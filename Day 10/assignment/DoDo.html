@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>DoDo</title>
+  </head>
+  <body>
+    <div class="sidebar-container">
+      <aside>
+        <div>
+          <p class="logo-text">
+            <img
+              src="https://i.pinimg.com/474x/18/2f/19/182f19d73d3426f102cf75402b4a0340.jpg"
+              alt=""
+            />
+            DoDo
+          </p>
+          <div class="user">
+            <img
+              class="profile-pic"
+              src="https://www.befunky.com/images/wp/wp-2021-01-linkedin-profile-picture-after.jpg?auto=avif,webp&format=jpg&width=944"
+              alt=""
+            />
+            <p class="user-name">
+              Michael Scott <i class="fa-solid fa-angle-down"></i>
+            </p>
+            <p>New York,USA</p>
+          </div>
+
+          <nav>
+            <div class="nav-tabs">
+              <a href=""><i class="fa-solid fa-bars-progress"></i> Dashboard</a>
+            </div>
+            <div class="nav-tabs">
+              <a href=""><i class="fa-solid fa-book"></i> workspace</a>
+            </div>
+            <div class="nav-tabs">
+              <a href=""><i class="fa-solid fa-chart-simple"></i> Statistics</a>
+            </div>
+            <div class="nav-tabs">
+              <a href=""><i class="fa-regular fa-user"></i> Contacts</a>
+            </div>
+            <div class="nav-tabs">
+              <a href=""
+                ><i class="fa-regular fa-calendar-check"></i> Calender</a
+              >
+            </div>
+            <div class="nav-tabs">
+              <a href=""><i class="fa-regular fa-bell"></i> Notification</a>
+            </div>
+            <div class="nav-tabs">
+              <a href=""><i class="fa-regular fa-comment"></i> Messages</a>
+            </div>
+          </nav>
+        </div>
+
+        <div class="for-padding">
+          <footer>
+            <i class="fa-solid fa-circle-question"></i>
+            <br />
+            <br />
+            <h4>Help center</h4>
+            <p>some random words written header</p>
+            <br />
+            <a href="">Sign up </a>
+          </footer>
+        </div>
+      </aside>
+      <div class="container no-scrollbar">
+        <header>
+          <div class="header-left">
+            <a href="" title="UX/UI Design"
+              ><i class="fa-solid fa-palette"></i> UX/UI design</a
+            >
+            <a href=""><i class="fa-regular fa-eye"></i> Illuustraion</a>
+            <a href=""><i class="fa-solid fa-font"></i> Typography</a>
+            <div class="search">
+              <i class="fa-solid fa-magnifying-glass"></i
+              ><input type="search" placeholder="Search here" />
+            </div>
+          </div>
+          <div class="header-right">
+            <div class="theme">
+              <!-- <div class="light-theme"><i class="fa-solid fa-circle"></i> Light</div>
+                        <div class="dark-theme"><i class="fa-solid fa-moon"></i> Dark</div> -->
+              <button class="light-theme">
+                <i class="fa-solid fa-circle"></i>
+                <span class="none">Light</span>
+              </button>
+              <button class="dark-theme">
+                <i class="fa-solid fa-moon"></i> <span class="none">Dark</span>
+              </button>
+            </div>
+            <i class="fa-regular fa-bell"></i>
+            <i class="fa-solid fa-gear"></i>
+            <a class="add-new" href=""
+              ><i class="fa-solid fa-plus"></i
+              ><span class="none">Add new item</span></a
+            >
+          </div>
+        </header>
+        <div class="name-course">
+          <div class="user-caption">
+            <div class="second-left">
+              <h2>
+                Hi, Michael! <br />
+                What do you want <br />
+                to <span>learn</span> today?
+              </h2>
+              <p>
+                invest inyourself and take the first <br />
+                step towards achieving your dream
+              </p>
+            </div>
+          </div>
+          <div class="course-card">
+            <div class="second-right no-scrollbar">
+            <div class="add-card"><i class="fa-solid fa-plus"></i></div>
+
+            <div class="card-task">
+              <img src="./images/data.png" alt="" />
+              <div>
+                <p>Data Research</p>
+                <p class="name">Rishav Talukdar</p>
+              </div>
+            </div>
+            <div class="card-task">
+              <img src="./images/graphics.png" alt="" />
+              <div>
+                <p>graphics Design</p>
+                <p class="name">Nathuram Gandhi</p>
+              </div>
+            </div>
+            <div class="card-task">
+              <img src="./images/appdesign.png" alt="" />
+              <div>
+                <p>App design</p>
+                <p class="name">Mohand Das</p>
+              </div>
+            </div>
+            <div class="card-task">
+              <img src="./images/strategy.png" alt="" />
+              <div>
+                <p>Strategy</p>
+                <p class="name">Robert Clibe</p>
+              </div>
+            </div>
+            <div class="card-task">
+              <img src="./images/data.png" alt="" />
+              <div>
+                <p>Data Research</p>
+                <p class="name">Rishav Talukdar</p>
+              </div>
+            </div>
+            <div class="card-task">
+              <img src="./images/data.png" alt="" />
+              <div>
+                <p>Data Research</p>
+                <p class="name">Rishav Talukdar</p>
+              </div>
+            </div>
+            <div class="card-task">
+              <img src="./images/data.png" alt="" />
+              <div>
+                <p>Data Research</p>
+                <p class="name">Rishav Talukdar</p>
+              </div>
+            </div>
+            <div class="card-task">
+              <img src="./images/data.png" alt="" />
+              <div>
+                <p>Data Research</p>
+                <p class="name">Rishav Talukdar</p>
+              </div>
+            </div>
+            <div class="card-task">
+              <img src="./images/data.png" alt="" />
+              <div>
+                <p>Data Research</p>
+                <p class="name">Rishav Talukdar</p>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <!-- <div class="stats">
+          <div class="stats-left">
+            <div class="all-card">
+            <div class="stats-card">
+              <div class="stats-card-header">
+                <div class="round">
+                    <p>90%</p>
+                </div>
+                <pre>
+    <span style="color: greenyellow;">Data Research</span>
+    <span class="bolder">Marketing</span>
+                </pre>
+              </div>  
+              <div class="stats-card-bottom">
+              <p class="left-tasks">
+  You marked 3.5<br/>
+  2 assignment left
+              </p>
+              <button class="stats-card-btn nobtn">Check</button>
+              </div>
+            </div>
+            <div class="stats-card">
+              <div class="stats-card-header">
+                <div class="round second-round">
+                    <p>60%</p>
+                </div>
+                <pre>
+    <span style="color: #f0cd52;">Data Research</span>
+    <span class="bolder">Marketing</span>
+                </pre>
+              </div>  
+              <div class="stats-card-bottom">
+              <p class="left-tasks">
+  You marked 3.5<br/>
+  2 assignment left
+              </p>
+              <button class="stats-card-btn ">Check</button>
+              </div>
+            </div>
+            <div class="stats-card">
+              <div class="stats-card-header">
+                <div class="round theird-round">
+                    <p>30%</p>
+                </div>
+                <pre>
+    <span style="color: #b19bfc;">Data Research</span>
+    <span class="bolder">Marketing</span>
+                </pre>
+              </div>  
+              <div class="stats-card-bottom">
+              <p class="left-tasks">
+  You marked 3.5<br/>
+  2 assignment left
+              </p>
+              <button class="stats-card-btn">Check</button>
+              </div>
+            </div>
+            </div>
+            <div class="to-do">
+              <div class="to-do-header">
+                <p class="todo-captions">To do list</p>
+                <div class="avatar-edit-share">
+                  <div class="avatar">
+                      <img class="img-one" src="https://www.befunky.com/images/wp/wp-2021-01-linkedin-profile-picture-after.jpg?auto=avif,webp&amp;format=jpg&amp;width=944" alt="">
+                      <img class="img-two" src="https://img.freepik.com/free-photo/portrait-man-laughing_23-2148859448.jpg?size=338&ext=jpg&ga=GA1.1.1819120589.1728086400&semt=ais_hybrid" alt="">
+                      <img class="img-three" src="https://www.befunky.com/images/wp/wp-2021-01-linkedin-profile-picture-after.jpg?auto=avif,webp&amp;format=jpg&amp;width=944" alt="">
+                      <img class="img-four" src="https://img.freepik.com/free-photo/portrait-man-laughing_23-2148859448.jpg?size=338&ext=jpg&ga=GA1.1.1819120589.1728086400&semt=ais_hybrid" alt="">
+                      <i class="fa-solid fa-plus"></i>
+                  </div>
+                  <p><i class="fa-regular fa-pen-to-square"></i>  Edit</p>
+                  <p><i class="fa-solid fa-share-nodes"></i>  Share</p>
+                </div>
+              </div>
+              <br/>
+              <div class="to-do-card-holder">
+              <div class="to-do-card">
+                <div class="to-do-card-top">
+                  <p class="todo-captions">Create a digital logo for <br/>a small business</p>
+                  <button class="to-do-btn">Low</button>
+                </div>
+                <br/>
+                <div class="to-do-card-bottom">
+                  <button class="to-do-btn">Logo Design</button>
+                    <div>
+                      <p>David Wilson</p>
+                        <img  src="https://www.befunky.com/images/wp/wp-2021-01-linkedin-profile-picture-after.jpg?auto=avif,webp&amp;format=jpg&amp;width=944" alt="">
+                    </div>
+                </div>
+              </div>
+              <div class="to-do-card gradient">
+                <div class="to-do-card-top">
+                  <p class="todo-captions">Design a packaging <br/>concept for a new product</p>
+                  <button class="to-do-btn">High</button>
+                </div>
+                <br/>
+                <div class="to-do-card-bottom">
+                  <button class="to-do-btn">Package Design</button>
+                    <div>
+                      <p>David Wilson</p>
+                        <img  src="https://www.befunky.com/images/wp/wp-2021-01-linkedin-profile-picture-after.jpg?auto=avif,webp&amp;format=jpg&amp;width=944" alt="">
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="assignment">
+             <div class="to-do-header">
+                <p class="todo-captions">My assignments</p>
+                <div class="avatar-edit-share">
+                  <div class="avatar">
+                      <i class="fa-regular fa-copy"></i>
+                      <i class="fa-solid fa-table-cells-large"></i>
+                      <i class="fa-solid fa-sliders"></i>
+                      <i class="fa-solid fa-plus"></i>
+                  </div>
+                  <p><i class="fa-regular fa-pen-to-square"></i>  Edit</p>
+                  <p><i class="fa-solid fa-share-nodes"></i>  Share</p>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="stats-right">
+          <div class="calender">
+            <div class="calender-header">
+            <p>
+              April 2023
+            </p>
+          
+            <div>
+              <i class="fa-solid fa-angle-left"></i>
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+            </div>
+            <table>
+              <tr>
+                <td>Mon</td>
+                <td>Tue</td>
+                <td>Wed</td>
+                <td>Thr</td>
+                <td>Fri</td>
+                <td>Sat</td>
+                <td>Sun</td>
+              </tr>
+              <tr>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+              </tr>
+            </table>
+            <p class="time-range">10:30 - 12:00 <span class="dashed"></span></p>
+            <div class="graphic-test">
+              <div class="graphic-left">
+                <i class="fa-regular fa-calendar"></i>
+                <div>
+                  <p class="graphic-caption">Graphic test</p>
+                  <p class="time-stamp">24 March,10:30 AM <i class="fa-solid fa-circle"></i> Motion Design</p>
+                </div>
+              </div>
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+            <p class="time-range">10:30<span class="dashed"></span></p>
+            <div class="graphic-test">
+              <div class="graphic-left">
+                <i class="fa-regular fa-calendar"></i>
+                <div>
+                  <p class="graphic-caption">Graphic test</p>
+                  <p class="time-stamp">24 March,10:30 AM <i class="fa-solid fa-circle"></i> Motion Design</p>
+                </div>
+              </div>
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <div class="content">
+        <div class="left-content">
+           <div class="all-card">
+            <div class="stats-card">
+              <div class="stats-card-header">
+                <div class="round center">
+                    <p>75%</p>
+                </div>
+                <pre>
+    <span style="color: greenyellow;">Data Research</span>
+    <span class="bolder">Marketing</span>
+                </pre>
+              </div>  
+              <div class="stats-card-bottom">
+              <p class="left-tasks">
+  You marked 3.5<br/>
+  2 assignment left
+              </p>
+              <button class="stats-card-btn nobtn">Check</button>
+              </div>
+            </div>
+            <div class="stats-card">
+              <div class="stats-card-header">
+                <div class="round second-round center">
+                    <p>50%</p>
+                </div>
+                <pre>
+    <span style="color: #f0cd52;">Data Research</span>
+    <span class="bolder">Marketing</span>
+                </pre>
+              </div>  
+              <div class="stats-card-bottom">
+              <p class="left-tasks">
+  You marked 3.5<br/>
+  2 assignment left
+              </p>
+              <button class="stats-card-btn ">Check</button>
+              </div>
+            </div>
+            <div class="stats-card">
+              <div class="stats-card-header">
+                <div class="round theird-round center">
+                    <p>25%</p>
+                </div>
+                <pre>
+    <span style="color: #b19bfc;">Data Research</span>
+    <span class="bolder">Marketing</span>
+                </pre>
+              </div>  
+              <div class="stats-card-bottom">
+              <p class="left-tasks">
+  You marked 3.5<br/>
+  2 assignment left
+              </p>
+              <button class="stats-card-btn">Check</button>
+              </div>
+            </div>
+            </div>
+            <br/>
+            <div class="to-do">
+              <div class="to-do-header">
+                <p class="todo-captions">To do list</p>
+                <div class="avatar-edit-share">
+                  <div class="avatar">
+                      <img class="img-one" src="https://www.befunky.com/images/wp/wp-2021-01-linkedin-profile-picture-after.jpg?auto=avif,webp&amp;format=jpg&amp;width=944" alt="">
+                      <img class="img-two" src="https://img.freepik.com/free-photo/portrait-man-laughing_23-2148859448.jpg?size=338&ext=jpg&ga=GA1.1.1819120589.1728086400&semt=ais_hybrid" alt="">
+                      <img class="img-three" src="https://www.befunky.com/images/wp/wp-2021-01-linkedin-profile-picture-after.jpg?auto=avif,webp&amp;format=jpg&amp;width=944" alt="">
+                      <img class="img-four" src="https://img.freepik.com/free-photo/portrait-man-laughing_23-2148859448.jpg?size=338&ext=jpg&ga=GA1.1.1819120589.1728086400&semt=ais_hybrid" alt="">
+                      <i class="fa-solid fa-plus"></i>
+                  </div>
+                  <p><i class="fa-regular fa-pen-to-square"></i>  Edit</p>
+                  <p><i class="fa-solid fa-share-nodes"></i>  Share</p>
+                </div>
+              </div>
+              <br/>
+              <div class="to-do-card-holder">
+              <div class="to-do-card">
+                <div class="to-do-card-top">
+                  <p class="todo-captions">Create a digital logo for <br/>a small business</p>
+                  <button class="to-do-btn">Low</button>
+                </div>
+                <br/>
+                <div class="to-do-card-bottom">
+                  <button class="to-do-btn">Logo Design</button>
+                    <div>
+                      <p>David Wilson</p>
+                        <img  src="https://www.befunky.com/images/wp/wp-2021-01-linkedin-profile-picture-after.jpg?auto=avif,webp&amp;format=jpg&amp;width=944" alt="">
+                    </div>
+                </div>
+              </div>
+              <div class="to-do-card gradient">
+                <div class="to-do-card-top">
+                  <p class="todo-captions">Design a packaging <br/>concept for a new product</p>
+                  <button class="to-do-btn">High</button>
+                </div>
+                <br/>
+                <div class="to-do-card-bottom">
+                  <button class="to-do-btn">Package Design</button>
+                    <div>
+                      <p>David Wilson</p>
+                        <img  src="https://www.befunky.com/images/wp/wp-2021-01-linkedin-profile-picture-after.jpg?auto=avif,webp&amp;format=jpg&amp;width=944" alt="">
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br/>
+          <div class="assignment">
+             <div class="to-do-header">
+                <p class="todo-captions">My assignments</p>
+                <div class="avatar-edit-share">
+                  <div class="assignment-tabs">
+                      <i class="fa-regular fa-copy"></i>
+                      <i class="fa-solid fa-table-cells-large"></i>
+                      <i class="fa-solid fa-sliders"></i>
+                  </div>
+                  <p><i class="fa-regular fa-pen-to-square"></i>  Edit</p>
+                  <p><i class="fa-solid fa-share-nodes"></i>  Share</p>
+                </div>
+              </div>
+              <div class="table-parent no-scrollbar">
+              <table class="assignment-table" >
+                <tr>
+                  <td><img src="./images/brush.png" alt=""></td>
+                  <td>
+                    <p class="graphic-caption">Graphic Test</p>
+                    <p class="time-stamp">24 March,10:30 AM</p>
+                  </td>
+                  <td>
+                    <p class="time-stamp">Duration</p>
+                    <p class="graphic-caption">02 h 45 m</p>
+                  </td>
+                  <td>
+                    <label class="graphic-caption">90%</label>
+                    <progress value="90" max="100"></progress>
+                  </td>
+                  <td><p class="graphic-caption">8/9</p></td>
+                  <td class="toomany-icon">
+                    <i class="fa-regular fa-lemon"></i>
+                    <p class="graphic-caption">4</p>
+                    <i class="fa-solid fa-circle"></i>
+                    <i class="fa-solid fa-paperclip"></i>
+                    <p class="graphic-caption">16</p>
+                    <i class="fa-solid fa-circle"></i>
+                    <i class="fa-regular fa-calendar"></i>
+                    <p class="graphic-caption">3 June</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td><img src="./images/brush.png" alt=""></td>
+                  <td>
+                    <p class="graphic-caption">Graphic Test</p>
+                    <p class="time-stamp">24 March,10:30 AM</p>
+                  </td>
+                  <td>
+                    <p class="time-stamp">Duration</p>
+                    <p class="graphic-caption">04 h 45 m</p>
+                  </td>
+                  <td>
+                    <label class="graphic-caption">50%</label>
+                    <progress value="50" max="100"></progress>
+                  </td>
+                  <td><p class="graphic-caption">8/9</p></td>
+                  <td class="toomany-icon">
+                    <i class="fa-regular fa-lemon"></i>
+                    <p class="graphic-caption">4</p>
+                    <i class="fa-solid fa-circle"></i>
+                    <i class="fa-regular fa-calendar"></i>
+                    <p class="graphic-caption">3 June</p>
+                  </td>
+                </tr>
+              </table>
+              </div>
+              <br/>
+              <button class="assignment-btn">
+                <i class="fa-solid fa-plus"></i>
+                Add new assignment</button>
+          </div>
+        </div>
+        <div class="right-content">
+          <div class="calender">
+            <div class="calender-header">
+            <p>
+              April 2023
+            </p>
+          
+            <div>
+              <i class="fa-solid fa-angle-left"></i>
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+            </div>
+            <table>
+              <tr>
+                <td>Mon</td>
+                <td>Tue</td>
+                <td>Wed</td>
+                <td>Thr</td>
+                <td>Fri</td>
+                <td>Sat</td>
+                <td>Sun</td>
+              </tr>
+              <tr>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+              </tr>
+            </table>
+            <p class="time-range">10:30 - 12:00 <span class="dashed"></span></p>
+            <div class="graphic-test">
+              <div class="graphic-left">
+                <i class="fa-regular fa-calendar"></i>
+                <div>
+                  <p class="graphic-caption">Graphic test</p>
+                  <p class="time-stamp">24 March,10:30 AM <i class="fa-solid fa-circle"></i> Motion Design</p>
+                </div>
+              </div>
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+            <p class="time-range">10:30<span class="dashed"></span></p>
+            <div class="graphic-test">
+              <div class="graphic-left">
+                <i class="fa-regular fa-calendar"></i>
+                <div>
+                  <p class="graphic-caption">Graphic test</p>
+                  <p class="time-stamp">24 March,10:30 AM <i class="fa-solid fa-circle"></i> Motion Design</p>
+                </div>
+              </div>
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+          </div>
+          <br/>
+          <div class="notification">
+              <div class="notification-header">
+                <p class="todo-captions">Notifications</p>
+                <p style="color: #999999; font-size: 14px;"><i class="fa-solid fa-share-nodes"></i>  Clear</p>
+              </div>
+              <div class="event">
+                <div class="event-header">
+                  <p class="upcoming-event">Upcoming event</p>
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+                <p class="time-stamp">Product design meeting | Time:120 min</p>
+                <p class="date-time"><i class="fa-regular fa-calendar"></i> Wed,20 Apr &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fa-regular fa-calendar"></i> 11 AM-11:45 AM</p>
+
+              </div>
+          </div>
+          <br/>
+          <div class="board-meeting">
+            <div class="event-header">
+               <p class="todo-captions">Board meeting</p>
+              <p class="edit"><i class="fa-regular fa-pen-to-square"></i>  Edit</p>
+                </div>
+                <p class="time-stamp">March 24 at 4:00 PM</p>
+                <br/>
+                <div class="meeting-bottom">
+                  <p>
+                    Meeting with Ann <br>
+                    Pekins room 15  
+                  </p>
+                  <div>
+                    <button class="meeting-btn nobg">Reschedule</button>
+                    <button class="meeting-btn">Accept invite</button>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

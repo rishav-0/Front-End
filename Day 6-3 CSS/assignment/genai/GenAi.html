@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+                        
+            font-family: "Roboto", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+        }
+        
+        .gallery{
+            clear: both;
+            width: 1024px;
+            background-color: rgb(245, 245, 245);
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+        }
+
+        .left,
+        .right{
+            width: 50%;
+            max-width: 510px;
+        }
+        .left{
+            padding: 40px;
+           
+        }
+        .left p{
+            color: rgb(116, 117, 119);
+            font-weight: 400;
+        }
+        .getstart{
+            text-decoration: none;
+            padding: 8px;
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+            font-size: 12px;
+            margin-right: 14px;
+        }
+        .showInfo{
+            text-decoration: none;
+
+        }
+        .right{
+            display: flex;
+            
+        }
+        .right-first,
+        .right-second{
+            width: 50%;
+            display: flex;
+            align-items: end;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 15px;
+        }
+        .right-second{
+            align-items:first ;
+         
+        }
+        .one{
+            
+            height: 90px;
+            width: 190px;
+            border-radius: 0 0 8px 8px;
+        }
+        .right-first img,
+        .right-second img{
+            object-fit: contain;
+            width: 100%;
+        }
+        .two{
+            width: 220px;
+            height: 140px;
+            
+            border-radius: 8px;
+        }
+        .three{
+            width: 190px;
+            /* height: 60px; */
+           
+            border-radius:8px 8px 0 0 ;
+        }
+        .second-one{
+            background-color: purple;
+            height: 180px;
+            width: 200px;
+            border-radius: 0 0 0 8px;
+            overflow: hidden;
+        }
+        .second-two{
+             background-color: brown;
+            height: 120px;
+            width: 200px;
+            border-radius: 8px 0 0 0 ;
+        }
+        .caption{
+            text-align: center;
+        }
+        .caption p{
+            color: rgb(106, 107, 108);
+            font-weight: 400;
+        }
+        .tabs{
+            text-align: center;
+        }
+        .tabs a{
+            text-decoration: none;
+            padding: 4px;
+            border: 2px solid #eeeeee;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+        .tabs a:hover{
+            border: 2px solid black;
+            border-radius: 6px;
+        }
+        header{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 10px;
+            align-items: center;
+            position: sticky ;
+            top: 0;
+        }
+        
+        header nav ul {
+            list-style: none;
+        }
+        nav{
+            display: flex;
+            
+        }
+        nav li{
+            display: inline-block;
+            margin: 0 10px;
+        }
+        nav a{
+            text-decoration: none;
+            padding: 2px;
+            background-color: black;
+            border-radius: 5px;
+            color: white;
+            border: 2px solid black;
+        }
+        nav a:hover{
+            background-color: white;
+            color: black;
+        }
+        .logo{
+            float: left;
+        }
+        
+        nav a{
+            float: right;
+        }
+        .inputSearch input{
+            display: none;
+        }
+        .inputSearch:hover input{
+            display: inline-block;
+            border-radius: 5px;
+            width: 40px;
+            margin-right: 4px;
+        }
+        nav select{
+            text-decoration: none;
+            border: none;
+        }
+    </style>
+    <title>Generative Ai</title>
+</head>
+<body>
+
+   <header>
+    <span class="logo">stability.ai</span>
+    <nav>
+        <ul>
+            <li> 
+                <select>
+                <option>Models</option>
+                <option>hello</option>
+                <option>hello</option>
+            </select>
+            </li>
+            <li> 
+                <select>
+                <option>Applications</option>
+                <option>hello</option>
+                <option>hello</option>
+            </select>
+            </li>
+            <li> 
+                <select>
+                <option>Deployment</option>
+                <option>hello</option>
+                <option>hello</option>
+            </select>
+            </li>
+            <li> 
+                <select>
+                <option>Coompany</option>
+                <option>hello</option>
+                <option>hello</option>
+            </select>
+            </li>
+            <li>Docs</li>
+            
+            <li class="inputSearch"><input type="search" ><i class="fa-sharp fa-solid fa-magnifying-glass search"></i></li>
+        </ul>
+        <a href="">Contact Us</a>
+    </nav>
+   </header>
+<br>
+<br>
+<br>
+    <div class="caption">
+        <h1>Unlocking Human Potential</h1>
+        <h1>With Generative AI.</h1>
+        <br>
+        <p>Developing and providing open-source AI models<br/> for creative problem-solving industrial use.</p>
+<br>
+<br>
+<br>
+<br>
+<br>
+    </div>
+    <div class="tabs">
+        <a href="">Image</a>
+        <a href="">Video</a>
+        <a href="">Audio</a>
+        <a href="">Language models</a>
+        <a href="">3D Objects</a>
+    </div>
+    <br>
+    <div class="gallery">
+        <div class="left">
+            <h2>Stable Diffusion 3 Medium.</h2>
+            <br>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus harum laboriosam eos incidunt quasi ipsum est facilis in autem adipisci!</p>
+            <br>
+            <a href="" class="getstart">Get Started with API</a>
+            <a href="" class="showInfo">Show Info</a>
+        </div>
+        <div class="right">
+            <div class="right-first">
+               <div class="one"><img src="./image.png" alt=""></div>
+               <div class="two"> <img src="./image copy.png" alt=""></div>
+               <div class="three"><img src="./image copy 2.png" alt=""></div>
+            </div>
+            <div class="right-second">
+                <div class="second-one"><img src="./image copy 3.png" alt=""></div>
+                <div class="second-two"><img src="./image copy 4.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

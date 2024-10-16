@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .common{
+            height: 30px;
+            width:  30px;
+            /* position: relative; */
+            top: 0;
+        }
+        .one{
+            background-color: crimson;
+            z-index: 3;
+            /* transition: width 500ms; */
+            left: 20px;
+        }
+        .one:hover{
+            width: 100%;
+        }
+        .two{
+            z-index: 2;
+            background-color: aqua;
+        }
+        .three{
+            background-color: greenyellow;
+            z-index: 1;
+            left: 30px;
+            top: 20px;
+            box-shadow: 1px 1px 10px 3px #dcdcdc;
+        }
+        .random-text{
+            
+            transform: translate(-50%,0);
+        }
+
+        .last{
+            height: 300px;
+            width: 200px;
+            border: 1px solid black;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="one common"></div>
+    <div class="two common"></div>
+    <div class="three common"></div>
+    <div popover id="mypop" class="last">
+
+    </div>
+    <button popovertarget="mypop">Enter</button>
+</body>
+</html>

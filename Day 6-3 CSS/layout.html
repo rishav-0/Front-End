@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+            border: 2px solid black;
+            margin: 10px;
+            display: flex;
+            justify-content: space-between;
+            gap: 4px;
+            height: 30px;
+            /* width: 350px; */
+        }
+        .child:hover{
+            display: none;
+        }
+        .nav{
+            display: none;
+        }
+        @media only screen and (max-width:300px){
+            .nav{
+                display: block;
+            }
+        }
+    </style>
+    <title>Layout</title>
+
+</head>
+<body>
+    <div class="main ">
+        <div class="child">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-facebook"></i>
+        </div>
+       <i class="fa-solid fa-bars nav"></i>
+    </div>
+</body>
+</html>

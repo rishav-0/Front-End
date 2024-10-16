@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+}
+.wrapper{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    /* padding: 20px; */
+}
+.left-column{
+    width: 50%;
+    padding: 20px;
+}
+.right-column{
+    width: 50%;
+    padding: 20px;
+}
+.img-banner{
+    background-image: url(https://img.freepik.com/free-vector/realistic-shubh-diwali-sale-banner-with-shiny-diya-design_1017-40297.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 241px;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+.banner-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;    
+}
+.nav-banner{
+    background-color: #ffeb9d;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 241px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.winter{
+    width: 100%;
+    padding: 20px;
+}
+.girl{
+    height: 100%;
+}
+.grid-banner{
+    height: 280px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 4px;
+}
+.grid-left{
+    padding: 10px;
+    width: calc(50% - 2px);
+    background-image: url("https://media.istockphoto.com/id/1473203340/photo/face-beauty-and-satisfaction-with-a-model-black-woman-in-studio-on-a-gray-background-to.jpg?s=612x612&w=0&k=20&c=vlAmvWIRkthdr9bzHCXLHknRWawyIklPwyVDFsk3aaA=");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+}
+.grid-right{
+    width: calc(50% - 2px);
+    height: 100%;
+    border: 2px solid #dcdcdc;
+    border-radius: 20px;
+    padding: 10px;
+    overflow: hidden;
+}
+.right-card{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+.cardOne{
+    width: calc(50% - 2px);
+}
+.cardTwo{
+    width: calc(50% - 2px);
+}
+.right-column .nav-banner{
+    background-color: #f7f7f7;
+}

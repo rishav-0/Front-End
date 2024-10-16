@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Calender</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        .wrapper{
+            display: flex;
+            gap: 20px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <img src="./images/logo.png" alt="H" class="logo-H" > 
+            <aside class="nav-bar">
+                <div class="tabs">
+                    <img
+                    src="https://img.icons8.com/?size=100&id=i6fZC6wuprSu&format=png&color=000000"
+                    alt=""
+                    />
+                </div>
+                <div class="tabs"><i class="fa-regular fa-calendar"></i></div>
+                <div class="tabs"><i class="fa-solid fa-chart-column"></i></div>
+                <div class="tabs">
+                    <img
+                    src="https://img.icons8.com/?size=100&id=4511GGVppfIx&format=png&color=000000"
+                    alt=""
+                    />
+                </div>
+                <div class="tabs"><i class="fa-regular fa-bell"></i></div>
+            </aside>
+             <aside class="logout">
+                <div class="tabs"><i class="fa-solid fa-arrow-right-from-bracket"></i></div>
+                <div class="tabs"><i class="fa-regular fa-user"></i></div>
+            </aside>
+        </div>
+        <div class="main">
+      <header>
+        <div class="name-logo">
+          <div class="greet">
+            <h4>Hello, Alex!</h4>
+            <p>Ready for today's challenges?</p>
+          </div>
+        </div>
+        <div class="search-premium">
+          <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" placeholder="Search for some activities" />
+          </div>
+        </div>
+      </header>
+      <div class="second">
+        
+
+        <div class="image-graph">
+            <div class="title-box">
+                <p class="activity">Physical Activity</p>
+                <p class="activity">Today <i class="fa-solid fa-angle-down"></i></p>
+            </div>
+          <div class="all-graphs">
+            <div class="graph">
+              <img src="./images/graph1.png" alt="" />
+              <p class="category">Steps</p>
+              <h1 class="title">8745</h1>
+              <div class="score">
+                <div>
+                  <p>Good</p>
+                  <p>Average</p>
+                </div>
+                <div>
+                  <p>8 000</p>
+                  <p>9 450</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="graph border">
+              <img src="./images/graph2.png" alt="" />
+              <div class="burned-consumed">
+                <p class="burned">- burned</p>
+                <p class="Consumed">- Consumed</p>
+              </div>
+              <p class="category">Calories burned</p>
+              <h1 class="title">700</h1>
+              <div class="score">
+                <div>
+                  <p>Good</p>
+                  <p>Average</p>
+                </div>
+                <div>
+                  <p>8 000</p>
+                  <p>9 450</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="graph">
+              <img src="./images/graph1.png" alt="" />
+              <p class="category">Activity time</p>
+              <h1 class="title">2h 45min</h1>
+              <div class="score">
+                <div>
+                  <p>Good</p>
+                  <p>Average</p>
+                </div>
+                <div>
+                  <p>8 000</p>
+                  <p>9 450</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="calender-main">
+          <div class="calender-header">
+            <p>Your Active Days</p>
+            <select>
+              <option>November</option>
+              <option>November</option>
+            </select>
+          </div>
+          <div class="calender">
+            <table cellspacing="0">
+              <tr class="days">
+                <td class="no-color">MON</td>
+                <td class="no-color">TUE</td>
+                <td class="no-color">WEB</td>
+                <td class="no-color">THU</td>
+                <td class="no-color">FRI</td>
+                <td class="no-color">SAT</td>
+                <td class="no-color">SUN</td>
+              </tr>
+              <tr>
+                <td class="dashed">1</td>
+                <td class="dashed">2</td>
+                <td class="dashed">3</td>
+                <td class="dashed">4</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+                <td class="today">15</td>
+                <td>16</td>
+                <td>17</td>
+              </tr>
+              <tr>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+                <td>24</td>
+              </tr>
+              <tr>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+                <td>29</td>
+                <td>30</td>
+                <td>31</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="theird">
+        <div class="progress">
+            <div class="sleep-time">
+                <div class="sleep-time-left">
+                  <p class="first-p">Sleep Time</p>
+                  <p>You're almost there</p>
+                  <br>
+                  <p>Goal is 8 hours</p>
+                </div>
+                <div class="sleep-time-right">
+                    <div class="round">
+                        <p>7.45h</p>
+                    </div>
+                </div>
+            </div>
+            <div class="weight">
+                <div class="weight-header">
+                    <p class="activity">Weight Loss Plan</p>
+                    <p>80% completed</p>
+                </div>
+                <div class="bar">
+                  <progress min="10" max="100" value="70"></progress>
+                  <div class="bar-weight">
+                    <p>80kg</p>
+                    <p>70kg</p>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="activieties">
+          <div class="header-activity">
+            <p class="activity">My Activity</p>
+            <p>You have 3 planned activities</p>
+          </div>
+          <div class="activieties-tabs">
+            <div class="single-tabs color">All</div>
+            <div class="single-tabs">Alone</div>
+            <div class="single-tabs">With friends</div>
+          </div>
+          <div class="cards">
+            <div class="card">
+              <div class="card-header">
+               
+                  <div class="avatar-main">
+                    <div class="avatar first">
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQolvXe6bZIKfmv7RY6hem0nrdlSvaeKRwkHQ&s" alt="">
+                    </div>
+                    <div class="avatar next-img">
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQolvXe6bZIKfmv7RY6hem0nrdlSvaeKRwkHQ&s" alt="">
+                    </div>
+                  </div>
+                <div class="arrow">
+                  <i class="fa-solid fa-arrow-up"></i> 
+                </div>
+              </div>
+              <div class="tasks">
+                <p>Running</p>
+                <p  class="tasks-time">7:00 AM</p>
+              </div>
+            </div>
+            <div class="card gray">
+              <div class="card-header">
+               
+                  <div class="avatar-main">
+                    <div class="avatar first">
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQolvXe6bZIKfmv7RY6hem0nrdlSvaeKRwkHQ&s" alt="">
+                    </div>
+                    <div class="avatar next-img">
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQolvXe6bZIKfmv7RY6hem0nrdlSvaeKRwkHQ&s" alt="">
+                    </div>
+                    <div class="avatar next-img-three">
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQolvXe6bZIKfmv7RY6hem0nrdlSvaeKRwkHQ&s" alt="">
+                    </div>
+                  </div>
+                <div class="arrow">
+                  <i class="fa-solid fa-arrow-up"></i> 
+                </div>
+              </div>
+              <div class="tasks">
+                <p>Gym</p>
+                <p  class="tasks-time">8:00 PM</p>
+              </div>
+            </div>
+            <div class="card gray">
+              <div class="card-header">
+               
+                  <div class="avatar-main">
+                    <div class="avatar first">
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQolvXe6bZIKfmv7RY6hem0nrdlSvaeKRwkHQ&s" alt="">
+                    </div>
+                    
+                  </div>
+                <div class="arrow">
+                  <i class="fa-solid fa-arrow-up"></i> 
+                </div>
+              </div>
+              <div class="tasks">
+                <p>Meditation</p>
+                <p  class="tasks-time">10:30 PM</p>
+              </div>
+            </div>
+            <div class="add-reply">
+                <i class="fa-solid fa-plus"></i>
+                <p>Add Activity</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    
+  </body>
+</html>

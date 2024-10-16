@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background: rgb(202,209,209);
+    background: linear-gradient(90deg, rgba(202,209,209,1) 0%, rgba(183,189,189,1) 35%, rgba(202,209,209,1) 91%);
+    
+}
+.insights-main {
+    width: 360px;
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.middle{
+    overflow: auto;
+}
+.no-scrollbar::-webkit-scrollbar {
+      display: none;
+}
+ /* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+      -ms-overflow-style: none;  
+      scrollbar-width: none; 
+}
+
+.status-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px 20px;
+}
+.network-status{
+    display: flex;
+    justify-content: space-between;
+    gap: 2px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+header h3{
+    font-weight: 500;
+    font-size: 25px;
+    padding: 3px;
+}
+.menu-tab{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    background-color: #f5f3f3;
+    border-radius: 20px;
+    position: relative;
+}
+.menu-profile{
+    width: 100%;
+}
+.lines{
+    width: 30px;
+    position: absolute;
+    top: 3px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.for-padding{
+    padding: 10px;
+}
+.hero{
+    background-color: #ffe9ca;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    /* padding: 15px; */
+}
+.hero-left{
+    padding: 10px;
+    width: 50%;
+}
+.caption{
+    font-size: 20px;
+    font-weight: 500;
+    padding: 3px;
+}
+.caption +p{
+    font-size: 12px;
+    padding: 3px;
+}
+.get-started{
+    text-decoration: none;   
+    display: inline-block;
+    padding: 6px 15px;
+    background-color: #f0d4ac;
+    border-radius: 20px;
+}
+/* .hero-right {
+    width: 50%;
+    object-fit: contain;
+    position: relative;
+    overflow: hidden;
+} */
+.hero-image{
+    width: 158px;
+    display: block;
+}
+.streak-header  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.view-all{
+    display: block;
+    text-decoration: none;
+}
+.slide-container{
+    display: flex;
+    gap: 10px;
+    /* overflow-y: scroll; */
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+.slide-container::-webkit-scrollbar{
+    display: none;
+}
+.card{
+    position: relative;
+    width: 130px;
+    min-width: 130px;
+    background-color: #272d34;
+    padding: 10px;
+    border-radius: 25px;
+}
+.slide-icon{
+    width: 22px;
+    background-color: #d2e9ef;
+    padding: 8px;
+    border-radius: 18px;
+    float: right;
+}
+.black{
+    background-color: #303740;
+    
+}
+.white{
+    background-color: #303740;
+}
+.white img{
+    filter: invert();
+}
+.color-gray{
+    background-color:#e1f0f4;
+}
+.color-gray p,
+.color-brown p{
+    color: black;
+}
+.color-gray .menu-tab{
+    background-color: #d2e9ef;
+}
+.color-brown{
+    background-color: #ead9be;
+}
+.card-icon{
+    position: absolute;
+    /* width: 80; */
+    right: 10px;
+    
+}
+.card-text{
+    color: white;
+    font-size: 14px;
+    clear: both;
+}
+
+.sticky-nav {
+    /* width: 320px; */
+    border-radius: 20px;
+    padding-top: 15px;
+    background-color: white;
+    box-shadow: 1px 1px 10px 3px #dcdcdc;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav-tabs{
+    width: 20px;
+    height: 40px;
+    object-fit: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* padding: 10px; */
+}
+.nav-icon{
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+}
+.nav-hover{
+    height: 4px;
+    width: 20px;
+    background-color: #193d47;
+    border-radius: 8px 8px 0 0;
+    display: none;
+}
+.nav-tabs:hover .nav-hover{
+    display: block;
+}
+.padding-nav{
+    padding: 0 10px;
+    background-color: transparent;
+}
+.activity{
+    font-size: 25px;
+    font-weight: 500;
+}

@@ -1,0 +1,148 @@
+<!-- 
+1. universal selector
+2. element selector
+3.class selector
+4.id selector
+5.attribute selector
+6.child selector
+7. descendent selector 
+8. psudo selector
+9. pseudo element selector
+10. adjacent selector
+11. general sibling selector
+
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Internal CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+      * {
+        /* '*' refers to universal selector */
+        margin: 0;
+        padding: 0;
+        font-size: 12px;
+        font-family: "Poppins", system-ui;
+      }
+      h1,
+      h2 {
+        /* this is type(element) selector */
+        color: gray;
+      }
+      .hThree {
+        /* class selector */
+        color: green;
+      }
+
+      #hFour {
+        /* id selector */
+        color: blue;
+      }
+
+      input[type="text"]{
+        /* attribute selector */
+        border: 2px solid red;
+      }
+
+      [type="checkbox"]{
+        /* attribute selector */
+        accent-color: black; 
+    
+        /* importnat */
+      }
+
+      div h3{
+        /* descendent selector */
+        color: black;
+      }
+
+      div > h3{
+        /* child selector */
+        border: 2px solid gray;
+      }
+
+      div > h3:hover{
+        /* psudo selector */
+        display: inline;
+      }
+
+      span{
+        border: 2px solid black;
+      }
+
+      span:hover{
+        display: block;
+        background-color: orange;
+    }
+
+    p::first-letter{
+        font-size: 24px;
+        /* pseudo element selector */
+    }
+    /* p::first-line{
+        color: greenyellow;
+    } */
+
+    #lastDiv + p{
+        color: blueviolet;
+        /* adjacent sibling selector */
+    }
+    #anotherDiv ~ p{
+        color: rgb(70, 20, 220);
+        /* general  sibling selector */
+    }
+
+    </style>
+  </head>
+  <body>
+    <h1>hello</h1>
+    <h2>world</h2>
+    <h3 class="hThree">how are you</h3>
+    <h4 id="hFour">hi</h4>
+    <h5 class="hThree">ok</h5>
+    <h6>bye</h6>
+
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis incidunt
+      similique accusantium culpa a unde rem, libero soluta praesentium qui
+      placeat saepe veritatis eveniet consequuntur, tenetur, vero non! Quo dolor
+      voluptate numquam. Placeat at ratione temporibus molestiae, delectus
+      maiores expedita nobis quibusdam commodi asperiores magni debitis ut eos
+      rerum quam.
+      <h3>Hello world</h3>
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptatem
+      aspernatur ex exercitationem voluptatibus eveniet, commodi eaque id
+      aliquid fuga, placeat accusantium necessitatibus reiciendis expedita,
+      reprehenderit a quas odit quidem?
+    </p>
+
+    <span>Rishav </span>
+    <span>Talukdar</span>
+
+    <br />
+    <input type="text" placeholder="Enter Usernmae" >
+    <br/>
+    <input type="checkbox" checked>
+
+    <div id="lastDiv">
+        Hello World
+    </div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus blanditiis non, obcaecati quaerat in eos impedit magnam provident placeat fuga!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus blanditiis non, obcaecati quaerat in eos impedit magnam provident placeat fuga!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus blanditiis non, obcaecati quaerat in eos impedit magnam provident placeat fuga!</p>
+        <br>
+    <div id="anotherDiv">Hello Rishav </div>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus blanditiis non, obcaecati quaerat in eos impedit magnam provident placeat fuga!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus blanditiis non, obcaecati quaerat in eos impedit magnam provident placeat fuga!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus blanditiis non, obcaecati quaerat in eos impedit magnam provident placeat fuga!</p>
+    
+
+  </body>
+</html>

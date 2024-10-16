@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form</title>
+  </head>
+  <body>
+    <form>
+      <section>
+        <label for="fullname">Full Name</label>
+        <br />
+        <input
+          type="text"
+          id="fullname"
+          placeholder="Enter full name"
+          required
+        />
+      </section>
+
+      <section>
+        <label for="phonenumber">Phone Number</label>
+        <br />
+        <input
+          type="tel"
+          id="phonenumber"
+          placeholder="Phone Number"
+          pattern="\d{10,}"
+          min="10"
+          required
+        />
+      </section>
+
+      <section>
+        <label for="streetaddress">Street Addresss</label>
+        <br />
+        <textarea
+          id="streetaddress"
+          cols="30"
+          rows="10"
+          placeholder="Enter address"
+          required
+        ></textarea>
+      </section>
+
+      <section>
+        <label for="city">City</label>
+        <br />
+        <input type="text" id="city" placeholder="Enter city" required />
+      </section>
+      <section>
+        <label for="stateprovince">State Province</label>
+        <br />
+        <input
+          type="text"
+          id="stateprovince"
+          placeholder="Enter State province"
+          required
+        />
+      </section>
+      <section>
+        <label for="zip">Zip / Postal code</label>
+        <br />
+        <input type="number" id="zip" placeholder="Enter pin code" required />
+      </section>
+      <section>
+        <label for="ssn">Social Security Number</label>
+        <br />
+        <input
+          type="text"
+          id="ssn"
+          placeholder="Enter Security Number"
+          required
+        />
+      </section>
+
+      <section>
+        <label for="salary">Salary</label>
+        <br />
+        <input type="number" id="salary" placeholder="Enter Salary" required />
+      </section>
+
+      <section>
+        <label for="email">Email</label>
+        <br />
+        <input type="email" id="email" placeholder="Enter Email" required />
+      </section>
+
+      <section>
+        <label for="gender">Gender</label>
+        <br />
+        <input type="radio" id="male" required />
+        <label for="male">Male</label>
+        <input type="radio" id="female" required />
+        <label for="female">Female</label>
+      </section>
+
+      <section>
+        <input
+          type="checkbox"
+          id="salary"
+          placeholder="Enter Salary"
+          required
+        />
+        <label>Accept terms and conditions</label>
+      </section>
+
+      <section>
+        <label for="salary">Fruits</label>
+        <br />
+        <select required>
+          <option>Select Fruits</option>
+          <option>Apple</option>
+          <option>Mango</option>
+          <option>Orange</option>
+          <option>Banana</option>
+          <option>Onion</option>
+        </select>
+      </section>
+      <br />
+
+      <button>Submit</button>
+    </form>
+
+    <a href="mailto:talukdarrishav88@gmail.com">Mail</a>
+    <a href="https://wa.me/9365046638">Whats app</a>
+  </body>
+</html>

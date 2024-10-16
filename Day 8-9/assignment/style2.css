@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background: rgb(202,209,209);
+    background: linear-gradient(90deg, rgba(202,209,209,1) 0%, rgba(183,189,189,1) 35%, rgba(202,209,209,1) 91%);
+    padding: 20px ;
+}
+.main{
+    width: 300px;
+    height: 700px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+.status-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.network-status{
+    display: flex;
+    gap: 2px;
+}
+.middle{
+    overflow: auto;
+    position: relative;
+}
+.no-scrollbar::-webkit-scrollbar {
+      display: none;
+}
+ /* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+      -ms-overflow-style: none;  
+      scrollbar-width: none; 
+}
+.activity{
+    font-size: 25px;
+    font-weight: 500;
+    padding: 10px;
+    position:sticky;
+    top: 0;
+    background-color: white;
+}
+.duration-tab{
+    padding: 10px;
+}
+.duration-tab div{
+    padding: 1px;
+    background-color: #f5f5f6;
+    display: flex;
+    justify-content: space-around;
+}
+.duration-tab a{
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 12px;
+    display: inline-block;
+}
+.duration-tab a:hover{
+    background-color: white;
+    border-radius: 8px;
+}
+.year-select{
+    padding: 10px;
+}
+.selected-year{
+    font-size: 22px;
+}
+.twozero{
+    font-size: 12px;
+    color:#8899a0 ;
+    display: flex;   
+    align-items: center;
+    gap: 4px;
+}
+.twozero i{
+    font-size: 4px;   
+}
+.graph{
+    width: 280px;
+    padding: 10px;
+}
+.graph img{
+    width: 100%;
+}
+.month-tab{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.months{
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 12px;
+    display: inline-block;
+}
+.months:hover{
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+}
+.summary{
+    padding: 10px;
+}
+.bottom-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding: 10px;
+}
+.card{
+    width: 110px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.black{
+    background-color: black;
+    color: white;
+}
+.blue{
+    background-color: #e1f0f4;
+}
+.purple{
+    background-color: #ede1f4;
+}
+.brown{
+    background-color: #ffe9ca;
+}
+.sticky-nav {
+    /* width: 320px; */
+    border-radius: 20px;
+    padding-top: 15px;
+    background-color: white;
+    box-shadow: 1px 1px 10px 3px #dcdcdc;
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    /* padding: 20px; */
+    justify-content: space-around;
+}
+.nav-tabs{
+    width: 20px;
+    height: 40px;
+    object-fit: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* padding: 10px; */
+}
+.nav-icon{
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+}
+.nav-hover{
+    height: 4px;
+    width: 20px;
+    background-color: #193d47;
+    border-radius: 8px 8px 0 0;
+    display: none;
+}
+.nav-tabs:hover .nav-hover{
+    display: block;
+}

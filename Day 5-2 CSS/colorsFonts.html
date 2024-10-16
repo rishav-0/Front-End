@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Color and Fonts</title>
+        <style>
+
+            *{
+                margin: 0;
+                padding: 0;
+            }
+
+            .p{
+                color: blueviolet;
+                font-size: 20px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                /* font-style:oblique; */
+                /* line-height:40px; */
+                /* letter-spacing:10px; */
+                text-transform:capitalize;
+                text-indent: 30px;
+                /* text-decoration: underline; */
+            }
+            .div{
+                text-align:center;
+            }
+            .list{
+                text-decoration:none;
+                list-style: none;
+                list-style-type: square;
+            }
+
+            .divTwo{
+                background-color:orange;
+                width:500px;
+                height: 30px;
+                margin: 0px 10px;
+                padding:10px;
+                border-radius: 10px;
+            }
+
+            .square{
+                height: 50px;
+                width: 50px;
+                background-color: gray;
+            }
+
+            .rectangle{
+                height: 50px;
+                width: 100px;
+                background-color: aqua;
+            }
+            .circle{
+                height: 50px;
+                width: 50px;
+                border-radius: 25px;
+                background-color: black;
+                overflow: hidden;
+
+            }
+            .circle img{
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                width: 50px;
+            }
+            .container{
+                border: 2px dashed blue;
+            }
+
+            .first{
+                height: 50px;
+                width: 50px;
+                background-color: gray;
+                float: left;
+            }
+
+            .second{
+                height: 50px;
+                width: 50px;
+                background-color: crimson;
+                float: right;
+            }
+
+            .theird{
+                height: 50px;
+                width: 50px;
+                background-color: rgb(6, 178, 178);
+            }
+        </style>
+    </head>
+<body>
+    <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos doloribus facere eligendi quisquam minima eius aliquid ipsam tempore nostrum distinctio culpa consequuntur impedit, sit suscipit delectus, id soluta! Obcaecati, eum.</p>
+    
+    <input class="passwd" type="password" placeholder="enter password" >
+    <p class="div">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, nemo.</p>
+
+    <ul class="list">
+        <li>Hello</li>
+        <li>World</li>
+        <li>how</li>
+        <li>are you</li>
+    </ul>
+    
+    <ol type="A" start="3" reversed>
+        <li>Hello</li>
+        <li>World</li>
+        <li>how</li>
+        <li>are you</li>
+    </ol>
+
+    <div class="divTwo">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, dolorem.</p>
+    </div>
+    <p>hello world</p>
+
+    <div class="square"></div>
+    <div class="circle"><img src="https://rangefinderonline.com/wp-content/uploads/2021/08/B23A9251-Edit.jpg" alt=""></div>
+    <div class="rectangle"></div>
+
+    <div class="container">
+        <div class="first"></div>
+        <div class="second"></div>
+        <div class="theird"></div>
+    </div>
+</body>
+</html>

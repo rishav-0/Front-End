@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Transparent</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: "Lato", sans-serif;
+        }
+        .background{
+            background-image: url('./window.jpg');
+            /* width: 100%; */
+            height: 100vh;
+            object-fit: contain;
+            margin-left: auto;
+            margin-right: auto;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+       .main{
+        margin-top: 30px;
+        padding: 30px;
+        width: 300px;
+        height: 100vh;
+        background: rgba( 255, 255, 255, 0.85 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 2px );
+        -webkit-backdrop-filter: blur( 2px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+       }
+       header{
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        border-bottom: 2px solid rgb(246, 235, 235);
+        font-weight: 900;
+       }
+       hr{
+        color: #757575;
+       }
+       header img{
+        width: 50px;
+        margin-right: 20px;
+       }
+
+       .menu{
+        padding: 18px 0;
+        border-bottom: 2px solid rgb(246, 235, 235);
+
+       }
+       .menu p{
+            font-size: 12px;
+            font-weight: 800;
+            padding: 12px;
+            color:#757575;
+
+       }
+       .options{
+        padding: 16px 12px;
+        color: #757575;
+        font-weight: 700;
+        opacity: 0.8;
+        font-size: 15px;
+       }
+       
+       .logo{
+        margin-right: 18px;
+       }
+       .options:hover {
+            color: black;
+            border-radius: 16px;
+            background-color: white;
+       }
+       
+       .slides{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        color:#757575;
+        font-size: 12px;
+        font-weight: 800;
+       }
+       .arrows i{
+        padding: 0 10px;
+       }
+       .arrows i:hover{
+        color: black;
+       }
+       .chats{
+        background-color: white;
+        border-radius: 18px;
+        padding: 20px;
+        position: relative;
+       }
+       .avatar{
+        display: flex;
+        align-items: center;
+        width: 24px;
+        justify-content: center;
+        border-radius: 12px;
+        overflow: hidden;
+       }
+       .avatar img{
+        width: 100%;
+       }
+       .chats-options{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 20px ;
+        justify-content: space-between;
+        border-bottom: 2px solid rgb(247, 240, 240);
+        padding-bottom: 18px;
+       }
+        .chats-options:last-child{
+            border: none;
+            padding-bottom: 0;
+        }
+       .people{
+        width: 140px;
+        display: flex;
+        align-items: center;
+        color: black;
+        font-size: 15px;
+        font-weight: 550;
+        justify-content: space-around;
+       }
+       .num{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background-color: #d1c9c9;
+        width: 15px;
+        padding: 2px;
+       }
+       .num p{
+        color: black;
+        font-size: 12px;
+        overflow: hidden;
+
+       }
+       .circles{
+        display: flex;
+        gap: 4px;
+       }
+       .circle{
+        max-width: 14px;
+        max-height: 14px;
+        min-width: 14px;
+        min-height: 14px;
+        border-radius: 7px;
+       }
+       
+       .tabs{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+       }
+       .red{
+        background-color: red;
+       }
+       .green{
+        background-color: greenyellow;
+       }
+       .yellow{
+        background-color: orange;
+       }
+       .all-messages{
+        text-decoration: none;
+        border: none;
+        background-color: blue;
+        color: white;
+        padding: 20px;
+        border-radius: 18px;
+        position: absolute;
+        bottom: -28px;
+        left: 50%;
+        transform: translate(-50%,0);
+       }
+    </style>
+</head>
+<body>
+    <div  class="background">
+       <div class="main">
+        <div class="tabs">
+            <div class="circles">
+                <div class="red circle"></div>
+                <div class="yellow circle"></div>
+                <div class="green circle"></div>
+            </div>
+            <i class="fa-solid fa-caret-left"></i>
+        </div>
+            <header><img src="./logo.png" alt=""><abbr>Aceagency</abbr></header>
+       
+            <div class="menu">
+                <p>MENU</p>
+                <div class="options"><i class="fa-solid fa-briefcase logo"></i>My Offers</div>
+                <div class="options"><i class="fa-solid fa-clipboard logo"></i>Tasks</div>
+                <div class="options"><i class="fa-solid fa-tags logo"></i>Discounts</div>
+                <div class="options"><i class="fa-solid fa-graduation-cap logo"></i>Case Study</div>
+                <div class="options"><i class="fa-solid fa-shield-halved logo"></i>Security</div>
+                <div class="options"><i class="fa-solid fa-bolt logo"></i>Your Ability</div>
+            </div>
+            <div class="messages">
+                <div class="slides">
+                    MESSAGES
+                    <span class="arrows">
+                        <i class="fa-solid fa-angle-left"></i>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </span>
+                 </div>
+            <div class="chats">
+                <div class="chats-options">
+                    <div class="people">
+                        <div class="avatar">
+                            <img src="https://standrewscollege.ac.in/wp-content/uploads/2019/07/portrait-square-03.jpg" alt="logo">
+                        </div>
+                        <p>Max Maraston</p>
+                    </div>
+                    <div class="num">
+                        <p>2</p>
+                    </div>
+                </div>
+                
+                <div class="chats-options">
+                    <div class="people">
+                        <div class="avatar">
+                            <img src="https://standrewscollege.ac.in/wp-content/uploads/2019/07/portrait-square-03.jpg" alt="logo">
+                        </div>
+                        <p>Max Maraston</p>
+                    </div>
+                    <div class="num">
+                        <p>2</p>
+                    </div>
+                </div>
+                <div class="chats-options">
+                    <div class="people">
+                        <div class="avatar">
+                            <img src="https://standrewscollege.ac.in/wp-content/uploads/2019/07/portrait-square-03.jpg" alt="logo">
+                        </div>
+                        <p>Max Maraston</p>
+                    </div>
+                    <div class="num">
+                        <p>2</p>
+                    </div>
+                </div>
+                <div class="chats-options">
+                    <div class="people">
+                        <div class="avatar">
+                            <img src="https://standrewscollege.ac.in/wp-content/uploads/2019/07/portrait-square-03.jpg" alt="logo">
+                        </div>
+                        <p>Max Maraston</p>
+                    </div>
+                    <div class="num">
+                        <p>2</p>
+                    </div>
+                </div>
+                
+            <button class="all-messages"><i class="fa-solid fa-caret-down"></i>  &nbsp; All messages</button>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
