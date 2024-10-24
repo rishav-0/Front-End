@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            /* width: 100%; */
+            height: 100vh;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .child{
+            border: 2px solid  red;
+        }
+        @media(max-width:600px){
+            .child:nth-child(2){
+                order: 1;
+            }
+            .child:nth-child(1){
+                order: 2;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="child">
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt magnam autem iste neque ullam at recusandae dolor, animi, corrupti reiciendis officiis nemo alias ipsum. Rerum cumque facere deserunt, a dolorem dolore, voluptates tenetur quos doloribus, velit ratione id tempora? Fuga.</h1>
+        </div>
+        <div class="child">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quo natus in deleniti rem aliquid explicabo animi commodi eius omnis voluptatibus, nesciunt velit nisi delectus debitis fuga distinctio illo ab. Hic ipsam officia autem quos? Rem minus aut quis incidunt.</p>
+        </div>
+    </div>
+</body>
+</html>

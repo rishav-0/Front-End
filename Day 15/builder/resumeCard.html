@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />    
+    <title>Resume Card</title>
+    <style>
+     * {
+        font-family: "Lato", sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body{
+        padding: 10px;
+      }
+      .main-card{
+        width: 150px;
+      }
+      .for-img{
+        width: 150px;
+        /* height: 250px; */
+        padding: 15px 30px;
+        background-color: #f7f4ff;
+        margin-bottom: 10px;
+      }
+      .for-img img{
+        width: 100%;
+      }
+      .bottom{
+        display: flex;
+        justify-content: space-between;
+      }
+      .name{
+        font-size: 12px;
+        font-weight: 700;
+      }
+      .last-update{
+        font-size: 10px;
+        color: #999999;
+      }
+    </style>
+</head>
+<body>
+    <div class="main-card">
+        <div class="for-img">
+            <img src="./images/image.png" alt="">
+        </div>
+        <div class="bottom">
+            <div>
+                <p class="name">Monica's Resume</p>
+                <p class="last-update">Last updated 2 day ago</p>
+            </div>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+    </div>
+</body>
+</html>

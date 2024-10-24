@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    height: 100vh;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+section:nth-child(1){
+    background-image: url(./images/a.jpg);
+}
+section:nth-child(2){
+    background-image: url(./images/b.jpg);
+}
+section:nth-child(3){
+    background-image: url(./images/c.jpg);
+}

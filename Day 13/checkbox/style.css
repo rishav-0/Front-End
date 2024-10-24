@@ -1,0 +1,11 @@
+#active:checked+.head{
+   display: none;
+}
+#active{
+    /* visibility: hidden; */
+    display: none;
+}
+.head{
+    /* visibility: hidden; */
+    /* display: none; */
+}

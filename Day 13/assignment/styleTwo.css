@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.line{
+    width: 100%;
+    border-top: .5px solid #e4e6e7;
+    margin: 10px 0;
+    /* height: .5px; */
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex {
+  display: flex;
+}
+.justify-between {
+  display: flex;
+  justify-content: space-between;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.flex-box {
+  padding: 20px 120px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.content {
+  width: 50%;
+  padding: 10px;
+}
+.content-right {
+  width: 50%;
+  padding: 10px;
+  background-color: #f6fafc;
+  border-radius: 20px;
+  border: 2px solid #dfe0e5;
+}
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cardOne {
+  width: 50%;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+.cardTwo {
+  width: 50%;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+.card-details {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  
+}
+.card-details .master-card{
+    width: 100px;
+    padding: 5px;
+}
+.card-details .master-card .card-logo{
+    width: 20px;
+}
+.card-details .master-card p{
+    font-size: 8px;
+}
+.name-number{
+    padding: 10px;
+}
+.full-number{
+    color: #8e92a2;
+    font-size: 12px;
+}
+.see-trnsactions{
+    font-size: 12px;
+}
+.tabs{
+    background-color:#e4e6e7;
+    padding: 2px;
+    border-radius: 4px;
+}
+.tabs button{
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    color:#84899a;
+    font-weight: regular;
+    padding: 5px 12px;
+    background-color: transparent;
+    border-radius: 4px;
+}
+.tabs button:hover{
+    color: black;
+    background-color: white;
+}
+.two {
+  border-left: 1px solid #dfe0e5;
+  border-right: 1px solid #dfe0e5;
+  text-align: center;
+  /* padding: 0 20px; */
+}
+.one,
+.two,
+.three{
+    width: 33.33%;
+    text-align: center;
+}
+.title{
+    font-size: 12px;
+    background-color: #f6fafc;
+    padding: 5px;
+    display: inline-block;
+    color: #22577a;
+    font-weight: medium;
+}
+.summary{
+    font-size: 12px;
+    color: #8e92a2;
+}
+.get-started{
+    font-size: 12px;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    background-color: #22577a;
+    color: white;
+}
+.fa-arrow-up{
+    transform: rotate(45deg);
+}
+.master-card{
+    background-color: #22577a;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+}
+.card-logo{
+    width: 30px;
+    float: right;
+}
+.card-logo img{
+    width: 100%;
+}
+.mycard-head{
+    font-size: 13.28px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+.mycard-head i{
+    color: #84899a;
+}
+.cardTwo h4 span{
+    font-size: 12px;
+    color: #51dc98;
+    background-color: #e5faef;
+    padding: 4px;
+    border-radius: 4px;
+}
+.increase{
+    font-size: 10px;
+    font-weight: medium;
+    color: #8e92a2;
+}
+.increase span{
+    font-weight: bold;
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    padding: 5px 0;
+    font-weight: bold;
+}
+.price-progress{
+    width: 100%;
+    background-color: #e4e6e7;
+    height: 6px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.done{
+    width: 30%;
+    height: 6px;
+    background-color: #174e73;
+}
+.detail-container{
+    display: flex;
+    justify-content: space-between;
+}
+.card-number{
+    clear: both;
+    font-size: 12px;
+}
+.user-details{
+    font-size: 12px;
+    font-weight: regular;
+}
+.progress-container{
+    padding: 10px;
+}
+.progress-bar{
+    background-color: #e4e6e7;
+    width: 50px;
+}
+.progress{
+    background-color: #22577a;
+    height: 4px;
+    width: 20px;
+}
+.card-management{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
+.manage-card,
+.add-card{
+    border: none;
+    padding: 5px 10px;
+    font-size: 10px;
+    width: 100%;
+    border-radius: 4px;
+}
+.manage-card{
+    background-color: #174e73;
+    color: white;
+    padding: 10px 0;
+}
+.add-card{
+    border: 1px solid #e5e6ea;
+    background-color: white;
+    padding: 10px 0;
+
+}
+.overview{
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+.pros{
+    width: 50%;
+    padding: 10px;
+}
+.pros-title{
+    font-weight: 500;
+    font-size: 18.72px;
+}
+@media (max-width: 768px) {
+  .content,
+  .content-right {
+    width: 100%;
+  }
+  .flex-box{
+    padding: 10px;
+  }
+}
+@media (max-width: 576px) {
+  .cardOne,
+  .cardTwo {
+    width: 100%;
+  }
+}

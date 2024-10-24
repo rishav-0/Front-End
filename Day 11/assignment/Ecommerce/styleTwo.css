@@ -10,12 +10,15 @@
 .left-column{
     width: 50%;
     padding: 20px;
+    transition:all 500ms;
 }
 .right-column{
     width: 50%;
     padding: 20px;
+    transition:all 500ms;
+
 }
-.img-banner{
+/* .img-banner{
     background-image: url(https://img.freepik.com/free-vector/realistic-shubh-diwali-sale-banner-with-shiny-diya-design_1017-40297.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -25,6 +28,14 @@
     display: flex;
     justify-content: center;
     align-items: start;
+} */
+.img-banner{
+    border-radius: 20px;
+    overflow: hidden;
+}
+.img-banner img{
+    border-radius: 20px;
+    
 }
 .banner-content{
     display: flex;
