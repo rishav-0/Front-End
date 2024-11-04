@@ -18,40 +18,572 @@
     <title></title>
 </head>
 <body>
-    <div class="">
-        <div class="row mx-0">
-            <div class="col-lg-8 d-flex p-4 align-items-center gap-2">
-                   <a class=" " data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-                    <i class="fa-solid fa-bars"></i>
-                    </a>
-                    <input type="text" class="form-control rounded-pill" placeholder="Search your course...">
+    <div class="row mx-0">
+        <div class="col-md-2">
+            <div class="offcanvasss offcanvasss-start d-flex flex-column mt-4" style="width: 260px;" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <div class="d-inline overflow-hidden logo rounded-circle"><img src="./image-removebg-preview (2).png" alt=""></div>
+    <a href="" class="btn fs-5">Course</a>
+  </div>
+  <div class="ps-3 d-flex flex-column justify-content-between h-100">
+    <div>
+        <div class="d-flex flex-column gap-4 mb-4">
+            <p class="small-text ">Overview</p>
+            <a href="#" class="text-decoration-none text-dark fw-semibold"><i class="fa-regular fa-window-restore me-2"></i> Dashboard</a href="#">
+            <a href="#" class="text-decoration-none text-dark"><i class="fa-solid fa-inbox me-2"></i> Inbox</a href="#">
+            <a href="#" class="text-decoration-none text-dark"><i class="fa-regular fa-address-book me-2"></i> Lesson</a href="#">
+            <a href="#" class="text-decoration-none text-dark"><i class="fa-solid fa-list-check me-2"></i> Task</a href="#">
+            <a href="#" class="text-decoration-none text-dark"><i class="fa-solid fa-people-group me-2"></i> Group</a href="#">
+        </div>
+        <div class="d-flex flex-column gap-4 mb-4">
+        <p class="small-text">Friends</p>
+            <div class="d-flex align-items-center justify-content-start gap-4">
+                <div class="card-avatar rounded-circle d-flex align-items-center justify-content-center">
+                    <img src="./image-removebg-preview (3).png" alt="" class="">
+                </div>
+                <div>
+                    <p class="card-bottom-name">Leonardo Vinci</p>
+                    <p class="mentor">Mentor</p>
+                </div>
             </div>
-            <div class="col-lg-2 d-flex gap-2 align-items-center border-end">
-                <div><i class="fa-solid fa-envelope text-secondary border border-secondary rounded-circle p-2"></i></div>
-                <div><i class="fa-solid fa-bell text-secondary border border-secondary rounded-circle p-2"></i></div>      
+            <div class="d-flex align-items-center justify-content-start gap-4">
+                <div class="card-avatar rounded-circle d-flex align-items-center justify-content-center">
+                    <img src="./image-removebg-preview (3).png" alt="" class="">
+                </div>
+                <div>
+                    <p class="card-bottom-name">Leonardo Vinci</p>
+                    <p class="mentor">Mentor</p>
+                </div>
             </div>
-            <div class="col-lg-2"></div>
+            <div class="d-flex align-items-center justify-content-start gap-4">
+                <div class="card-avatar rounded-circle d-flex align-items-center justify-content-center">
+                    <img src="./image-removebg-preview (3).png" alt="" class="">
+                </div>
+                <div>
+                    <p class="card-bottom-name">Leonardo Vinci</p>
+                    <p class="mentor">Mentor</p>
+                </div>
+            </div>
+            
         </div>
     </div>
- 
+    <div class="d-flex flex-column gap-4 mb-4">
+        <p class="small-text">Settings</p>
+        <a href="#" class="text-decoration-none text-dark ">
+            <svg class="me-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+            <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0"/>
+            <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115z"/>
+            </svg>Settings</a>
+        <a href="#" class="text-decoration-none text-dark"><i class="fa-solid fa-arrow-right-from-bracket me-2"></i> Group</a href="#">
 
-<div class="offcanvas offcanvas-start  " style="width: 260px;" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-  <div class="offcanvas-header">
-    <div class="d-inline w-20 logo"><img src="./image-removebg-preview (2).png" alt=""></div>
-    <a href="" class="btn fs-5">Course</a>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="ps-3">
-    <p class="small-text">Overview</p>
-    <div class="d-flex flex-column gap-4">
-        <a href="#" class="text-decoration-none text-dark fw-semibold"><i class="fa-regular fa-window-restore me-2"></i> Dashboard</a href="#">
-        <a href="#" class="text-decoration-none text-dark"><i class="fa-solid fa-inbox me-2"></i> Inbox</a href="#">
-        <a href="#" class="text-decoration-none text-dark"><i class="fa-regular fa-address-book me-2"></i> Lesson</a href="#">
-        <a href="#" class="text-decoration-none text-dark"><i class="fa-solid fa-list-check me-2"></i> Task</a href="#">
-        <a href="#" class="text-decoration-none text-dark"><i class="fa-solid fa-people-group me-2"></i> Group</a href="#">
     </div>
   </div>
 </div>
+        </div>
+
+    
+    <div class="wrapper col-md-10 overflow-y-auto no-scrollbar">
+        <div class="">
+            <div class="row mx-0 position-sticky sticky-top">
+                <div class="col-lg-8 d-flex p-2 align-items-center gap-2">
+                    <a class=" " data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                        <i class="fa-solid fa-bars"></i>
+                        </a>
+                        <input type="text" class="form-control rounded-pill" placeholder="Search your course...">
+                </div>
+                <div class="col-lg-2 d-flex gap-2 align-items-center justify-content-center border-end p-4">
+                    <div><i class="fa-solid fa-envelope text-secondary border border-secondary rounded-circle p-2"></i></div>
+                    <div><i class="fa-solid fa-bell text-secondary border border-secondary rounded-circle p-2"></i></div>      
+                </div>
+                <div class="col-lg-2 d-flex align-items-center p-4 gap-2">
+                    <div class="logo rounded-circle d-flex align-items-center justify-content-center p-1">
+                        <img class="w-4" src="./image-removebg-preview (3).png" alt="">
+                    </div>
+                    <p class="m-0">Jason Ranti</p>
+                </div>
+            </div>
+        </div>
+        <div class="row p-4 pt-0">
+            <div class=" col-md-8 ">
+                <div class="p-3 banner mb-3 rounded">
+                    <p class="small-text text-white mb-4">ONLINE COURSE</p>
+                    <h2 class="text-white mb-4">Sharpen Your Skills with ProfessionalOnline Courses</h2>
+                    <button class="btn btn-dark rounded-pill join-now d-flex align-items-center gap-2">Join Now <span class="d-flex align-items-center justify-content-center d-inline-block rounded-circle bg-white"><i class="text-dark fa-solid fa-angle-right"></i></span></button>
+                </div>
+                <div class="row mb-3">
+                    <div class=" col-md-6 col-lg-6 overflow-hidden mb-2 col-xl-3">
+                        <div class=" bg-white  p-2 rounded d-flex align-items-center justify-content-between">
+                            <div class="card-logo d-flex align-items-center justify-content-center rounded-circle p-2 ">
+                            <i class="fa-solid fa-pen-ruler "></i>
+                        </div>
+                        <div class="d-flex  justify-content-start flex-column direction-column">
+                            <p class="small-text m-0">
+                                2/8 watched
+                            </p>
+                            <p class="fs-6 text-dark m-0">UI/UX Dessign</p>
+                        </div>
+                        <div>
+                            <i class="text-secondary fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        </div>
+                        
+                    </div>
+                    <div class=" col-md-6 col-lg-6 overflow-hidden mb-2 col-xl-3">
+                        <div class=" bg-white  p-2 rounded d-flex align-items-center justify-content-between">
+                            <div class="card-logo d-flex align-items-center justify-content-center rounded-circle p-2 ">
+                            <i class="fa-solid fa-pen-ruler "></i>
+                        </div>
+                        <div class="d-flex  justify-content-start flex-column direction-column">
+                            <p class="small-text m-0">
+                                2/8 watched
+                            </p>
+                            <p class="fs-6 text-dark m-0">UI/UX Dessign</p>
+                        </div>
+                        <div>
+                            <i class="text-secondary fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        </div>
+                        
+                    </div>
+                    <div class=" col-md-6 col-lg-6 overflow-hidden mb-2 col-xl-3">
+                        <div class=" bg-white  p-2 rounded d-flex align-items-center justify-content-between">
+                            <div class="card-logo d-flex align-items-center justify-content-center rounded-circle p-2 ">
+                            <i class="fa-solid fa-pen-ruler "></i>
+                        </div>
+                        <div class="d-flex  justify-content-start flex-column direction-column">
+                            <p class="small-text m-0">
+                                2/8 watched
+                            </p>
+                            <p class="fs-6 text-dark m-0">UI/UX Dessign</p>
+                        </div>
+                        <div>
+                            <i class="text-secondary fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        </div>
+                        
+                    </div>
+                    <div class=" col-md-6 col-lg-6 overflow-hidden mb-2 col-xl-3">
+                        <div class=" bg-white  p-2 rounded d-flex align-items-center justify-content-between">
+                            <div class="card-logo d-flex align-items-center justify-content-center rounded-circle p-2 ">
+                            <i class="fa-solid fa-pen-ruler "></i>
+                        </div>
+                        <div class="d-flex  justify-content-start flex-column direction-column">
+                            <p class="small-text m-0">
+                                2/8 watched
+                            </p>
+                            <p class="fs-6 text-dark m-0">UI/UX Dessign</p>
+                        </div>
+                        <div>
+                            <i class="text-secondary fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        </div>
+                        
+                    </div>
+                   
+                </div>
+                
+                    <div class="header d-flex justify-content-between">
+                        <p>Continue Watching</p>
+                        <div class="d-flex gap-2">
+                            <div class="bg-white rounded-circle icon d-flex align-items-center justify-content-center">
+                                <i class="fa-solid fa-angle-left"></i>
+                            </div>
+                            <div class="rounded-circle icon d-flex align-items-center justify-content-center">
+                                <i class="fa-solid fa-angle-right "></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-holder bg-white p-2 rounded mb-2 d-flex flex-row gap-2 overflow-auto no-scrollbar">
+                        <div class="card p-2 border-0" style="width: 15rem; min-width: 250px;">
+                            <div class="heart opacity-75 bg-secondary rounded-circle position-absolute d-flex align-items-center justify-content-center p-3 opacity-5"><i class="fa-regular fa-heart"></i></div>
+                            <img src="https://cdn.pixabay.com/photo/2015/09/04/23/28/wordpress-923188_1280.jpg" class="card-img-top rounded mb-2" alt="...">
+                            <div class="card-body p-0">
+                                <h5 class="card-title tags  mt-2 mb-2 rounded-pill"><i class="fa-regular fa-object-group me-2"></i>Frontend</h5>
+                                <p class="card-text fs-6 mb-2">Beginer's Guide to becoming a professional Frond-End Developer</p>
+                                <div class="progress rounded mb-2">
+                                    <div class="done"></div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-start gap-4">
+                                    <div class="card-avatar rounded-circle d-flex align-items-center justify-content-center">
+                                        <img src="./image-removebg-preview (3).png" alt="" class="">
+                                    </div>
+                                    <div>
+                                        <p class="card-bottom-name">Leonardo Vinci</p>
+                                        <p class="mentor">Mentor</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="card p-2 border-0" style="width: 15rem; min-width: 250px;">
+                            <div class="heart opacity-75 bg-secondary rounded-circle position-absolute d-flex align-items-center justify-content-center p-3 opacity-5"><i class="fa-regular fa-heart"></i></div>
+                            <img src="https://cdn.pixabay.com/photo/2015/09/04/23/28/wordpress-923188_1280.jpg" class="card-img-top rounded mb-2" alt="...">
+                            <div class="card-body p-0">
+                                <h5 class="card-title tags uiux rounded-pill mt-2 mb-2"><i class="fa-regular fa-object-group me-2"></i>UI/UX Design</h5>
+                                <p class="card-text fs-6 mb-2">Optimizing User Experience With the Best UI/UX Design</p>
+                                <div class="progress rounded mb-2">
+                                    <div class="done"></div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-start gap-4">
+                                    <div class="card-avatar rounded-circle d-flex align-items-center justify-content-center">
+                                        <img src="./image-removebg-preview (3).png" alt="" class="">
+                                    </div>
+                                    <div>
+                                        <p class="card-bottom-name">Leonardo Vinci</p>
+                                        <p class="mentor">Mentor</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card p-2 border-0" style="width: 15rem; min-width: 250px;">
+                            <div class="heart opacity-75 bg-secondary rounded-circle position-absolute d-flex align-items-center justify-content-center p-3 opacity-5"><i class="fa-regular fa-heart"></i></div>
+                            <img src="https://cdn.pixabay.com/photo/2015/09/04/23/28/wordpress-923188_1280.jpg" class="card-img-top rounded mb-2" alt="...">
+                            <div class="card-body p-0">
+                                <h5 class="card-title tags branding rounded-pill mt-2 mb-2"><i class="fa-regular fa-object-group me-2"></i>Branding</h5>
+                                <p class="card-text fs-6 mb-2">Reviving and Refreshing Company Image</p>
+                                <div class="progress rounded mb-2">
+                                    <div class="done"></div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-start gap-4">
+                                    <div class="card-avatar rounded-circle d-flex align-items-center justify-content-center">
+                                        <img src="./image-removebg-preview (3).png" alt="" class="">
+                                    </div>
+                                    <div>
+                                        <p class="card-bottom-name">Leonardo Vinci</p>
+                                        <p class="mentor">Mentor</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="card p-2 border-0" style="width: 15rem; min-width: 250px;">
+                            <div class="heart opacity-75 bg-secondary rounded-circle position-absolute d-flex align-items-center justify-content-center p-3 opacity-5"><i class="fa-regular fa-heart"></i></div>
+                            <img src="https://cdn.pixabay.com/photo/2015/09/04/23/28/wordpress-923188_1280.jpg" class="card-img-top rounded" alt="...">
+                            <div class="card-body p-0">
+                                <h5 class="card-title tags rounded mt-2 mb-2"><i class="fa-regular fa-object-group me-2"></i>Frontend</h5>
+                                <p class="card-text fs-6 mb-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <div class="progress rounded mb-2">
+                                    <div class="done"></div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-start gap-4">
+                                    <div class="card-avatar rounded-circle d-flex align-items-center justify-content-center">
+                                        <img src="./image-removebg-preview (3).png" alt="" class="">
+                                    </div>
+                                    <div>
+                                        <p class="card-bottom-name">Leonardo Vinci</p>
+                                        <p class="mentor">Mentor</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header d-flex justify-content-between">
+                        <p>Your Lesson</p>
+                        <div class="d-flex gap-2">
+                        <a href="" class="text-secondary">See all</a>
+                        </div>
+                    </div>
+                    <!-- <div class="rounded bg-white">
+                       
+                        <div class="row p-3 pt-1 pb-1 border-bottom">
+                            <p class="col-3 small-text text-center">Mentor</p>
+                            <p class="col-3 small-text text-center">Type</p>
+                            <p class="col-3 small-text text-center">Desc</p>
+                            <p class="col-3 small-text text-center">Action</p>
+                        
+                        </div>
+                        <div class="overflow-y-scroll overflow-x-hidden no-scrollbar d-flex flex-column lesson-wrapper">
+                            <div class="p-3  pt-1 pb-1 row">
+                                <div class="d-flex col-3 align-items-center">
+                                    <div class="d-flex  align-items-center justify-content-start gap-3">
+                                                <div class="card-avatar rounded-circle d-flex align-items-center justify-content-center">
+                                                    <img src="./image-removebg-preview (3).png" alt="" class="">
+                                                </div>
+                                                <div>
+                                            <p class="card-bottom-name">Leonardo Vinci</p>
+                                            <p class="mentor">Mentor</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 d-flex  align-items-center justify-content-center">
+                                    <h5 class="card-title tags rounded "><i class="fa-regular fa-object-group me-2"></i>Frontend</h5>
+                                </div>
+                                <p class=" col-3 card-text fs-6  d-flex m-0 align-items-center justify-content-center">Understand Of UI/UX Design</p>
+                                <div class="col-3 d-flex m-0 align-items-center justify-content-center">
+                                    <div class="rounded-circle border up-right-arrowdiv d-flex  align-items-center justify-content-center">
+                                        <i class="fa-solid fa-arrow-up up-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-3  pt-1 pb-1 row">
+                                <div class="d-flex col-3 align-items-center">
+                                    <div class="d-flex  align-items-center justify-content-start gap-3">
+                                                <div class="card-avatar rounded-circle d-flex align-items-center justify-content-center">
+                                                    <img src="./image-removebg-preview (3).png" alt="" class="">
+                                                </div>
+                                                <div>
+                                            <p class="card-bottom-name">Leonardo Vinci</p>
+                                            <p class="mentor">Mentor</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 d-flex  align-items-center justify-content-center">
+                                    <h5 class="card-title tags rounded "><i class="fa-regular fa-object-group me-2"></i>Frontend</h5>
+                                </div>
+                                <p class=" col-3 card-text fs-6  d-flex m-0 align-items-center justify-content-center">Understand Of UI/UX Design</p>
+                                <div class="col-3 d-flex m-0 align-items-center justify-content-center">
+                                    <div class="rounded-circle border up-right-arrowdiv d-flex  align-items-center justify-content-center">
+                                        <i class="fa-solid fa-arrow-up up-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-3  pt-1 pb-1 row">
+                                <div class="d-flex col-3 align-items-center">
+                                    <div class="d-flex  align-items-center justify-content-start gap-3">
+                                                <div class="card-avatar rounded-circle d-flex align-items-center justify-content-center">
+                                                    <img src="./image-removebg-preview (3).png" alt="" class="">
+                                                </div>
+                                                <div>
+                                            <p class="card-bottom-name">Leonardo Vinci</p>
+                                            <p class="mentor">Mentor</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 d-flex  align-items-center justify-content-center">
+                                    <h5 class="card-title tags rounded "><i class="fa-regular fa-object-group me-2"></i>Frontend</h5>
+                                </div>
+                                <p class=" col-3 card-text fs-6  d-flex m-0 align-items-center justify-content-center">Understand Of UI/UX Design</p>
+                                <div class="col-3 d-flex m-0 align-items-center justify-content-center">
+                                    <div class="rounded-circle border up-right-arrowdiv d-flex  align-items-center justify-content-center">
+                                        <i class="fa-solid fa-arrow-up up-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-3  pt-1 pb-1 row">
+                                <div class="d-flex col-3 align-items-center">
+                                    <div class="d-flex  align-items-center justify-content-start gap-3">
+                                                <div class="card-avatar rounded-circle d-flex align-items-center justify-content-center">
+                                                    <img src="./image-removebg-preview (3).png" alt="" class="">
+                                                </div>
+                                                <div>
+                                            <p class="card-bottom-name">Leonardo Vinci</p>
+                                            <p class="mentor">Mentor</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 d-flex  align-items-center justify-content-center">
+                                    <h5 class="card-title tags rounded "><i class="fa-regular fa-object-group me-2"></i>Frontend</h5>
+                                </div>
+                                <p class=" col-3 card-text fs-6  d-flex m-0 align-items-center justify-content-center">Understand Of UI/UX Design</p>
+                                <div class="col-3 d-flex m-0 align-items-center justify-content-center">
+                                    <div class="rounded-circle border up-right-arrowdiv d-flex  align-items-center justify-content-center">
+                                        <i class="fa-solid fa-arrow-up up-right"></i>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div> -->
+                    <div class="bg-white rounded h-25 px-2 pb-2 overflow-y-scroll no-scrollbar">
+                        <table class="table">
+  <thead class="sticky-top">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td scope="row">
+        <div class="d-flex align-items-center justify-content-start gap-4">
+                                    <div class="card-avatar rounded-circle d-flex align-items-center justify-content-center">
+                                        <img src="./image-removebg-preview (3).png" alt="" class="">
+                                    </div>
+                                    <div>
+                                        <p class="card-bottom-name">Leonardo Vinci</p>
+                                        <p class="mentor">Mentor</p>
+                                    </div>
+                                </div>
+                            </th>
+      <td><h5 class="card-title tags  mt-2 mb-2 rounded-pill"><i class="fa-regular fa-object-group me-2"></i>Frontend</h5></td>
+      <td>Understand of UI/UX Dessign</td>
+      <td><div class="rounded-circle border up-right-arrowdiv d-flex  align-items-center justify-content-center">
+                                        <i class="fa-solid fa-arrow-up up-right"></i>
+                                    </div></td>
+    </tr>
+    <tr>
+      <td scope="row">
+        <div class="d-flex align-items-center justify-content-start gap-4">
+                                    <div class="card-avatar rounded-circle d-flex align-items-center justify-content-center">
+                                        <img src="./image-removebg-preview (3).png" alt="" class="">
+                                    </div>
+                                    <div>
+                                        <p class="card-bottom-name">Leonardo Vinci</p>
+                                        <p class="mentor">Mentor</p>
+                                    </div>
+                                </div>
+                            </th>
+      <td><h5 class="card-title tags uiux rounded-pill mt-2 mb-2"><i class="fa-regular fa-object-group me-2"></i>UI/UX Design</h5></td>
+      <td>Understand of UI/UX Dessign</td>
+      <td><div class="rounded-circle border up-right-arrowdiv d-flex  align-items-center justify-content-center">
+                                        <i class="fa-solid fa-arrow-up up-right"></i>
+                                    </div></td>
+    </tr>
+    <tr>
+      <td scope="row">
+        <div class="d-flex align-items-center justify-content-start gap-4">
+                                    <div class="card-avatar rounded-circle d-flex align-items-center justify-content-center">
+                                        <img src="./image-removebg-preview (3).png" alt="" class="">
+                                    </div>
+                                    <div>
+                                        <p class="card-bottom-name">Leonardo Vinci</p>
+                                        <p class="mentor">Mentor</p>
+                                    </div>
+                                </div>
+                            </th>
+      <td><h5 class="card-title tags branding rounded-pill mt-2 mb-2"><i class="fa-regular fa-object-group me-2"></i>Branding</h5></td>
+      <td>Understand of UI/UX Dessign</td>
+      <td><div class="rounded-circle border up-right-arrowdiv d-flex  align-items-center justify-content-center">
+                                        <i class="fa-solid fa-arrow-up up-right"></i>
+                                    </div></td>
+    </tr>
+    <tr>
+      <td scope="row">
+        <div class="d-flex align-items-center justify-content-start gap-4">
+                                    <div class="card-avatar rounded-circle d-flex align-items-center justify-content-center">
+                                        <img src="./image-removebg-preview (3).png" alt="" class="">
+                                    </div>
+                                    <div>
+                                        <p class="card-bottom-name">Leonardo Vinci</p>
+                                        <p class="mentor">Mentor</p>
+                                    </div>
+                                </div>
+                            </th>
+      <td><h5 class="card-title tags  mt-2 mb-2 rounded-pill"><i class="fa-regular fa-object-group me-2"></i>Frontend</h5></td>
+      <td>Understand of UI/UX Dessign</td>
+      <td><div class="rounded-circle border up-right-arrowdiv d-flex  align-items-center justify-content-center">
+                                        <i class="fa-solid fa-arrow-up up-right"></i>
+                                    </div></td>
+    </tr>
+    <tr>
+      <td scope="row">
+        <div class="d-flex align-items-center justify-content-start gap-4">
+                                    <div class="card-avatar rounded-circle d-flex align-items-center justify-content-center">
+                                        <img src="./image-removebg-preview (3).png" alt="" class="">
+                                    </div>
+                                    <div>
+                                        <p class="card-bottom-name">Leonardo Vinci</p>
+                                        <p class="mentor">Mentor</p>
+                                    </div>
+                                </div>
+                            </th>
+      <td><h5 class="card-title tags  mt-2 mb-2 rounded-pill"><i class="fa-regular fa-object-group me-2"></i>Frontend</h5></td>
+      <td>Understand of UI/UX Dessign</td>
+      <td><div class="rounded-circle border up-right-arrowdiv d-flex  align-items-center justify-content-center">
+                                        <i class="fa-solid fa-arrow-up up-right"></i>
+                                    </div></td>
+    </tr>
+    <tr>
+      <td scope="row">
+        <div class="d-flex align-items-center justify-content-start gap-4">
+                                    <div class="card-avatar rounded-circle d-flex align-items-center justify-content-center">
+                                        <img src="./image-removebg-preview (3).png" alt="" class="">
+                                    </div>
+                                    <div>
+                                        <p class="card-bottom-name">Leonardo Vinci</p>
+                                        <p class="mentor">Mentor</p>
+                                    </div>
+                                </div>
+                            </th>
+      <td><h5 class="card-title tags  mt-2 mb-2 rounded-pill"><i class="fa-regular fa-object-group me-2"></i>Frontend</h5></td>
+      <td>Understand of UI/UX Dessign</td>
+      <td><div class="rounded-circle border up-right-arrowdiv d-flex  align-items-center justify-content-center">
+                                        <i class="fa-solid fa-arrow-up up-right"></i>
+                                    </div></td>
+    </tr>
+    
+  </tbody>
+</table>
+                    </div>
+                </div>
+                <div class="col-md-4">
+            <div class=" bg-white rounded p-3">
+                <div class="avatar-card mb-2">
+                    <div class="header d-flex justify-content-between">
+                        <p>Continue Watching</p>
+                        <i class="fa-solid fa-ellipsis-vertical text-secondary"></i>
+                    </div>
+                            <div class="d-flex justify-content-center mb-2">
+                                <div class="d-flex align-items-center justify-content-center p-2 border rounded-circle big-avatar-border">
+                                    <div class="logo big-avatar rounded-circle d-flex align-items-center justify-content-center p-1">
+                                        <img class="w-4" src="./image-removebg-preview (3).png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="fw-semibold text-center m-0">Good Morning Jason  <i class="fa-solid fa-fire"></i></p>
+                            <p class="small-text text-center">Continue Your learning to achieve your target</p>
+                </div>
+                <div class="d-flex align-items-center justify-content-center mb-2">
+                    <img src="./image.png" class="img-fluid" alt="...">
+                </div>
+                <div class="header d-flex justify-content-between">
+                    <p>Your Mentor</p>
+                    <div class="border border-secondary rounded-circle d-flex align-items-center justify-content-center plus-border">
+                        <i class="fa-solid fa-plus text-secondary border-secondary rounded-circle"></i>
+                    </div>
+
+                </div>
+                <div class="rounded mentor-card p-3">
+                    <div class=" d-flex p-2 align-items-center justify-content-start gap-4">
+                    <div class="d-flex gap-4 align-items-center justify-content-start">
+                        <div class="card-avatar rounded-circle d-flex align-items-center justify-content-center"> 
+                                <img src="./image-removebg-preview (3).png" alt="" class="">
+                        </div>
+                        <div class="me-4">
+                        <p class="card-bottom-name">Leonardo Vinci</p>
+                        <p class="mentor">Mentor</p>
+                        </div>
+                        <button class="follow btn rounded-pill"><i class="fa-solid fa-user-plus me-2"></i>Follow</button>
+                    </div>
+                    </div>
+                    <div class="d-flex p-2 align-items-center justify-content-start gap-4">
+                     <div class="d-flex gap-4 align-items-center justify-content-start">
+
+                    <div class="card-avatar rounded-circle d-flex align-items-center justify-content-center"> 
+                            <img src="./image-removebg-preview (3).png" alt="" class="">
+                        </div>
+                        <div class="me-4">
+                            <p class="card-bottom-name">Leonardo Vinci</p>
+                            <p class="mentor">Mentor</p>
+                        </div>
+                    </div>
+                        <button class="btn rounded-pill follow"><i class="fa-solid fa-user-plus me-2"></i>Follow</button>
+                    </div>
+                    <div class="d-flex p-2 align-items-center justify-content-start gap-4">
+                     <div class="d-flex gap-4 align-items-center justify-content-start">
+
+                    <div class="card-avatar rounded-circle d-flex align-items-center justify-content-center"> 
+                            <img src="./image-removebg-preview (3).png" alt="" class="">
+                        </div>
+                        <div class="me-4">
+                            <p class="card-bottom-name">Leonardo Vinci</p>
+                            <p class="mentor">Mentor</p>
+                        </div>
+                    </div>
+                        <button class="btn rounded-pill follow"><i class="fa-solid fa-user-plus me-2"></i>Follow</button>
+                    </div>
+                    <button class="see-all rounded-pill">See all</button>
+                     
+                </div>
+             </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

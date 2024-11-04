@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* width */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+
+      /* Track */
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 10px;
+      }
+
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+    </style>
+    <title>oliv</title>
+  </head>
+  <body>
+    <div class="container mb-5">
+      <!-- <div class="header d-flex justify-content-between align-items-center flex-wrap">
+        <div class="d-flex align-items-center gap-2">
+          <img src="./images/image.png" alt="" />
+          <p>oliv</p>
+          <div>
+            <span class="badge bg-brown text-dark fw-normal"
+              >We are hiring</span
+            >
+          </div>
+        </div>
+        <div class="d-flex justify-content-between gap-3">
+          <a href="" class="nav-link">Work</a>
+          <a href="" class="nav-link">Services</a>
+          <a href="" class="nav-link">About</a>
+          <a href="" class="nav-link">Blog</a>
+          <a href="" class="nav-link">Blog</a>
+          <div class="dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              data-bs-toggle="dropdown"
+            >
+                Pages
+            </a>
+
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+          <div class="nav-link">Cart <span class="bg-brown text-dark badge">0</span></div>
+        </div>
+      </div> -->
+      <nav class="navbar navbar-expand-lg bg-body-white">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <div class="d-flex align-items-center gap-2">
+              <img src="./images/image.png" alt="" />
+              <p>Øliv</p>
+            </div>
+          </a>
+          <div>
+            <span class="badge bg-brown text-dark fw-normal"
+              >We are hiring</span
+            >
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul
+              class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll"
+              style="--bs-scroll-height: 100px"
+            >
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Work</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Pages
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  >Cart
+                  <span class="badge bg-brown text-dark">0</span>
+                </a>
+              </li>
+            </ul>
+            <button class="btn btn-outline-success rounded-pill" type="submit">
+              Get in Touch
+            </button>
+          </div>
+        </div>
+      </nav>
+      <br />
+      <br />
+      <br />
+      <div
+        class="text-center text-md-start animate__animated animate__slideInUp"
+      >
+        <h1 class="big-title">Building Brands,One</h1>
+        <h1 class="big-title">Success Story at a Time.</h1>
+        <br />
+        <p class="text-secondary">
+          Create a Brand That Resonates: We Can Help You
+        </p>
+        <p class="text-secondary">
+          Define and Communicate Your Unique Messsage
+        </p>
+        <br />
+        <buton class="btn btn-dark rounded-pill small-text py-2 px-3"
+          >Our Services</buton
+        >
+      </div>
+      <br />
+      <br />
+      <br />
+      <marquee behavior="" direction="">
+        <div class="d-flex gap-4">
+          <div class="mx-5 d-flex gap-2 align-items-center">
+            <i class="fa-brands fa-pied-piper-alt"></i>
+            <p class="fw-semibold">Piped Piper</p>
+          </div>
+          <div class="mx-5 d-flex gap-2 align-items-center">
+            <i class="fa-brands fa-slack"></i>
+            <p class="fw-semibold">Slack</p>
+          </div>
+          <div class="mx-5 d-flex gap-2 align-items-center">
+            <i class="fa-brands fa-google"></i>
+            <p class="fw-semibold">Google</p>
+          </div>
+          <div class="mx-5 d-flex gap-2 align-items-center">
+            <i class="fa-brands fa-yahoo"></i>
+            <p class="fw-semibold">Yahoo</p>
+          </div>
+          <div class="mx-5 d-flex gap-2 align-items-center">
+            <i class="fa-brands fa-joomla"></i>
+            <p class="fw-semibold">Joomla</p>
+          </div>
+          <div class="mx-5 d-flex gap-2 align-items-center">
+            <i class="fa-brands fa-digg"></i>
+            <p class="fw-semibold">Digg</p>
+          </div>
+          <div class="mx-5 d-flex gap-2 align-items-center">
+            <i class="fa-brands fa-pied-piper-alt"></i>
+            <p class="fw-semibold">Piped Piper</p>
+          </div>
+          <div class="mx-5 d-flex gap-2 align-items-center">
+            <i class="fa-brands fa-slack"></i>
+            <p class="fw-semibold">Slack</p>
+          </div>
+          <div class="mx-5 d-flex gap-2 align-items-center">
+            <i class="fa-brands fa-google"></i>
+            <p class="fw-semibold">Google</p>
+          </div>
+          <div class="mx-5 d-flex gap-2 align-items-center">
+            <i class="fa-brands fa-yahoo"></i>
+            <p class="fw-semibold">Yahoo</p>
+          </div>
+          <div class="mx-5 d-flex gap-2 align-items-center">
+            <i class="fa-brands fa-joomla"></i>
+            <p class="fw-semibold">Joomla</p>
+          </div>
+          <div class="mx-5 d-flex gap-2 align-items-center">
+            <i class="fa-brands fa-digg"></i>
+            <p class="fw-semibold">Digg</p>
+          </div>
+          <div class="mx-5 d-flex gap-2 align-items-center">
+            <i class="fa-brands fa-pied-piper-alt"></i>
+            <p class="fw-semibold">Piped Piper</p>
+          </div>
+          <div class="mx-5 d-flex gap-2 align-items-center">
+            <i class="fa-brands fa-slack"></i>
+            <p class="fw-semibold">Slack</p>
+          </div>
+          <div class="mx-5 d-flex gap-2 align-items-center">
+            <i class="fa-brands fa-google"></i>
+            <p class="fw-semibold">Google</p>
+          </div>
+          <div class="mx-5 d-flex gap-2 align-items-center">
+            <i class="fa-brands fa-yahoo"></i>
+            <p class="fw-semibold">Yahoo</p>
+          </div>
+          <div class="mx-5 d-flex gap-2 align-items-center">
+            <i class="fa-brands fa-joomla"></i>
+            <p class="fw-semibold">Joomla</p>
+          </div>
+          <div class="mx-5 d-flex gap-2 align-items-center">
+            <i class="fa-brands fa-digg"></i>
+            <p class="fw-semibold">Digg</p>
+          </div>
+          <div class="mx-5 d-flex gap-2 align-items-center">
+            <i class="fa-brands fa-pied-piper-alt"></i>
+            <p class="fw-semibold">Piped Piper</p>
+          </div>
+          <div class="mx-5 d-flex gap-2 align-items-center">
+            <i class="fa-brands fa-slack"></i>
+            <p class="fw-semibold">Slack</p>
+          </div>
+          <div class="mx-5 d-flex gap-2 align-items-center">
+            <i class="fa-brands fa-google"></i>
+            <p class="fw-semibold">Google</p>
+          </div>
+          <div class="mx-5 d-flex gap-2 align-items-center">
+            <i class="fa-brands fa-yahoo"></i>
+            <p class="fw-semibold">Yahoo</p>
+          </div>
+          <div class="mx-5 d-flex gap-2 align-items-center">
+            <i class="fa-brands fa-joomla"></i>
+            <p class="fw-semibold">Joomla</p>
+          </div>
+          <div class="mx-5 d-flex gap-2 align-items-center">
+            <i class="fa-brands fa-digg"></i>
+            <p class="fw-semibold">Digg</p>
+          </div>
+          <div class="mx-5 d-flex gap-2 align-items-center">
+            <i class="fa-brands fa-pied-piper-alt"></i>
+            <p class="fw-semibold">Piped Piper</p>
+          </div>
+          <div class="mx-5 d-flex gap-2 align-items-center">
+            <i class="fa-brands fa-slack"></i>
+            <p class="fw-semibold">Slack</p>
+          </div>
+          <div class="mx-5 d-flex gap-2 align-items-center">
+            <i class="fa-brands fa-google"></i>
+            <p class="fw-semibold">Google</p>
+          </div>
+          <div class="mx-5 d-flex gap-2 align-items-center">
+            <i class="fa-brands fa-yahoo"></i>
+            <p class="fw-semibold">Yahoo</p>
+          </div>
+          <div class="mx-5 d-flex gap-2 align-items-center">
+            <i class="fa-brands fa-joomla"></i>
+            <p class="fw-semibold">Joomla</p>
+          </div>
+          <div class="mx-5 d-flex gap-2 align-items-center">
+            <i class="fa-brands fa-digg"></i>
+            <p class="fw-semibold">Digg</p>
+          </div>
+          <div class="mx-5 d-flex gap-2 align-items-center">
+            <i class="fa-brands fa-pied-piper-alt"></i>
+            <p class="fw-semibold">Piped Piper</p>
+          </div>
+          <div class="mx-5 d-flex gap-2 align-items-center">
+            <i class="fa-brands fa-slack"></i>
+            <p class="fw-semibold">Slack</p>
+          </div>
+          <div class="mx-5 d-flex gap-2 align-items-center">
+            <i class="fa-brands fa-google"></i>
+            <p class="fw-semibold">Google</p>
+          </div>
+          <div class="mx-5 d-flex gap-2 align-items-center">
+            <i class="fa-brands fa-yahoo"></i>
+            <p class="fw-semibold">Yahoo</p>
+          </div>
+          <div class="mx-5 d-flex gap-2 align-items-center">
+            <i class="fa-brands fa-joomla"></i>
+            <p class="fw-semibold">Joomla</p>
+          </div>
+          <div class="mx-5 d-flex gap-2 align-items-center">
+            <i class="fa-brands fa-digg"></i>
+            <p class="fw-semibold">Digg</p>
+          </div>
+        </div>
+      </marquee>
+      <br />
+      <br />
+      <div class="row mb-5 mx-0">
+        <div class="col-md-3">
+          <div class="bg-offwhite rounded p-3 mb-3">
+            <p class="fw-light">Brand Stragegy</p>
+            <br />
+            <p class="small-text text-secondary">
+              We help business define their unique brand message and branding
+              positioning
+            </p>
+            <br />
+            <div class="main-hover">
+              <p class="small-text">About Strategy</p>
+              <div class="underline"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="bg-offwhite rounded p-3 mb-3">
+            <p class="fw-light">Visual Identity</p>
+            <br />
+            <p class="small-text text-secondary">
+              We help business define their unique brand message and branding
+              positioning
+            </p>
+            <br />
+            <div class="main-hover">
+              <p class="small-text">About Strategy</p>
+              <div class="underline"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="bg-offwhite rounded p-3 mb-3">
+            <p class="fw-light">Digital Marketing</p>
+            <br />
+            <p class="small-text text-secondary">
+              We help business define their unique brand message and branding
+              positioning
+            </p>
+            <br />
+            <div class="main-hover">
+              <p class="small-text">About Strategy</p>
+              <div class="underline"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="bg-offwhite rounded p-3 mb-3">
+            <p class="fw-light .nowrap">Brand Managment</p>
+            <br />
+            <p class="small-text text-secondary">
+              We help business define their unique brand message and branding
+              positioning
+            </p>
+            <br />
+            <div class="main-hover">
+              <p class="small-text">About Strategy</p>
+              <div class="underline"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="border-bottom border-secondary-subtle pb-3 mb-3 mini-text">
+        Our work
+      </p>
+      <div class="d-flex justify-content-between mb-5">
+        <h3 class="fw-lighter">Selected Work</h3>
+        <buton class="btn btn-outline-success rounded-pill small-text"
+          >All Works</buton
+        >
+      </div>
+      <div class="row">
+        <div class="col-md-6 mb-5">
+          <div class="">
+            <img
+              class="w-100 mb-2"
+              src="https://cdn.prod.website-files.com/63c3f1995d4c354236c944de/63c6b981e34f347cacdc73b6_project-01-thumb.webp"
+              alt=""
+            />
+            <div class="d-flex justify-content-between">
+              <h3 class="fw-lighter">Invision Sutudio</h3>
+              <buton class="btn btn-outline-success rounded-pill small-text"
+                >Matketing</buton
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-5">
+          <div class="">
+            <img
+              class="w-100 mb-2"
+              src="https://cdn.prod.website-files.com/63c3f1995d4c354236c944de/63c6b96d86c0c985079d8d60_project-02-thumb.webp"
+              alt=""
+            />
+            <div class="d-flex justify-content-between">
+              <h3 class="fw-lighter">Invision Sutudio</h3>
+              <buton class="btn btn-outline-success rounded-pill small-text"
+                >Matketing</buton
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-5">
+          <div class="">
+            <img
+              class="w-100 mb-2"
+              src="https://cdn.prod.website-files.com/63c3f1995d4c354236c944de/63c6b953a2c1a5706f63bbe1_project-03-thumb.webp"
+              alt=""
+            />
+            <div class="d-flex justify-content-between">
+              <h3 class="fw-lighter">Invision Sutudio</h3>
+              <buton class="btn btn-outline-success rounded-pill small-text"
+                >Matketing</buton
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-5">
+          <div class="">
+            <img
+              class="w-100 mb-2"
+              src="https://cdn.prod.website-files.com/63c3f1995d4c354236c944de/63c6b943f334e17d7007a0ea_project-04-thumb.webp"
+              alt=""
+            />
+            <div class="d-flex justify-content-between">
+              <h3 class="fw-lighter">Invision Sutudio</h3>
+              <buton class="btn btn-outline-success rounded-pill small-text"
+                >Matketing</buton
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p
+        class="border-bottom border-secondary-subtle text-secondary pb-3 mb-3 mini-text"
+      >
+        Our work
+      </p>
+      <div class="row mb-3">
+        <div class="col-md-3 mb-3">
+          <div class="colorone p-4 h-100">
+            <p class="mini-text text-secondary">SERVICES</p>
+            <h3 class="fw-lighter">Our Approach to Branding</h3>
+            <br />
+            <br />
+            <br />
+            <buton class="btn btn-dark rounded-pill small-text py-2 px-3"
+              >About oliv
+              <i class="fa-solid fa-arrow-up up-right"></i>
+            </buton>
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="colortwo p-4 h-100">
+            <p class="mini-text text-secondary">HELPING BRANDS</p>
+            <p class="mini-text text-secondary">STAND OUT</p>
+            <br />
+            <br />
+            <br />
+            <h3 class="fw-lighter">BOLD MOVES</h3>
+            <h3 class="fw-lighter">BIG IMPACT</h3>
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="colorthree p-4 h-100">
+            <p class="mini-text text-secondary">HOW WE WORK</p>
+            <p class="mini-text text-secondary">WITH OUR CLIENTS</p>
+            <br />
+            <br />
+            <br />
+            <h3 class="fw-lighter">Honesty is the</h3>
+            <h3 class="fw-lighter">Best Policy</h3>
+          </div>
+        </div>
+        <div class="col-md-3 mb-3"></div>
+        <div class="col-md-3 mb-3"></div>
+        <div class="col-md-3 mb-3">
+          <div class="colorthree p-4 h-100">
+            <p class="mini-text text-secondary">COLABORATION IS KEY</p>
+            <p class="mini-text text-secondary">&nbsp;</p>
+            <br />
+            <br />
+            <br />
+            <h3 class="fw-lighter">Building Strong</h3>
+            <h3 class="fw-lighter">Partners.</h3>
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="colorfive p-4 h-100">
+            <p class="mini-text text-secondary">OUR APPROACH</p>
+            <p class="mini-text text-secondary">&nbsp;</p>
+            <br />
+            <br />
+            <br />
+            <h3 class="fw-lighter">Achieving</h3>
+            <h3 class="fw-lighter">Real Results</h3>
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="colorsix p-4 h-100">
+            <p class="mini-text text-secondary">OUR PHILOSOPHY</p>
+            <p class="mini-text text-secondary">&nbsp;</p>
+            <br />
+            <br />
+            <br />
+            <h3 class="fw-lighter">Building Trust</h3>
+            <h3 class="fw-lighter">Not Pitching</h3>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+          <h1 class="fw-lighter">Crafting Exceptional Digital</h1>
+          <h1 class="fw-lighter">Experiences Across All Platforms:</h1>
+          <h1 class="fw-lighter">Our Goal at Øliv.</h1>
+          <br />
+          <div class="row">
+            <div class="col-md-6">
+              <p class="small-text text-secondary">
+                At Øliv, our goal is to craft exceptional digital experiences
+                across all platforms. In today's digitally driven world, having
+                a strong online presence is paramount for businesses to connect
+                with their target audience effectively. We understand the
+                importance of delivering seamless and engaging experiences that
+                leave a lasting impression.
+              </p>
+            </div>
+            <div class="col-md-6">
+              <p class="small-text text-secondary">
+                Our team of skilled designers, developers, and digital
+                strategists collaborate to create customized digital solutions
+                tailored to your unique business needs. Whether it's designing a
+                user-friendly website, developing a mobile application, or
+                enhancing your e-commerce platform, we strive to provide
+                solutions that not only meet but exceed your expectations
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+      <p
+        class="border-bottom border-secondary-subtle text-secondary pb-3 mb-3 mini-text"
+      >
+        Our Team
+      </p>
+      <div class="d-flex justify-content-between mb-3">
+        <h3 class="fw-lighter">Our Team of Experts</h3>
+        <buton class="btn btn-outline-success rounded-pill small-text"
+          >About us</buton
+        >
+      </div>
+      <div class="row mb-5">
+        <div class="col-sm-6 col-md-4 mb-3 overflow-hidden col-lg-3">
+          <div class="h-100 p-3" style="background-color: #f1f6f5">
+            <p class="mini-text text-secondary mb-2">SERVICES</p>
+            <h3 class="fw-lighter">Want to shape the</h3>
+            <h3 class="fw-lighter">future of</h3>
+            <h3 class="fw-lighter mb-2">Branding?</h3>
+            <p class="mini-text text-secondary">
+              Join us and shape the future of
+            </p>
+            <p class="mini-text text-secondary">branding today?</p>
+            <br />
+            <br />
+            <br />
+            <buton class="btn btn-dark rounded-pill small-text py-2 px-3"
+              >Apply now
+            </buton>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 mb-3 overflow-hidden col-lg-3">
+          <div class="h-100">
+            <div class="main-hover position-relative">
+              <img
+                height="424px"
+                class="img-fluid "
+                src="https://assets-global.website-files.com/63c3f1995d4c3581bbc944b5/63c68f2ecddac415070de2e8_team-01-p-500.webp"
+                alt=""
+              />
+              <div class="to-hover position-absolute animate__animated animate__bounceInUp">
+                <div class="p-3 d-flex justify-content-end ">
+                  <div class="d-flex gap-2">
+                    <button
+                      class="btn btn-dark rounded-circle hover-btn fs-6 d-flex align-items-center justify-content-center"
+                    >
+                      <i class="fa-brands p-2 fa-instagram"></i>
+                    </button>
+                    <button
+                      class="btn btn-dark rounded-circle hover-btn fs-6 d-flex align-items-center justify-content-center"
+                    >
+                      <i class="fa-brands p-2 fa-twitter"></i>
+                    </button>
+                    <button
+                      class="btn btn-dark rounded-circle hover-btn fs-6 d-flex align-items-center justify-content-center"
+                    >
+                      <i class="fa-brands p-2 fa-behance"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-center justify-content-between py-2">
+              <p class="small-text">Anette Black</p>
+              <p class="small-text btn btn-outline-dark rounded-pill">
+                Branding
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 mb-3 overflow-hidden col-lg-3">
+          <div class="h-100">
+           <div class="main-hover position-relative">
+              <img
+                height="424px"
+                class="img-fluid "
+                src="https://assets-global.website-files.com/63c3f1995d4c3581bbc944b5/63c68f2e0a57ab81ad90f31f_team-02-p-500.webp"
+                alt=""
+              />
+              <div class="to-hover position-absolute animate__animated animate__bounceInUp">
+                <div class="p-3 d-flex justify-content-end ">
+                  <div class="d-flex gap-2">
+                    <button
+                      class="btn btn-dark rounded-circle hover-btn fs-6 d-flex align-items-center justify-content-center"
+                    >
+                      <i class="fa-brands p-2 fa-instagram"></i>
+                    </button>
+                    <button
+                      class="btn btn-dark rounded-circle hover-btn fs-6 d-flex align-items-center justify-content-center"
+                    >
+                      <i class="fa-brands p-2 fa-twitter"></i>
+                    </button>
+                    <button
+                      class="btn btn-dark rounded-circle hover-btn fs-6 d-flex align-items-center justify-content-center"
+                    >
+                      <i class="fa-brands p-2 fa-behance"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-between py-2">
+              <p class="small-text">Devon Lane</p>
+              <p class="small-text btn btn-outline-dark rounded-pill">
+                Branding
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 mb-3 overflow-hidden col-lg-3">
+          <div class="h-100">
+            <div class="main-hover position-relative">
+              <img
+                height="424px"
+                class="img-fluid "
+                src="https://assets-global.website-files.com/63c3f1995d4c3581bbc944b5/63c68f2ed7fe4b9a5bef7ee1_team-03-p-500.webp"
+                alt=""
+              />
+              <div class="to-hover position-absolute animate__animated animate__bounceInUp">
+                <div class="p-3 d-flex justify-content-end ">
+                  <div class="d-flex gap-2">
+                    <button
+                      class="btn btn-dark rounded-circle hover-btn fs-6 d-flex align-items-center justify-content-center"
+                    >
+                      <i class="fa-brands p-2 fa-instagram"></i>
+                    </button>
+                    <button
+                      class="btn btn-dark rounded-circle hover-btn fs-6 d-flex align-items-center justify-content-center"
+                    >
+                      <i class="fa-brands p-2 fa-twitter"></i>
+                    </button>
+                    <button
+                      class="btn btn-dark rounded-circle hover-btn fs-6 d-flex align-items-center justify-content-center"
+                    >
+                      <i class="fa-brands p-2 fa-behance"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-between py-2">
+              <p class="small-text">Chris Watson</p>
+              <p class="small-text btn btn-outline-dark rounded-pill">
+                Marketing
+              </p>
+            </div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 mb-3"></div>
+        <div class="col-md-9 mb-3 border-bottom border-secondary-subtle">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="mb-3">
+                <div class="d-flex gap-2 align-items-center">
+                  <i class="fa-brands fa-pied-piper-alt"></i>
+                  <p class="fw-semibold">Piped Piper</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div>
+                <h3 class="fw-lighter mb-3 fw-lighter">
+                  “We couldn't be happier with the branding strategy developed.”
+                </h3>
+                <p class="small-text mb-3 text-secondary fw-light">
+                  We approached Øliv for a complete rebranding of our company
+                  and we couldn't be happier with the results. Their market
+                  research and analysis helped us define our target audience and
+                  unique brand positioning. Their team then created a visually
+                  compelling logo and consistent branding across all
+                  touchpoints.
+                </p>
+                <p class="small-text mb-3 text-secondary fw-light">
+                  The new brand has helped us stand out in the market and
+                  increase sales. We highly recommend Øliv to any business
+                  looking to rebrand or refresh their brand.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-3"></div>
+        <div class="col-md-9 mb-3 border-bottom border-secondary-subtle">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="mb-3">
+                <div class="d-flex gap-2 align-items-center">
+                  <i class="fa-brands fa-pied-piper-alt"></i>
+                  <p class="fw-semibold">Piped Piper</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div>
+                <h3 class="fw-lighter mb-3 fw-lighter">
+                  “We couldn't be happier with the branding strategy developed.”
+                </h3>
+                <p class="small-text mb-3 text-secondary fw-light">
+                  We approached Øliv for a complete rebranding of our company
+                  and we couldn't be happier with the results. Their market
+                  research and analysis helped us define our target audience and
+                  unique brand positioning. Their team then created a visually
+                  compelling logo and consistent branding across all
+                  touchpoints.
+                </p>
+                <p class="small-text mb-3 text-secondary fw-light">
+                  The new brand has helped us stand out in the market and
+                  increase sales. We highly recommend Øliv to any business
+                  looking to rebrand or refresh their brand.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="background-color: #f1f6f5" class="p-5 mb-3">
+        <p class="mini-text">CONTACT</p>
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-9">
+            <div>
+              <h1 class="fw-light mb-2">
+                Let's start building your brand's unique story together.
+              </h1>
+              <p class="small-text fw-light text-secondary">
+                Want to see what a difference a strong brand can make? Request a
+                consultation today.
+              </p>
+              <br />
+              <button
+                class="btn btn-dark rounded-pill small-text d-flex align-items-center gap-2"
+              >
+                Get in Touch <i class="fa-solid fa-arrow-up up-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p
+        class="border-bottom border-secondary-subtle text-secondary pb-3 mb-3 mini-text"
+      >
+        BLOG
+      </p>
+
+      <div class="d-flex justify-content-between mb-3">
+        <h3 class="fw-lighter">Insights of Branding</h3>
+        <buton class="btn btn-outline-dark rounded-pill small-text"
+          >See all</buton
+        >
+      </div>
+      <div class="row mb-3">
+        <div class="col-sm-6 col-md-3 mb-3">
+          <div>
+            <img src="./images/a.png" class="card-img-top mb-2" alt="..." />
+            <div class="card-body">
+              <p class="fw-light">The Importance of a Strong Brand Position</p>
+              <div class="main-hover">
+                <p class="small-text">Read More</p>
+                <div class="underline"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 mb-3">
+          <div>
+            <img src="./images/b.png" class="card-img-top mb-2" alt="..." />
+            <div class="card-body">
+              <p class="fw-light">
+                Creating a Consistent Brand Identify Across All Touchpoints
+              </p>
+              <div class="main-hover">
+                <p class="small-text">Read More</p>
+                <div class="underline"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 mb-3">
+          <div>
+            <img src="./images/c.png" class="card-img-top mb-2" alt="..." />
+            <div class="card-body">
+              <p class="fw-light">
+                The Role of Market Research in Branding Strategy
+              </p>
+              <div class="main-hover">
+                <p class="small-text">Read More</p>
+                <div class="underline"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 mb-3">
+          <div>
+            <img src="./images/d.png" class="card-img-top mb-2" alt="..." />
+            <div class="card-body">
+              <p class="fw-light">The impact of Social Media Branding</p>
+              <div class="main-hover">
+                <p class="small-text">Read More</p>
+                <div class="underline"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-sm-6 col-md-3 mb-3">
+          <div>
+            <a class="navbar-brand" href="#">
+              <div class="d-flex align-items-center gap-2">
+                <img src="./images/image.png" alt="" />
+                <p>Øliv</p>
+              </div>
+            </a>
+            <div class="mt-3">
+              <i class="fa-brands p-2 fa-instagram"></i>
+              <i class="fa-brands p-2 fa-twitter"></i>
+              <i class="fa-brands p-2 fa-behance"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 mb-3">
+          <div>
+            <p class="small-text fw-light">Pages</p>
+            <br />
+            <div>
+              <div class="main-hover">
+                <p class="mini-text fw-light">Home</p>
+                <div class="underline"></div>
+              </div>
+              <br />
+              <div class="main-hover">
+                <p class="mini-text fw-light">Services</p>
+                <div class="underline"></div>
+              </div>
+              <br />
+              <div class="main-hover">
+                <p class="mini-text fw-light">About</p>
+                <div class="underline"></div>
+              </div>
+              <br />
+              <div class="main-hover">
+                <p class="mini-text fw-light">Jobs</p>
+                <div class="underline"></div>
+              </div>
+              <br />
+              <div class="main-hover">
+                <p class="mini-text fw-light">Contact</p>
+                <div class="underline"></div>
+              </div>
+              <br />
+              <br />
+              <button class="btn btn-dark mini-text rounded-pill">
+                More Templates
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 mb-3">
+          <div>
+            <p class="small-text fw-light">CMS</p>
+            <br />
+            <div>
+              <div class="main-hover">
+                <p class="mini-text fw-light">Work</p>
+                <div class="underline"></div>
+              </div>
+              <br />
+              <div class="main-hover">
+                <p class="mini-text fw-light">Work Single</p>
+                <div class="underline"></div>
+              </div>
+              <br />
+              <div class="main-hover">
+                <p class="mini-text fw-light">Blog</p>
+                <div class="underline"></div>
+              </div>
+              <br />
+              <div class="main-hover">
+                <p class="mini-text fw-light">Blog Single</p>
+                <div class="underline"></div>
+              </div>
+              <br />
+              <div class="main-hover">
+                <p class="mini-text fw-light">Shop</p>
+                <div class="underline"></div>
+              </div>
+              <br />
+              <div class="main-hover">
+                <p class="mini-text fw-light">Shop Single</p>
+                <div class="underline"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 mb-3">
+          <div>
+            <p class="small-text fw-light">Utility Pages</p>
+            <br />
+            <div>
+              <div class="main-hover">
+                <p class="mini-text fw-light">402 Erro Page</p>
+                <div class="underline"></div>
+              </div>
+              <br />
+              <div class="main-hover">
+                <p class="mini-text fw-light">Password Protected</p>
+                <div class="underline"></div>
+              </div>
+              <br />
+              <div class="main-hover">
+                <p class="mini-text fw-light">Licensing</p>
+                <div class="underline"></div>
+              </div>
+              <br />
+              <div class="main-hover">
+                <p class="mini-text fw-light">Style Guide</p>
+                <div class="underline"></div>
+              </div>
+              <br />
+              <div class="main-hover">
+                <p class="mini-text fw-light">Changelog</p>
+                <div class="underline"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p
+        class="border-bottom border-secondary-subtle text-secondary pb-3 mb-3 mini-text"
+      ></p>
+      <div class="d-flex justify-content-between">
+        <div>
+          <p class="mini-text text-secondary">
+            &copy; Made by <a href="" class="text-dark">Pawel Gola </a>Powered
+            by <a href="" class="text-dark"> Webflow</a>
+          </p>
+        </div>
+        <div class="d-flex gap-2">
+          <p class="mini-text text-secondary">Privicy</p>
+          <p class="mini-text text-secondary">Imprint</p>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+*,h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", serif;
+    box-sizing: border-box;
+}
+
+.secondary-color{
+    background-color: #f4f4f4 !important;
+}
+.small-text{
+    font-size: 12px;
+}
+.mini-text{
+    font-size: 10px;
+}
+.btn-style{
+    box-shadow: none !important;
+    
+}
+.my-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.my-wrapper .accordion-button:not(.collapsed){
+    background-color: #f4f4f4;
+
+}
+.my-wrapper .accordion-button:not(.collapsed)::after{
+    background-color: black;
+    color: white !important;
+    border-radius: 50%;
+}
+.my-wrapper .accordion-item{
+    border: none;
+}

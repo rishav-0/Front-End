@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+.charcoal{
+    color: #1e1e1e;
+}
+.bg-charcoal{
+    background-color: #1e1e1e;   
+}
+.sand{
+    color: #ece3db;
+}
+.bg-sand{
+    background-color: #ece3db;
+}
+.orange{
+    color: #fa7d4f;
+}
+.bg-orange{
+    background-color: #fa7d4f;   
+}
+
+.bg-main{
+    background-color: #f8f7f2;
+}
+.main{
+    color: #f8f7f2;
+
+}
+.baige{
+    color: #f7f3ee;
+}
+.bg-baige{
+    background-color: #f7f3ee;
+}
+.mini-text{
+    font-size: 10px;
+}
+.btn-text{
+    font-size: 12px;
+}
+.small-icon{
+    width: 24px;
+    height: 24px;
+}
+.small-icon:nth-child(2){
+    width: 30px;
+}
+.accordion-parent .accordion-item{
+
+    border: none;
+}
+.accordion-parent button{
+    background-color: #f7f3ee;
+    box-shadow: none;
+}
+.accordion-parent .accordion-button:focus{
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+.accordion-parent button:not(.collapsed){
+    background-color: #f7f3ee;
+    border: none;
+}
+
+.abcc{
+    
+    margin-bottom: 40px;
+    display: inline-block;
+    transition: all 50000ms;
+    cursor: url("https://www.citypng.com/public/uploads/preview/white-user-member-guest-icon-png-image-701751695037005zdurfaim0y.png") 16 16, auto;
+}
+.width{
+    height: 2px;
+    width: 0;
+    background-color: black;
+    transition: all 500ms;
+}
+.abcc:hover .width{
+    width: 100%;
+}

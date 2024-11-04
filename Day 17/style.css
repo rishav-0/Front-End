@@ -4,6 +4,10 @@
     font-family: "Poppins", serif;
     box-sizing: border-box;
 }
+.wrapper{
+    background-color: #f5f6fb;
+    height: 100vh;
+}
 .logo{
     width: 30px;
     height: 30px;
@@ -14,4 +18,139 @@
 .small-text{
     font-size: 12px;
     color: #999999;
+    margin: 0;
+}
+.logo{
+    background-color: #e5dce8;
+    width: 35px;
+    height: 35px;
+}
+.banner{
+    background-color: #6e62e5;
+}
+.join-now{
+    font-size: 12px;
+}
+.join-now span,
+.icon{
+    width: 20px;
+    height: 20px;
+    padding: 14px;
+}
+.icon:nth-child(2){
+    color: white;
+    background-color: #6e62e5;
+}
+.no-scrollbar::-webkit-scrollbar {
+      display: none;
+  }
+ /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+}
+.card-logo{
+    background-color: #ebe9fb;
+    width: 35px;
+    height: 35px;
+    margin-right: 1rem;
+}
+.tags{
+    font-size: 12px;
+    padding: 3px;
+    background-color: #e9f5fb;
+    color: #62b6e5;
+    display: inline;
+    border-radius: 4px;
+    padding: 4px;
+    /* width: 80px; */
+}
+.uiux{
+    background-color: #ebe9fb;
+    color: #7265e6;
+}
+.branding{
+   color: #e770d5; 
+   background-color: #f8e9fb;
+}
+.heart{
+    z-index: 2;
+    color: white;
+    height: 20px;
+    width: 20px;
+    top: 16px;
+    right: 16px;
+    opacity: 4px;
+}
+.progress{
+    height: 2px;
+}
+.done{
+    width: 60%;
+    background-color: #6e62e5;
+}
+.card-avatar{
+    height: 25px;
+    width: 25px;
+    background-color: #d1c2b3;
+    padding: 2px;
+}
+.card-avatar img{
+    width: 100%;
+}
+.card-bottom-name{
+    font-size: 10px;
+    font-weight: 500;
+    margin: 0;
+}
+.mentor{
+    font-size: 10px;
+    font-weight: 500;
+    color: #999999;
+    margin: 0;
+}
+.lesson-wrapper{
+    height: 100px;
+}
+.up-right{
+    transform: rotate(45deg);
+}
+.up-right-arrowdiv{
+    width: 25px;
+    height: 25px;
+    padding: 6px;
+}
+.big-avatar-border{
+    width: 150px;
+    height: 150px;
+    padding: 5px;
+}
+.big-avatar{
+    width: 130px;
+    height: 130px;
+}
+.plus-border{
+    width: 30px;
+    height: 30px;
+}
+.mentor-card{
+    background-color: #f5f6fb;
+    
+}
+.mentor-card .card-avatar{
+    width: 40px;
+    height: 40px;
+}
+.follow{
+    font-size: 12px;
+    border: 1px solid #766be6;
+    color: #766be6;
+    padding: 4px;
+}
+.see-all{
+    width: 100%;
+    padding: 5px;
+    border: none;
+    color: #766be6;
+    background-color: #ebe9fb;
 }

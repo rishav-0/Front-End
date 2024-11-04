@@ -1,0 +1,130 @@
+*,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+  font-weight: 900;
+}
+.wrapper {
+  background-color: rgb(217, 219, 222);
+}
+.small-text {
+  font-size: 12px;
+  font-weight: 900;
+}
+.search-hover:hover {
+  background-color: white;
+  color: black;
+}
+.search-hover input {
+  display: none;
+}
+.search-hover:hover input {
+  display: block;
+  width: 30px;
+  border: none;
+}
+.title {
+  font-size: 300px;
+  margin: 0;
+}
+@media (max-width: 1400px) {
+  .title {
+    font-size: 249px !important;
+  }
+}
+@media (max-width: 1200px) {
+  .title {
+    font-size: 200px !important;
+  }
+  .hero-bg {
+    height: 350px !important;
+  }
+}
+@media (max-width: 992px) {
+  .title {
+    font-size: 139px !important;
+  }
+  .hero-bg {
+    height: 250px !important;
+  }
+}
+@media (max-width: 768px) {
+  .title {
+    font-size: 92px !important;
+  }
+  .hero-bg {
+    height: 163px !important;
+  }
+  .large-text {
+    font-size: 60px !important;
+  }
+}
+@media (max-width: 576px) {
+  .title {
+    font-size: 60px !important;
+    text-align: end !important;
+  }
+}
+
+.hero-bg {
+  background-color: rgb(236, 226, 217);
+  height: 500px;
+}
+.bg {
+  background-color: rgb(236, 226, 217);
+}
+.hero-bg img {
+  left: 10%;
+}
+.overlay-main {
+  background-color: #e9dfd9;
+  transition: all 500ms;
+}
+.overlay-main:hover .overlay {
+  display: block !important;
+  background: linear-gradient(
+    180deg,
+    rgb(242 242 242 / 0%) 19%,
+    rgb(37 36 36) 100%,
+    rgb(255 246 211) 100%
+  );
+  /* background: linear-gradient(0,black); */
+}
+.large-text {
+  font-size: 100px;
+}
+.banner-height {
+  height: 320px;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.img-holder {
+  /* width: 200px; */
+  min-width: 200px;
+  object-fit: contain;
+}
+.jumper-banner {
+  position: relative;
+  height: 400px;
+  margin-top: 150px;
+}
+.jumper-img,.mail-btn{
+    left: 50%;
+    transform: translateX(-50%);
+}
+.mail-btn input{
+    width: 100px;
+}
