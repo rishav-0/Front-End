@@ -1,8 +1,47 @@
-*,p,h1,h2,h3,h4,h5,h6{
-    margin: 0;
-    padding: 0;
-    font-family: "Roboto", sans-serif;
+*,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
 }
-.rotate-right{
-    transform: rotate(90deg);
+.rotate-right {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+.small-text {
+  font-size: 12px;
+}
+.large-text {
+  font-size: 70px;
+}
+.rotate-left  {
+    transform: rotateZ(270deg);
+}
+.number{
+    width: 30px;
+}
+.number div{
+    height: 2px;
+}
+.right-20{
+    right: -20px;
+}
+.bg-divs{
+    background-color: #dcdcdc;
+    z-index: -2;
+}
+.on-top{
+    z-index: 9;
+}
+@media(max-width:576px){
+    .bg-divs{
+        display: none;
+    }
 }

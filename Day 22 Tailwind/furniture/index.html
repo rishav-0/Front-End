@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      * {
+        font-family: "Roboto Condensed", sans-serif;
+        scroll-behavior: smooth;
+      }
+      .container {
+        transition: all 500ms;
+      }
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+      }
+    </style>
+    <title>Furniture</title>
+  </head>
+  <body>
+    <div class="flex justify-between p-3 items-center">
+      <h1 class="text-xl font-bold">furniture</h1>
+      <div class="flex space-between gap-4 items-center">
+        <div class="flex space-between items-center gap-3">
+          <a href="" class="text-sm font-semibold">Home</a>
+          <a href="" class="text-sm font-semibold">Products</a>
+          <a href="" class="text-sm font-semibold">About</a>
+          <a href="" class="text-sm font-semibold">Contact</a>
+        </div>
+        <div class="flex gap-3 hidden sm:block items-center">
+          <i class="fa-regular fa-heart"></i>
+          <i class="fas fa-cart-shopping"></i>
+          <img
+            class="inline-block h-8 w-8 rounded-full ring-2 ring-white"
+            src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <img
+      class="w-full aspect-video mb-5"
+      src="https://tricitypropertysearches.com/wp-content/uploads/2022/11/Get-potted-plants-_-How-to-decorate-a-living-room-750x474.jpg"
+      alt=""
+    />
+    <h1 class="text-3xl text-center font-semibold">Featured Categories</h1>
+    <p class="text-secondary text-center text-sm mb-4">
+      The freshest and most exciting offers
+    </p>
+
+    <div class="container">
+      <div class="row mx-0">
+        <div class="col-md-6 mb-4">
+          <div class="row mb-2 p-3">
+            <div class="col-sm-6">
+              <div class="p-3">
+                <img
+                  class="scale-x-[-1] max-h-[180px]"
+                  src="./images/image.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="flex justify-center h-100 flex-col">
+                <h1 class="text-2xl mb-2 font-semibold">Minimal Chair</h1>
+                <p class="text-sm mb-2 mb-2">
+                  Mordern living moving chair with coushion comfortable
+                </p>
+                <button
+                  class="btn btn-outline-dark rounded-0 px-5 py-[4px] whitespace-nowrap"
+                >
+                  See All
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 px-0">
+              <div class="flex h-100 p-2 justify-around">
+                <div class="flex flex-col justify-center">
+                  <h1 class="fw-semibold text-[30px] md:text-[16px]">
+                    Bean Bag
+                  </h1>
+                  <p class="text-[12px]">Indoor/Outdoor</p>
+                  <p class="text-[12px]">Natural</p>
+                </div>
+                <div class="flex items-center">
+                  <img class="max-h-[180px]" src="./images/bat.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 px-0 h-100">
+              <div class="flex h-100 p-2 justify-around">
+                <div class="flex flex-col justify-center">
+                  <h1 class="fw-semibold text-[30px] md:text-[16px]">
+                    Bean Bag
+                  </h1>
+                  <p class="text-[12px]">Indoor/Outdoor</p>
+                  <p class="text-[12px]">Natural</p>
+                </div>
+                <div class="flex items-center">
+                  <img
+                    class="max-h-[180px]"
+                    src="./images/graysofa.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4 text-center">
+          <div class="h-100 flex items-center justify-center p-2">
+            <div class="">
+              <img src="./images/sofa.png" alt="" />
+              <button class="btn btn-dark rounded-0 px-5 py-[4px]">
+                Explore
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mb-5">
+      <h1 class="text-3xl text-center font-medium capitalize mb-2">
+        best seller product
+      </h1>
+      <button
+        class="px-4 border-1 active:text-white border-gray-300 rounded-0 active:bg-[#e1b02f] py-[0px] text-[12px]"
+      >
+        All
+      </button>
+      <button
+        class="px-4 border-1 active:text-white border-gray-300 rounded-0 active:bg-[#e1b02f] py-[0px] text-[12px]"
+      >
+        Features
+      </button>
+      <button
+        class="px-4 border-1 active:text-white border-gray-300 rounded-0 active:bg-[#e1b02f] py-[0px] text-[12px]"
+      >
+        New
+      </button>
+      <button
+        class="px-4 border-1 active:text-white border-gray-300 rounded-0 active:bg-[#e1b02f] py-[0px] text-[12px]"
+      >
+        Our Sale
+      </button>
+      <button
+        class="px-4 border-1 active:text-white border-gray-300 rounded-0 active:bg-[#e1b02f] py-[0px] text-[12px]"
+      >
+        Deal
+      </button>
+    </div>
+
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-sm-6 col-md-3 mb-3">
+          <div class="position-relative h-100 flex flex-col justify-between">
+            <div
+              class="position-absolute end-0 rounded-circle h-[35px] w-[35px] bg-green-600 flex items-center justify-center p-2"
+            >
+              <p class="text-white text-xs">New</p>
+            </div>
+            <div class="flex justify-center item-center p-2">
+              <img
+                class="w-100 max-w-[180px]"
+                src="https://i.pinimg.com/originals/dc/f0/1a/dcf01a208c12d042a65a4b472c030d21.jpg"
+                alt=""
+              />
+            </div>
+            <div class="bg-gray-100 p-2">
+              <p class="text-sm font-medium">Modern Chair</p>
+              <p class="text-secondary text-[10px] capitalize">on sale</p>
+              <p class="text-sm">$200.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 mb-3">
+          <div class="position-relative h-100 flex flex-col justify-between">
+            <div
+              class="position-absolute end-0 rounded-circle h-[35px] w-[35px] bg-red-400 flex items-center justify-center p-2"
+            >
+              <p class="text-white text-xs">New</p>
+            </div>
+            <div class="flex justify-center item-center p-2">
+              <img
+                class="w-100 max-w-[180px]"
+                src="https://slimages.macysassets.com/is/image/MCY/products/2/optimized/21809552_fpx.tif"
+                alt=""
+              />
+            </div>
+            <div class="bg-gray-100 p-2">
+              <p class="text-sm font-medium">Modern Chair</p>
+              <p class="text-secondary text-[10px] capitalize">on sale</p>
+              <p class="text-sm">$200.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 mb-3">
+          <div class="position-relative h-100 flex flex-col justify-between">
+            <!-- <div class="position-absolute end-0 rounded-circle h-[35px] w-[35px] bg-green-600 flex items-center justify-center p-2">
+            <p class="text-white text-xs">New</p>
+          </div> -->
+            <div class="flex justify-center item-center p-2">
+              <img
+                class="w-100 max-w-[180px]"
+                src="https://p.globalsources.com/IMAGES/PDT/S1168484343/Beech-wood-leg-dining-chair.jpg"
+                alt=""
+              />
+            </div>
+            <div class="bg-gray-100 p-2">
+              <p class="text-sm font-medium">Modern Chair</p>
+              <p class="text-secondary text-[10px] capitalize">on sale</p>
+              <p class="text-sm">$200.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 mb-3">
+          <div class="position-relative h-100 flex flex-col justify-between">
+            <div
+              class="position-absolute end-0 rounded-circle h-[35px] w-[35px] bg-green-600 flex items-center justify-center p-2"
+            >
+              <p class="text-white text-xs">New</p>
+            </div>
+            <div class="flex justify-center item-center p-2">
+              <img
+                class="w-100 max-w-[180px]"
+                src="https://th.bing.com/th/id/OIP.PxejosdUfwIXnluQacMh4QAAAA?w=300&h=300&rs=1&pid=ImgDetMain"
+                alt=""
+              />
+            </div>
+
+            <div class="bg-gray-100 p-2">
+              <p class="text-sm font-medium">Modern Chair</p>
+              <p class="text-secondary text-[10px] capitalize">on sale</p>
+              <p class="text-sm">$200.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 mb-3">
+          <div class="position-relative h-100 flex flex-col justify-between">
+            <div
+              class="position-absolute end-0 rounded-circle h-[35px] w-[35px] bg-red-400 flex items-center justify-center p-2"
+            >
+              <p class="text-white text-xs">New</p>
+            </div>
+            <div class="flex justify-center item-center p-2">
+              <img
+                class="w-100 max-w-[180px]"
+                src="https://darshanhomefurniture.com/wp-content/uploads/2019/12/Best-Foot-Stools-480x410.png"
+                alt=""
+              />
+            </div>
+
+            <div class="bg-gray-100 p-2">
+              <p class="text-sm font-medium">Modern Chair</p>
+              <p class="text-secondary text-[10px] capitalize">on sale</p>
+              <p class="text-sm">$200.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 mb-3">
+          <div class="position-relative h-100 flex flex-col justify-between">
+            <!-- <div class="position-absolute end-0 rounded-circle h-[35px] w-[35px] bg-green-600 flex items-center justify-center p-2">
+            <p class="text-white text-xs">New</p>
+          </div> -->
+            <div class="flex justify-center item-center p-2">
+              <img
+                class="w-100 max-w-[180px]"
+                src="https://www.sydneywidepartyhire.com.au/wp-content/uploads/2018/02/tullsta-armchair-beige-event-furniture.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="bg-gray-100 p-2">
+              <p class="text-sm font-medium">Modern Chair</p>
+              <p class="text-secondary text-[10px] capitalize">on sale</p>
+              <p class="text-sm">$200.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 mb-3">
+          <div class="position-relative h-100 flex flex-col justify-between">
+            <div
+              class="position-absolute end-0 rounded-circle h-[35px] w-[35px] bg-red-400 flex items-center justify-center p-2"
+            >
+              <p class="text-white text-xs">New</p>
+            </div>
+            <div class="flex justify-center item-center p-2">
+              <img
+                class="w-100 max-w-[180px]"
+                src="https://1.bp.blogspot.com/_xa-NlAVwxyk/SCdM9sIVLKI/AAAAAAAAATA/nWRXR_IAM48/s400/W2007_1051.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="bg-gray-100 p-2">
+              <p class="text-sm font-medium">Modern Chair</p>
+              <p class="text-secondary text-[10px] capitalize">on sale</p>
+              <p class="text-sm">$200.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 mb-3">
+          <div class="position-relative h-100 flex flex-col justify-between">
+            <div
+              class="position-absolute end-0 rounded-circle h-[35px] w-[35px] bg-green-600 flex items-center justify-center p-2"
+            >
+              <p class="text-white text-xs">New</p>
+            </div>
+            <div class="flex justify-center item-center p-2">
+              <img
+                class="w-100 max-w-[180px]"
+                src="https://img.zcdn.com.au/lf/45/hash/38369/19155737/4/Gordon%2BVelvet%2BDining%2BChairs.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="bg-gray-100 p-2">
+              <p class="text-sm font-medium">Modern Chair</p>
+              <p class="text-secondary text-[10px] capitalize">on sale</p>
+              <p class="text-sm">$200.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-6 col-md-4">
+          <div>
+            <h1 class="capitalize fw-semibold mb-[2px]">top rated</h1>
+            <div class="w-[30px] h-[3px] bg-yellow-500 mb-3"></div>
+            <div class="flex flex-wrap sm:flex-col justify-between">
+              <div class="flex mb-3">
+                <img
+                  class="w-[40px]"
+                  src="https://i.etsystatic.com/21713429/r/il/13253a/5012629102/il_570xN.5012629102_o43m.jpg"
+                  alt=""
+                />
+                <div class="p-1">
+                  <p class="capitalize text-sm fw-semibold whitespace-nowrap">
+                    Modern dining chair
+                  </p>
+                  <p class="capitalize text-sm fw-semibold whitespace-nowrap">
+                    <span class="text-yellow-500">$26.00</span> $25.00
+                  </p>
+                </div>
+              </div>
+              <div class="flex mb-3">
+                <img
+                  class="w-[40px]"
+                  src="https://i.etsystatic.com/21713429/r/il/13253a/5012629102/il_570xN.5012629102_o43m.jpg"
+                  alt=""
+                />
+                <div class="p-1">
+                  <p class="capitalize text-sm fw-semibold whitespace-nowrap">
+                    Modern dining chair
+                  </p>
+                  <p class="capitalize text-sm fw-semibold whitespace-nowrap">
+                    <span class="text-yellow-500">$26.00</span> $25.00
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-6 col-md-4">
+          <div>
+            <h1 class="capitalize fw-semibold mb-[2px]">best selling</h1>
+            <div class="w-[30px] h-[3px] bg-yellow-500 mb-3"></div>
+            <div class="flex flex-wrap sm:flex-col justify-between">
+              <div class="flex mb-3">
+                <img
+                  class="w-[40px]"
+                  src="https://i.etsystatic.com/21713429/r/il/13253a/5012629102/il_570xN.5012629102_o43m.jpg"
+                  alt=""
+                />
+                <div class="p-1">
+                  <p class="capitalize text-sm fw-semibold whitespace-nowrap">
+                    Modern dining chair
+                  </p>
+                  <p class="capitalize text-sm fw-semibold whitespace-nowrap">
+                    <span class="text-yellow-500">$26.00</span> $25.00
+                  </p>
+                </div>
+              </div>
+              <div class="flex mb-3">
+                <img
+                  class="w-[40px]"
+                  src="https://i.etsystatic.com/21713429/r/il/13253a/5012629102/il_570xN.5012629102_o43m.jpg"
+                  alt=""
+                />
+                <div class="p-1">
+                  <p class="capitalize text-sm fw-semibold whitespace-nowrap">
+                    Modern dining chair
+                  </p>
+                  <p class="capitalize text-sm fw-semibold whitespace-nowrap">
+                    <span class="text-yellow-500">$26.00</span> $25.00
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-6 col-md-4">
+          <div>
+            <h1 class="capitalize fw-semibold mb-[2px]">on sale</h1>
+            <div class="w-[30px] h-[3px] bg-yellow-500 mb-3"></div>
+            <div class="flex flex-wrap justify-between sm:flex-col">
+              <div class="flex mb-3">
+                <img
+                  class="w-[40px]"
+                  src="https://i.etsystatic.com/21713429/r/il/13253a/5012629102/il_570xN.5012629102_o43m.jpg"
+                  alt=""
+                />
+                <div class="p-1">
+                  <p class="capitalize text-sm fw-semibold whitespace-nowrap">
+                    Modern dining chair
+                  </p>
+                  <p class="capitalize text-sm fw-semibold whitespace-nowrap">
+                    <span class="text-yellow-500">$26.00</span> $25.00
+                  </p>
+                </div>
+              </div>
+              <div class="flex mb-3">
+                <img
+                  class="w-[40px]"
+                  src="https://i.etsystatic.com/21713429/r/il/13253a/5012629102/il_570xN.5012629102_o43m.jpg"
+                  alt=""
+                />
+                <div class="p-1">
+                  <p class="capitalize text-sm fw-semibold whitespace-nowrap">
+                    Modern dining chair
+                  </p>
+                  <p class="capitalize text-sm fw-semibold whitespace-nowrap">
+                    <span class="text-yellow-500">$26.00</span> $25.00
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center p-5">
+      <div class="text-yellow-500 fw-semibold">Testimonials</div>
+      <h1 class="text-xl fw-medium">What our customer say</h1>
+      <p class="text-secondary text-sm fw-medium">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae suscipit
+        laudantium cum ea odit autem.
+      </p>
+    </div>
+
+    <div
+      class="overflow-auto gap-2 flex-nowrap flex-row flex justify-between no-scrollbar mb-5"
+    >
+      <div class="p-2 w-[250px] min-w-[250px]">
+        <img src="./images/comma.png" alt="" />
+        <p class="text-secondary text-sm line-clamp-2 my-3">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi sunt
+          quas corrupti natus magni explicabo?
+        </p>
+
+        <div class="flex justify-between">
+          <div class="flex items-center gap-2">
+            <img
+              class="inline-block h-6 w-6 rounded-full ring-2 ring-white"
+              src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80"
+              alt=""
+            />
+            <p class="capitalize text-sm fw-semibold">John smith</p>
+          </div>
+          <p class="text-sm fw-semibold flex items-center gap-1">
+            <img src="./images/star.png" class="w-3 h-3" alt="" />
+            4.3
+          </p>
+        </div>
+      </div>
+      <div class="p-2 w-[250px] min-w-[250px]">
+        <img src="./images/comma.png" alt="" />
+        <p class="text-secondary text-sm line-clamp-2 my-3">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi sunt
+          quas corrupti natus magni explicabo?
+        </p>
+
+        <div class="flex justify-between">
+          <div class="flex items-center gap-2">
+            <img
+              class="inline-block h-6 w-6 rounded-full ring-2 ring-white"
+              src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80"
+              alt=""
+            />
+            <p class="capitalize text-sm fw-semibold">John smith</p>
+          </div>
+          <p class="text-sm fw-semibold flex items-center gap-1">
+            <img src="./images/star.png" class="w-3 h-3" alt="" />
+            4.3
+          </p>
+        </div>
+      </div>
+      <div class="p-2 w-[250px] min-w-[250px]">
+        <img src="./images/comma.png" alt="" />
+        <p class="text-secondary text-sm line-clamp-2 my-3">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi sunt
+          quas corrupti natus magni explicabo?
+        </p>
+
+        <div class="flex justify-between">
+          <div class="flex items-center gap-2">
+            <img
+              class="inline-block h-6 w-6 rounded-full ring-2 ring-white"
+              src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80"
+              alt=""
+            />
+            <p class="capitalize text-sm fw-semibold">John smith</p>
+          </div>
+          <p class="text-sm fw-semibold flex items-center gap-1">
+            <img src="./images/star.png" class="w-3 h-3" alt="" />
+            4.3
+          </p>
+        </div>
+      </div>
+      <div class="p-2 w-[250px] min-w-[250px]">
+        <img src="./images/comma.png" alt="" />
+        <p class="text-secondary text-sm line-clamp-2 my-3">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi sunt
+          quas corrupti natus magni explicabo?
+        </p>
+
+        <div class="flex justify-between">
+          <div class="flex items-center gap-2">
+            <img
+              class="inline-block h-6 w-6 rounded-full ring-2 ring-white"
+              src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80"
+              alt=""
+            />
+            <p class="capitalize text-sm fw-semibold">John smith</p>
+          </div>
+          <p class="text-sm fw-semibold flex items-center gap-1">
+            <img src="./images/star.png" class="w-3 h-3" alt="" />
+            4.3
+          </p>
+        </div>
+      </div>
+      <div class="p-2 w-[250px] min-w-[250px]">
+        <img src="./images/comma.png" alt="" />
+        <p class="text-secondary text-sm line-clamp-2 my-3">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi sunt
+          quas corrupti natus magni explicabo?
+        </p>
+
+        <div class="flex justify-between">
+          <div class="flex items-center gap-2">
+            <img
+              class="inline-block h-6 w-6 rounded-full ring-2 ring-white"
+              src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80"
+              alt=""
+            />
+            <p class="capitalize text-sm fw-semibold">John smith</p>
+          </div>
+          <p class="text-sm fw-semibold flex items-center gap-1">
+            <img src="./images/star.png" class="w-3 h-3" alt="" />
+            4.3
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mb-5">
+      <div class="row mb-5">
+        <div class="col-sm-6">
+          <div class=" flex flex-col justify-between h-100">
+            <p class="text-sm text-yellow-500 fw-semibold">Articles</p>
+            <h1 class="text-2xl fw-semibold">
+              The best furniture comes from Lalsia
+            </h1>
+            <p class="text-secondary text-sm mb-3">
+              Lorem ipsum dolor sit amet consectetur.
+            </p>
+
+            <div id="carouselExampleCaptions" class="carousel slide">
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://static.wixstatic.com/media/77ca98_578e0fd25c2f46038e0b5ba79380bb2a~mv2.png/v1/fill/w_600,h_288,al_c,q_85,enc_auto/Box%20Featured%20(1).png" class="d-block w-100" alt="..." />
+                  <div class="carousel-caption d-none d-md-block text-start">
+                    <h5 class="text-xs fw-light">Tips and Tricks</h5>
+                    <p class="capitalize">
+                      Create cozy dining room vibes
+                    </p>
+                    <h5 class="text-xs fw-light line-clamp-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, necessitatibus placeat. Commodi harum eveniet amet.</h5>
+                    <button class="btn text-xs text-white fw-normal ps-0">Read more</button>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="https://th.bing.com/th/id/OIP.5VfEUFfqlEA8zwQCmfDwKgHaEO?w=2000&h=1143&rs=1&pid=ImgDetMain" class="d-block w-100" alt="..." />
+                  <div class="carousel-caption d-none d-md-block text-start">
+                    <h5 class="text-xs fw-light">Tips and Tricks</h5>
+                    <p class="capitalize">
+                      Create cozy dining room vibes
+                    </p>
+                    <h5 class="text-xs fw-light line-clamp-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, necessitatibus placeat. Commodi harum eveniet amet.</h5>
+                    <button class="btn text-xs text-white fw-normal ps-0">Read more</button>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="https://www.glam.com/img/gallery/live-your-best-main-character-life-with-this-lived-in-decorating-trend/intro-1677614841.jpg" class="d-block w-100" alt="..." />
+                  <div class="carousel-caption d-none d-md-block text-start">
+                    <h5 class="text-xs fw-light ">Tips and Tricks</h5>
+                    <p class="capitalize">
+                      Create cozy dining room vibes
+                    </p>
+                    <h5 class="text-xs fw-light line-clamp-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, necessitatibus placeat. Commodi harum eveniet amet.</h5>
+                    <button class="btn text-xs text-white fw-normal ps-0">Read more</button>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 flex flex-col justify-between">
+          <div class=" flex">
+            <img
+              src="https://img.zumpercdn.com/538292187/1280x960?fit=crop&h=360&w=392"
+              alt=""
+              class="aspect-square h-[130px]"
+            />
+            <div class="p-2">
+              <p class="text-secondary text-xs mb-1">Tips and Tricks</p>
+              <p class="fw-semibold mb-1">
+                6 ways to give your home minimalstic vibes
+              </p>
+              <p class="text-secondary line-clamp-1 text-xs mb-1">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Dolorem, a.
+              </p>
+              <div class="flex justify-between gap-2 items-center">
+                <div class="flex justify-between gap-2 items-center">
+                  <img
+                    class="inline-block h-4 w-4 rounded-full ring-2 ring-white"
+                    src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80"
+                    alt=""
+                  />
+                  <p class="text-xs capitalize fw-semibold">by john smith</p>
+                </div>
+
+                <p
+                  class="text-xs text-secondary line-clamp-1 capitalize fw-medium"
+                >
+                  by john smith
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class=" flex">
+            <img
+              src="https://media.designcafe.com/wp-content/uploads/2019/12/17055343/simple-living-room-interior-415x415.jpg"
+              alt=""
+              class="aspect-square h-[130px]"
+            />
+            <div class="p-2">
+              <p class="text-secondary text-xs mb-1">Tips and Tricks</p>
+              <p class="fw-semibold mb-1">
+                6 ways to give your home minimalstic vibes
+              </p>
+              <p class="text-secondary line-clamp-1 text-xs mb-1">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Dolorem, a.
+              </p>
+              <div class="flex justify-between gap-2 items-center">
+                <div class="flex justify-between gap-2 items-center">
+                  <img
+                    class="inline-block h-4 w-4 rounded-full ring-2 ring-white"
+                    src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80"
+                    alt=""
+                  />
+                  <p class="text-xs capitalize fw-semibold">by john smith</p>
+                </div>
+
+                <p
+                  class="text-xs text-secondary line-clamp-1 capitalize fw-medium"
+                >
+                  by john smith
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class=" flex">
+            <img
+              src="https://wozniakinteriordesign.com/wp-content/uploads/2023/05/hero-img-1-300x265.jpg"
+              alt=""
+              class="aspect-square h-[130px]"
+            />
+            <div class="p-2">
+              <p class="text-secondary text-xs mb-1">Tips and Tricks</p>
+              <p class="fw-semibold mb-1">
+                6 ways to give your home minimalstic vibes
+              </p>
+              <p class="text-secondary line-clamp-1 text-xs mb-1">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Dolorem, a.
+              </p>
+              <div class="flex justify-between gap-2 items-center">
+                <div class="flex justify-between gap-2 items-center">
+                  <img
+                    class="inline-block h-4 w-4 rounded-full ring-2 ring-white"
+                    src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80"
+                    alt=""
+                  />
+                  <p class="text-xs capitalize fw-semibold">by john smith</p>
+                </div>
+
+                <p
+                  class="text-xs text-secondary line-clamp-1 capitalize fw-medium"
+                >
+                  by john smith
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-5">
+          <div>
+          <h1 class="text-sm fw-bold mb-2">furniture</h1>
+          <p class="line-clamp-4 text-xs">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti error consectetur culpa architecto nisi reprehenderit adipisci voluptate quo saepe. Accusantium, aliquid illum quibusdam at repellendus rem autem totam? Doloribus excepturi totam consequuntur placeat voluptate ipsum cupiditate commodi, porro beatae esse aut architecto neque deleniti molestias. Fuga recusandae natus ex eveniet!
+          </p>
+          </div>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-2">
+          <div>
+            <p class="text-sm fw-semibold mb-2">Products</p>
+            <p class="text-xs fw-medium mb-2 capitalize">new arrivals</p>
+            <p class="text-xs fw-medium mb-2 capitalize">best selling</p>
+            <p class="text-xs fw-medium mb-2 capitalize">home decore</p>
+            <p class="text-xs fw-medium mb-2 capitalize">kitcen set</p>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div>
+            <p class="text-sm fw-semibold mb-2">Products</p>
+            <p class="text-xs fw-medium mb-2 capitalize">Catalog</p>
+            <p class="text-xs fw-medium mb-2 capitalize">best selling</p>
+            <p class="text-xs fw-medium mb-2 capitalize">FaQ</p>
+            <p class="text-xs fw-medium mb-2 capitalize">Pricing</p>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div>
+            <p class="text-sm fw-semibold mb-2">Follow us</p>
+            <p class="text-xs fw-medium mb-2 capitalize">facebook</p>
+            <p class="text-xs fw-medium mb-2 capitalize">instagram</p>
+            <p class="text-xs fw-medium mb-2 capitalize">twitter</p>
+          </div>
+        </div>
+       
+      </div>
+
+    </div>
+
+    <div class="bg-gray-300">
+      <div class="container flex justify-between py-3">
+        <p class="text-[10px] ">
+          &copy; 2024, All rights reserved
+        </p>
+
+        <div class="flex flex-row gap-2">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-linkedin"></i>
+        </div>
+      </div>
+    </div>
+
+   
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
