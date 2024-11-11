@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Gym</title>
+    <style>
+      * {
+        font-family: "Maven Pro", sans-serif;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .gradient:nth-child(1) {
+        background: rgb(25, 26, 38);
+        background: linear-gradient(
+          20deg,
+          rgba(25, 26, 38, 1) 27%,
+          rgba(12, 24, 96, 1) 77%
+        );
+      }
+      .gradient:nth-child(2) {
+        background: rgb(15, 28, 98);
+        background: linear-gradient(
+          151deg,
+          rgba(15, 28, 98, 1) 27%,
+          rgba(27, 32, 54, 1) 77%
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row mx-0 h-[100vh]">
+      <div class="col-md-1 bg-[#dadbdf]">
+        <aside class="flex sm:flex-col  items-center p-3 h-100">
+          <img class="w-[40px] min-w-[40px]" src="./images/image.png" alt="" />
+          <div class="flex sm:flex-col h-100 justify-center items-center">
+            <div class="flex sm:flex-col justify-between items-center gap-4">
+              <div
+                class="p-2 w-10 flex items-center justify-center hover:bg-white rounded-2 cursor-pointer"
+              >
+                <img class="w-100" src="./images/pie.png" alt="" />
+              </div>
+              <div
+                class="p-2 w-10 flex items-center justify-center hover:bg-white rounded-2 cursor-pointer"
+              >
+                <img class="w-100" src="./images/people.png" alt="" />
+              </div>
+              <div
+                class="p-2 w-10 flex items-center justify-center hover:bg-white rounded-2 cursor-pointer"
+              >
+                <img class="w-100" src="./images/graph.png" alt="" />
+              </div>
+              <div
+                class="p-2 w-10 flex items-center justify-center hover:bg-white rounded-2 cursor-pointer"
+              >
+                <img class="w-100" src="./images/gear.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+      <div class="col-md-4 px-0">
+        <div class="bg-blue-500 p-5 text-white">
+          <h1 class="text-2xl flex gap-2 mb-5">
+            <img class="w-6" src="./images/sun.png" alt="" /> Morning Walk
+          </h1>
+          <div class="flex gap-2 flex-wrap">
+            <div class="min-w-[118px]">
+              <div class="flex gap-3">
+                <div
+                  class="border-1 hover:border-gray-300 w-[40px] h-[40px] min-w-[40px] min-h-[40px] rounded-circle p-1"
+                >
+                  <img class="w-100" src="./images/running.png" alt="" />
+                </div>
+                <div>
+                  <p class="text-sm whitespace-nowrap">Running</p>
+                  <p class="text-lg whitespace-nowrap">130 km</p>
+                </div>
+              </div>
+            </div>
+            <div class="min-w-[118px]">
+              <div class="flex gap-3">
+                <div
+                  class="border-1 hover:border-gray-300 w-[40px] h-[40px] min-w-[40px] min-h-[40px] rounded-circle p-1"
+                >
+                  <img class="w-100 invert" src="./images/watch.png" alt="" />
+                </div>
+                <div>
+                  <p class="text-sm whitespace-nowrap">Duration</p>
+                  <p class="text-lg whitespace-nowrap">31:12 h</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="shadow-lg">
+          <div class="row mx-0">
+            <div class="col-6 gradient">
+              <div class="px-3 py-2 text-white">
+                <img
+                  src="./images/chicken-leg (2).png"
+                  class="w-10 float-end"
+                  alt=""
+                />
+                <br />
+                <br />
+                <p class="text-sm">Protien</p>
+                <p class="text-lg">15/40g</p>
+              </div>
+            </div>
+            <div class="col-6 gradient">
+              <div class="px-3 py-2 text-white">
+                <img src="./images/leafs.png" class="w-10 float-end" alt="" />
+                <br />
+                <br />
+                <p class="text-sm">Protien</p>
+                <p class="text-lg">15/40g</p>
+              </div>
+            </div>
+            <div class="col-6 gradient bg-[#1f212a]">
+              <div class="px-3 py-2 text-white">
+                <img src="./images/fire.png" class="w-10 float-end" alt="" />
+                <br />
+                <br />
+                <p class="text-sm">Protien</p>
+                <p class="text-lg">15/40g</p>
+              </div>
+            </div>
+            <div class="col-6 gradient bg-[#191b24]">
+              <div class="px-3 py-1 text-white">
+                <img src="./images/drop.png " class="w-10 float-end" alt="" />
+                <br />
+                <br />
+                <p class="text-sm">Protien</p>
+                <p class="text-lg">15/40g</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-3 bg-[#d2d1d1] flex gap-3 justify-between">
+          <div class="flex gap-3 justify-between">
+            <img class="w-[40px] h-[40px]" src="./images/fish.png" alt="" />
+            <div>
+              <p class="text-sm">Brazilian Stew</p>
+              <p class="text-lg fw-semibold">Breakfast</p>
+            </div>
+          </div>
+          <div class="flex items-center text-sm">cal-123 kcl</div>
+        </div>
+        <div class="p-3 bg-[#dedede] flex gap-3 justify-between">
+          <div class="flex gap-3 justify-between">
+            <img class="w-[40px] h-[40px]" src="./images/fish.png" alt="" />
+            <div>
+              <p class="text-sm">Brazilian Stew</p>
+              <p class="text-lg fw-semibold">Lunch</p>
+            </div>
+          </div>
+          <div class="flex items-center text-sm">cal-123 kcl</div>
+        </div>
+        <div class="p-3 bg-[#d2d1d1] flex gap-3 justify-between">
+          <div class="flex gap-3 justify-between">
+            <img class="w-[40px] h-[40px]" src="./images/fish.png" alt="" />
+            <div>
+              <p class="text-sm">Brazilian Stew</p>
+              <p class="text-lg fw-semibold">Breakfast</p>
+            </div>
+          </div>
+          <div class="flex items-center text-sm">cal-123 kcl</div>
+        </div>
+      </div>
+      <div class="col-md-7 px-0">
+        <div class="bg-[#191a23] p-5 text-white">
+          <h1 class="text-2xl flex gap-2 mb-5">
+            <img class="w-[30px]" src="./images/fire.png" alt="" /> Morning Walk
+          </h1>
+          <div class="flex gap-2 flex-wrap">
+            <div class="mb-2 min-w-[118px]">
+              <div class="">
+                <p class="text-sm line-clamp-2 w-50">
+                  Lorem Lorem, ipsum dolor sit amet consectetur adipisicing
+                  elit. Eius eligendi quas eum earum incidunt assumenda
+                  molestiae accusamus esse adipisci, dignissimos accusantium
+                  libero enim vel! Earum consectetur aliquid veritatis
+                  blanditiis excepturi. ipsum dolor sit amet, consectetur
+                  adipisicing elit. Architecto, minus.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mx-0">
+          <div class="col-md-6 border-1">
+            <div class="p-3">
+              <div
+                class="flex justify-between items-center text-secondary border-bottom mb-4 fw-medium"
+              >
+                <div
+                  class="flex group justify-between items-center py-4 position-relative h-[30px]"
+                >
+                  <a href="" class="group-hover:text-black">Chest</a>
+                  <div
+                    class="position-absolute hidden group-hover:block bottom-0 h-[3px] bg-blue-500 w-100"
+                  ></div>
+                </div>
+                <div
+                  class="flex group justify-between items-center py-4 position-relative h-[30px]"
+                >
+                  <a href="" class="group-hover:text-black">Shoulder</a>
+                  <div
+                    class="position-absolute hidden group-hover:block bottom-0 h-[3px] bg-blue-500 w-100"
+                  ></div>
+                </div>
+                <div
+                  class="flex group justify-between items-center py-4 position-relative h-[30px]"
+                >
+                  <a href="" class="group-hover:text-black">Legs</a>
+                  <div
+                    class="position-absolute hidden group-hover:block bottom-0 h-[3px] bg-blue-500 w-100"
+                  ></div>
+                </div>
+                <div
+                  class="flex group justify-between items-center py-4 position-relative h-[30px]"
+                >
+                  <a href="" class="group-hover:text-black">Abs</a>
+                  <div
+                    class="position-absolute hidden group-hover:block bottom-0 h-[3px] bg-blue-500 w-100"
+                  ></div>
+                </div>
+              </div>
+              <img src="./images/human.png" alt="" />
+              <div class="border-top mt-4 flex justify-between">
+                <p class="text-sm text-secondary fw-medium">Height:6ft 4inch</p>
+                <p class="text-sm text-secondary">Weight:145 lbs</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 px-0 border-1">
+            <div class="p-3 bg-[#dedede]">
+              <div class="flex items-center justify-between mb-3">
+                <p class="text-lg fw-medium">Calories</p>
+                <img class="w-50" src="./images/meter.png" alt="" />
+              </div>
+              <div class="flex items-center justify-between mb-3">
+                <div>
+                  <p class="text-sm text-secondary fw-medium">consumed</p>
+                  <p class="text-lg fw-medium">130 Cal</p>
+                </div>
+                <div>
+                  <p class="text-sm text-secondary fw-medium">Remaining</p>
+                  <p class="text-lg fw-medium">70 Cal</p>
+                </div>
+              </div>
+            </div>
+            <div class="p-3 bg-[#d7d6d6]">
+              <div class="flex items-center justify-between mb-3">
+                <p class="text-lg fw-medium">Heart</p>
+                <img class="w-50" src="./images/line.png" alt="" />
+              </div>
+              <div class="flex items-center justify-between mb-3">
+                <div>
+                  <p class="text-sm text-secondary fw-medium">Today</p>
+                  <p class="text-lg fw-medium">110 Bpm</p>
+                </div>
+                <div>
+                  <p class="text-sm text-secondary fw-medium">Yesterday</p>
+                  <p class="text-lg fw-medium">130 Bpa</p>
+                </div>
+              </div>
+            </div>
+            <div class="p-3 bg-[#dedede]">
+              <div class="flex items-center justify-between mb-3">
+                <p class="text-lg fw-medium">Water</p>
+                <img class="w-50" src="./images/meter2.png" alt="" />
+              </div>
+              <div class="flex items-center justify-between mb-3">
+                <div>
+                  <p class="text-sm text-secondary fw-medium">consumed</p>
+                  <p class="text-lg fw-medium">3 L</p>
+                </div>
+                <div>
+                  <p class="text-sm text-secondary fw-medium">Remaining</p>
+                  <p class="text-lg fw-medium">05 L</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
