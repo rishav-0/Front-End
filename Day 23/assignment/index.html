@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Twitter</title>
+    <style>
+      * {
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #06141d;
+      }
+      input {
+        font-weight: 300;
+      }
+      input:focus-visible {
+        border: none;
+        outline: 0;
+      }
+      input::placeholder {
+        font-weight: 300;
+        padding: 5px;
+      }
+      .glow{
+        -webkit-box-shadow:0px 0px 147px 0px rgba(45,255,196,0.74);
+        -moz-box-shadow: 0px 0px 147px 0px rgba(45,255,196,0.74);
+        box-shadow: 0px 0px 147px 0px rgba(45,255,196,0.74);
+      }
+        .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+      }
+     
+    </style>
+  </head>
+  <body class="pb-2">
+    <div class=" flex-wrap gap-2 z-10 sticky top-0 bg-[#06141d]  flex justify-between p-3 items-center">
+      <div class="flex gap-2 flex-wrap items-center">
+        <img src="./images/twitter.png" class="w-[30px] h-[30px]" alt="" />
+        <input
+          type="search o"
+          placeholder="# Explore"
+          class="fw-light p-1 rounded-2 bg-[#1b2730] text-white"
+          id=""
+        />
+      </div>
+      <div class="flex gap-4 flex-wrap items-center">
+        <button class="btn flex gap-2 rounded-pill bg-white">
+          <img class="w-[20px]" src="./images/home (1).png" alt="" />
+          Home
+        </button>
+        <img
+          src="./images/joystick.png"
+          class="w-[20px] h-[20px] cursor-pointer"
+          alt=""
+        />
+        <img
+          src="./images/sithi.png"
+          class="w-[20px] h-[20px] invert cursor-pointer"
+          alt=""
+        />
+        <div class="position-relative">
+          <div
+            class="flex items-center justify-center text-white p-2 w-[15px] h-[15px] rounded-circle bg-[#055479] position-absolute end-0 z-10"
+          >
+            8
+          </div>
+          <img
+            src="./images/bell.png"
+            class="w-[22px] h-[22px] invert cursor-pointer"
+            alt=""
+          />
+        </div>
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary rounded-pill bg-[#1b2730] border-0"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <div class="flex items-center gap-2">
+                <div class="w-[24px] h-[24px] rounded-circle overflow-hidden flex">
+                    <img src="./images/profile.png" alt="">
+                </div>
+                <p class="text-sm flex items-center gap-2">Rishav RT<i class="mt-[-4px] fa-solid fa-sort-down"></i></p>
+                
+            </div>
+          </button>
+          <ul class="dropdown-menu bg-[#1b2730] text-white">
+            <li><a class="dropdown-item text-white" href="#">Action</a></li>
+            <li><a class="dropdown-item text-white" href="#">Another action</a></li>
+            <li><a class="dropdown-item text-white" href="#">Something else here</a></li>
+          </ul>
+        </div>
+        <img src="./images/menu.png" class="w-[20px] h-[20px] invert cursor-pointer" alt="">
+      </div>
+    </div>
+    <div class="row py-3 mx-0">
+      <div class="col-md-3 mb-3 main-height">
+        <div class="rounded-4 bg-[#1b2730] overflow-hidden">
+          <img class="w-100" src="https://i.pinimg.com/736x/e2/2f/14/e22f1485bb68385d42f060d3aea594c9.jpg" alt="">
+          <div class="position-relative text-center text-white px-5 pt-5 pb-4  border-b-2 border-slate-600">
+            <div class="position-absolute top-[-25px] left-1/2 transform -translate-x-1/2  w-[50px] h-[50] overflow-hidden object-fit-contain rounded-circle">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1b55xRJWlCQP6vPrRAj2oDikLKV-zaHVfDA&s" alt="">
+            </div>
+            <p class="">Rishav Talukdar</p>
+            <p class="text-secondary text-sm">@rishav</p>
+            <p class=" text-sm line-clamp-2 fw-light">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis!
+            </p>
+          </div>
+          <div class="row text-white py-3 border-b-2 border-slate-600">
+            <div class="col-md-6 border-e-2 border-slate-600">
+              <div class="text-center  ">
+              <p>6,664</p>
+              <p>Following</p>
+            </div>
+            </div>
+            <div class="col-md-6">
+              <div class="text-center "">
+              <p>6,664</p>
+              <p>Following</p>
+            </div>
+            </div>
+          </div>
+          <div class="text-center p-3">
+            <a href="" class="text-sm text-primary">My Profile</a>
+          </div>
+        </div>
+        <br/>
+        <div class="p-3 text-white bg-[#1b2730] rounded-4 ">
+          <p class="mb-2 whitespace-nowrap">Who is to follow you</p>
+          <div class="flex items-center mb-2 justify-between flex-wrap gap-3">
+            <div class="flex items-center justify-between gap-3">
+              <div class="w-[30px] h-[30px] rounded-circle overflow-hidden object-fit-contain">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Elon_Musk_Royal_Society_crop.jpg/330px-Elon_Musk_Royal_Society_crop.jpg" class="w-100"  alt="">
+              </div>
+              <div class="min-w-[100px] overflow-hidden">
+                <p class="text-sm whitespace-nowrap line-clamp-1">Elon Musk</p>
+                <p class="text-xs text-slate-400 line-clamp-1">@elon</p>
+              </div>
+            </div>
+            <button class="btn btn-light text-sm rounded-pill text-dark">
+              Follow
+            </button>
+          </div>
+          <div class="flex items-center mb-2 justify-between flex-wrap gap-3">
+            <div class="flex items-center justify-between gap-3">
+              <div class="w-[30px] h-[30px] rounded-circle overflow-hidden object-fit-contain">
+                <img src="https://static01.nyt.com/images/2024/09/04/business/00zuckerberg/00zuckerberg-articleLarge.jpg?quality=75&auto=webp&disable=upscale" class="w-100"  alt="">
+              </div>
+              <div>
+                <p class="text-sm truncate">Mark Zuckerberg</p>
+                <p class="text-xs text-slate-400 line-clamp-1">@mark</p>
+              </div>
+            </div>
+            <button class="btn btn-light text-sm rounded-pill text-dark">
+              Follow
+            </button>
+          </div>
+          <div class="flex items-center mb-2 justify-between flex-wrap gap-3">
+            <div class="flex items-center justify-between gap-3">
+              <div class="w-[30px] h-[30px] rounded-circle overflow-hidden">
+                <img src="https://yt3.googleusercontent.com/WuPodYLA22bumFSAnf654wJ8cE7n2Zb8M2KEF5B3RiyziqLTXQpp6JXBYOSH8zifY_jihWVq=s900-c-k-c0x00ffffff-no-rj" class="w-100"  alt="">
+              </div>
+              <div>
+                <p class="text-sm truncate ">Bill Gates</p>
+                <p class="text-xs text-slate-400 line-clamp-1">@elon</p>
+              </div>
+            </div>
+            <button class="btn btn-light text-sm rounded-pill text-dark">
+              Follow
+            </button>
+          </div>
+          <a href="" class="text-primary text-sm">See more</a>
+        </div>
+      </div>
+      <div class="col-md-6  mb-3 main-height">
+        <div class="rounded-4 p-3 bg-[#1b2730] ">
+          <div class="flex gap-2">
+            <div class="object-fit-contain overflow-hidden rounded-circle w-[40px] min-w-[40px] h-[40px] min-h-[40px]">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1b55xRJWlCQP6vPrRAj2oDikLKV-zaHVfDA&s" class="w-100" alt="">
+            </div> 
+            <div class="w-100">
+              <input class="mb-2 p-2 text-slate-400 post-type bg-[#28343e] rounded-2 p-2 placeholder:p-2 w-100" type="text" placeholder="What's happening?">
+              <div class="flex gap-2 justify-between flex-wrap w-100">
+                <div class="btn btn-outline-secondary  flex gap-2 items-center rounded-pill text-sm">
+                  <img src="./images/jpg.png" class="h-[16px] w-[16px]" alt=""> 
+                  Photo
+                </div>  
+                <div class="btn btn-outline-secondary  flex gap-2 items-center rounded-pill text-sm">
+                  <img src="./images/pause.png" class="h-[16px] w-[16px]" alt=""> 
+                  Video
+                </div>  
+                <div class="btn btn-outline-secondary  flex gap-2 items-center rounded-pill text-sm">
+                  <img src="./images/link.png" class="h-[16px] w-[16px]" alt=""> 
+                  Thread
+                </div>  
+                <div class="btn btn-outline-secondary  flex gap-2 items-center rounded-pill text-sm">
+                  <img src="./images/calendar.png" class="h-[16px] w-[16px]" alt=""> 
+                  Schedule
+                </div>  
+              </div>
+            </div>
+          </div>
+         
+        </div>
+        <br/>
+        <div class="overflow-auto h-[486px] flex jusrify-between no-scrollbar flex-col">
+
+          <div class="mb-3 rounded-4 p-3 bg-[#1b2730] text-white" >
+            <div class="flex items-center justify-between mb-2">
+              <div class="flex items-center gap-2 jusrify-between">
+                <div class="object-fit-contain overflow-hidden rounded-circle w-[40px] min-w-[40px] h-[40px] min-h-[40px]">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1b55xRJWlCQP6vPrRAj2oDikLKV-zaHVfDA&s" class="w-100" alt="">
+                </div>
+                <div>
+                  <p class="text-sm flex items-center">Rishav Talukdar <img src="https://parspng.com/wp-content/uploads/2022/07/tickpng.parspng.com-4.png" class="w-[24px] h-[24px]" alt=""> <span class="text-slate-400 text-xs">@elonmusk</span></p>
+                  <p class="text-xs text-slate-400">Few Minutes ago</p>
+                </div>
+              </div> 
+                <i class="text-slate-500 cursor-pointer fas fa-ellipsis"></i>
+            </div>
+            <div class="flex gap-2 justify-between">
+              <div class="w-[40px] min-w-[40px]"></div>
+              <div>
+                <p class="mb-2 line-clamp-2 text-sm fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero voluptas ipsa aperiam, voluptatum perferendis ipsum.</p>
+                <div class="flex justify-between mb-3">
+                  <div class="flex gap-1 items-center">
+                    <img src="./images/heart.png" class="w-[18px] h-[18px]" alt="">
+                    <img src="./images/loop.png" class="w-[18px] h-[18px]" alt="">
+                    <img src="./images/thumbsup.png" class="w-[18px] h-[18px]" alt="">
+                    <p class="text-xs text-slate-400">214k</p>
+                  </div>
+                  <p class="text-slate-400 text-xs">45 Comments</p>
+                </div>
+                <div class="flex gap-2 items-center flex-wrap justify-between">
+                  <button class="btn px-4 whitespace-nowrap bg-[#28343e] text-white text-xs">
+                    <i class="fa-solid fa-heart pe-2"></i>
+                    Like
+                  </button>
+                  <button class="btn px-4 whitespace-nowrap  bg-[#28343e] text-white text-xs">
+                    <i class="fa-solid fa-retweet pe-2"></i>
+                    Retweet
+                  </button>
+                  <button class="btn px-4 whitespace-nowrap  bg-[#28343e] text-white text-xs">
+                    <i class="fa-solid fa-comment pe-2"></i>
+                    Comment
+                  </button>
+                  <button class="btn btn-outline-secondary text-xs">
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-3 rounded-4 p-3 bg-[#1b2730] text-white" >
+            <div class="flex items-center justify-between mb-2">
+              <div class="flex items-center gap-2 jusrify-between">
+                <div class="object-fit-contain overflow-hidden rounded-circle w-[40px] min-w-[40px] h-[40px] min-h-[40px]">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Elon_Musk_Royal_Society_crop.jpg/330px-Elon_Musk_Royal_Society_crop.jpg" class="w-100" alt="">
+                </div>
+                <div>
+                  <p class="text-sm flex items-center">Elon Musk <img src="https://parspng.com/wp-content/uploads/2022/07/tickpng.parspng.com-4.png" class="w-[24px] h-[24px]" alt=""> <span class="text-slate-400 text-xs">@elonmusk</span></p>
+                  <p class="text-xs text-slate-400">Few Minutes ago</p>
+                </div>
+              </div> 
+                <i class="text-slate-500 cursor-pointer fas fa-ellipsis"></i>
+            </div>
+            <div class="flex gap-2 justify-between">
+              <div class="w-[40px] min-w-[40px]"></div>
+              <div>
+                <p class="mb-2 line-clamp-2 text-sm fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero voluptas ipsa aperiam, voluptatum perferendis ipsum.</p>
+                <div class="object-fit-contain rounded-4 overflow-hidden mb-2">
+                  <img class="w-100" src="https://t3.ftcdn.net/jpg/08/18/52/32/360_F_818523251_T67ETZ2Dx8YMq9aQKgTeRw4ok5mCaeou.jpg" alt="">
+                </div>
+                <div class="flex justify-between mb-3">
+                  <div class="flex gap-1 items-center">
+                    <img src="./images/heart.png" class="w-[18px] h-[18px]" alt="">
+                    <img src="./images/loop.png" class="w-[18px] h-[18px]" alt="">
+                    <img src="./images/thumbsup.png" class="w-[18px] h-[18px]" alt="">
+                    <p class="text-xs text-slate-400">214k</p>
+                  </div>
+                  <p class="text-slate-400 text-xs">45 Comments</p>
+                </div>
+                <div class="flex gap-2 items-center flex-wrap justify-between">
+                  <button class="btn px-4 whitespace-nowrap bg-[#28343e] text-white text-xs">
+                    <i class="fa-solid fa-heart pe-2"></i>
+                    Like
+                  </button>
+                  <button class="btn px-4 whitespace-nowrap  bg-[#28343e] text-white text-xs">
+                    <i class="fa-solid fa-retweet pe-2"></i>
+                    Retweet
+                  </button>
+                  <button class="btn px-4 whitespace-nowrap  bg-[#28343e] text-white text-xs">
+                    <i class="fa-solid fa-comment pe-2"></i>
+                    Comment
+                  </button>
+                  <button class="btn btn-outline-secondary text-xs">
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-3 rounded-4 p-3 bg-[#1b2730] text-white" >
+            <div class="flex items-center justify-between mb-2">
+              <div class="flex items-center gap-2 jusrify-between">
+                <div class="object-fit-contain overflow-hidden rounded-circle w-[40px] min-w-[40px] h-[40px] min-h-[40px]">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1b55xRJWlCQP6vPrRAj2oDikLKV-zaHVfDA&s" class="w-100" alt="">
+                </div>
+                <div>
+                  <p class="text-sm flex items-center">Rishav Talukdar <img src="https://parspng.com/wp-content/uploads/2022/07/tickpng.parspng.com-4.png" class="w-[24px] h-[24px]" alt=""> <span class="text-slate-400 text-xs">@elonmusk</span></p>
+                  <p class="text-xs text-slate-400">Few Minutes ago</p>
+                </div>
+              </div> 
+                <i class="text-slate-500 cursor-pointer fas fa-ellipsis"></i>
+            </div>
+            <div class="flex gap-2 justify-between">
+              <div class="w-[40px] min-w-[40px]"></div>
+              <div>
+                <p class="mb-2 line-clamp-2 text-sm fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero voluptas ipsa aperiam, voluptatum perferendis ipsum.</p>
+                <div class="flex justify-between mb-3">
+                  <div class="flex gap-1 items-center">
+                    <img src="./images/heart.png" class="w-[18px] h-[18px]" alt="">
+                    <img src="./images/loop.png" class="w-[18px] h-[18px]" alt="">
+                    <img src="./images/thumbsup.png" class="w-[18px] h-[18px]" alt="">
+                    <p class="text-xs text-slate-400">214k</p>
+                  </div>
+                  <p class="text-slate-400 text-xs">45 Comments</p>
+                </div>
+                <div class="flex gap-2 items-center flex-wrap justify-between">
+                  <button class="btn px-4 whitespace-nowrap bg-[#28343e] text-white text-xs">
+                    <i class="fa-solid fa-heart pe-2"></i>
+                    Like
+                  </button>
+                  <button class="btn px-4 whitespace-nowrap  bg-[#28343e] text-white text-xs">
+                    <i class="fa-solid fa-retweet pe-2"></i>
+                    Retweet
+                  </button>
+                  <button class="btn px-4 whitespace-nowrap  bg-[#28343e] text-white text-xs">
+                    <i class="fa-solid fa-comment pe-2"></i>
+                    Comment
+                  </button>
+                  <button class="btn btn-outline-secondary text-xs">
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+         
+        </div>
+        
+      </div>
+      <div class="col-md-3">
+        <div class="bg-[#1b2730] rounded-4 overflow-hidden p-3">
+          <div class="flex items-center justify-between text-white mb-3">
+            <p>Trend for you</p>
+            <i class="fas fa-gear"></i>
+          </div>
+          <div class="mb-3">
+
+            <p class="text-xs text-slate-400 uppercase mb-2">trending in indonesia</p>
+            <div class="flex justify-between items-center mb-3">
+              <div class="text-white">
+                <p>#Minions</p>
+                <p class="text-xs">97.7 k Tweets</p>
+              </div>
+              <i class="fas fa-ellipsis text-slate-400"></i>
+            </div>
+            <div class="flex justify-between  items-center mb-3">
+              <div class="text-white">
+                <p>#Minions</p>
+                <p class="text-xs">97.7 k Tweets</p>
+              </div>
+              <i class="fas fa-ellipsis text-slate-400"></i>
+            </div>
+            <div class="border-slate-500 border-b-2"></div>
+          </div>
+          <div class="mb-3">
+
+            <p class="text-xs text-slate-400 uppercase mb-2">trending in indonesia</p>
+            <div class="flex justify-between items-center mb-3">
+              <div class="text-white">
+                <p>#Minions</p>
+                <p class="text-xs">97.7 k Tweets</p>
+              </div>
+              <i class="fas fa-ellipsis text-slate-400"></i>
+            </div>
+            <div class="flex justify-between  items-center mb-3">
+              <div class="text-white">
+                <p>#Minions</p>
+                <p class="text-xs">97.7 k Tweets</p>
+              </div>
+              <i class="fas fa-ellipsis text-slate-400"></i>
+            </div>
+            <div class="border-slate-500 border-b-2"></div>
+          </div>
+          <div class="mb-3">
+
+            <p class="text-xs text-slate-400 uppercase mb-2">trending in indonesia</p>
+            <div class="flex justify-between items-center mb-3">
+              <div class="text-white">
+                <p>#Minions</p>
+                <p class="text-xs">97.7 k Tweets</p>
+              </div>
+              <i class="fas fa-ellipsis text-slate-400"></i>
+            </div>
+            <div class="flex justify-between  items-center mb-3">
+              <div class="text-white">
+                <p>#Minions</p>
+                <p class="text-xs">97.7 k Tweets</p>
+              </div>
+              <i class="fas fa-ellipsis text-slate-400"></i>
+            </div>
+                     <a href="" class="text-primary text-sm">See more</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+   
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

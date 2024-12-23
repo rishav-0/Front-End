@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Portfolio</title>
+    <style>
+      * {
+        font-family: "Roboto", serif;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        color: white;
+      }
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      /* Track */
+      ::-webkit-scrollbar-track {
+        box-shadow: 0;
+        border-radius: 0;
+      }
+
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: #334169;
+        border-radius: 10px;
+      }
+
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: #dcdcdc;
+      }
+      @media (max-width: 577px) {
+        .hide {
+          display: none;
+        }
+        .unhide {
+          display: block !important;
+        }
+        .aside{
+          max-width: 50px;
+        }
+      }
+    </style>
+  </head>
+  <body class="h-screen bg-[#0d111d] overflow-hidden">
+    <!-- <div class="row mx-0 border-1 border-slate-300 bg-[#0d111d]">
+        <div class="col-md-2 text-white">
+            <div class="p-2">
+                <p class="text-lg mb-2 flex gap-2 items-center">
+                    <img class="bg-slate-300 p-1 rounded-2 cursor-pointer invert w-[30px] h-[30px]" src="./imgages/logo.png" alt=""> 
+                    Rishav UI
+                </p>
+                <div class="border-2 border-slate-500 rounded-2 p-2 flex items-center text-sm gap-2">
+                    <i class="fa-solid text-slate-400 fa-magnifying-glass "></i>
+                    <input type="search" placeholder=" Search " class="bg-[#0d111d] ">
+                </div>
+            </div>
+            
+        </div>
+        <div class="text-white col-md-10 border-s-2 border-slate-300">dd</div>
+    </div> -->
+
+    <div class="flex  h-100 overflow-hidden">
+      <div
+        class="flex aside flex-col justify-between border-white w-[250px] overflow-y-auto overflow-x-hidden"
+      >
+        <div class="">
+          <div class="sticky bg-[#0d111d] top-0">
+            <div class="p-3">
+              <p class="text-lg mb-2 flex gap-2 items-center">
+                <img
+                  class="bg-slate-300 p-1 rounded-2 cursor-pointer invert w-[30px] h-[30px]"
+                  src="./imgages/logo.png"
+                  alt=""
+                />
+                Rishav UI
+              </p>
+              
+            </div>
+          </div>
+          <div class="flex flex-col gap-10">
+            <div class="p-3">
+              <div class="flexitems-center justify-between gap-2 mb-3">
+                <div class="hide">
+                  <div class="flex items-center gap-2">
+                    <img
+                      src="./imgages/home.png"
+                      class="w-[20px] h-[20px] invert"
+                      alt=""
+                    />
+                    <p class="text-sm text-slate-400">Home</p>
+                  </div>
+                </div>
+                <div class="unhide hidden">
+                  <div
+                    class="flex items-center gap-2"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="right"
+                    data-bs-title="Home"
+                  >
+                    <img
+                      src="./imgages/home.png"
+                      class="w-[20px] h-[20px] invert"
+                      alt=""
+                    />
+                  </div>
+                </div>
+
+                <!-- <i class="fa-solid fa-angle-down text-slate-400"></i> -->
+              </div>
+              <div class="flexitems-center justify-between gap-2 mb-3">
+                <div class="hide">
+                  <div class="flex items-center gap-2">
+                    <img
+                      src="./imgages/project.png"
+                      class="w-[20px] h-[20px] invert"
+                      alt=""
+                    />
+                    <p class="text-sm text-slate-400">Projects</p>
+                  </div>
+                </div>
+                <div class="unhide hidden">
+                  <div
+                    class="flex items-center gap-2"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="right"
+                    data-bs-title="Projects"
+                  >
+                    <img
+                      src="./imgages/project.png"
+                      class="w-[20px] h-[20px] invert"
+                      alt=""
+                    />
+                  </div>
+                </div>
+
+                <!-- <i class="fa-solid fa-angle-down text-slate-400"></i> -->
+              </div>
+              <div class="flexitems-center justify-between gap-2 mb-3">
+                <div class="hide">
+                  <div class="flex items-center gap-2">
+                    <img
+                      src="./imgages/tasks.png"
+                      class="w-[20px] h-[20px] invert"
+                      alt=""
+                    />
+                    <p class="text-sm text-slate-400">Tasks</p>
+                  </div>
+                </div>
+                <div class="unhide hidden">
+                  <div
+                    class="flex items-center gap-2"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="right"
+                    data-bs-title="Tasks"
+                  >
+                    <img
+                      src="./imgages/tasks.png"
+                      class="w-[20px] h-[20px] invert"
+                      alt=""
+                    />
+                  </div>
+                </div>
+
+                <!-- <i class="fa-solid fa-angle-down text-slate-400"></i> -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-[#0d111d] sticky bottom-0">
+          <div class="p-3">
+            <div class="flexitems-center justify-between gap-2 mb-3">
+              <div class="hide">
+                <div class="flex items-center gap-2">
+                  <img
+                    src="./imgages/support.png"
+                    class="w-[20px] h-[20px] invert"
+                    alt=""
+                  />
+                  <p class="text-sm text-slate-400">Support</p>
+                </div>
+              </div>
+              <div class="unhide hidden">
+                <div
+                  class="flex items-center gap-2"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="right"
+                  data-bs-title="Support"
+                >
+                  <img
+                    src="./imgages/support.png"
+                    class="w-[20px] h-[20px] invert"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <!-- <i class="fa-solid fa-angle-down text-slate-400"></i> -->
+            </div>
+            <div class="flexitems-center justify-between gap-2 mb-3">
+              <div class="hide">
+                <div class="flex items-center gap-2">
+                  <img
+                    src="./imgages/project.png"
+                    class="w-[20px] h-[20px] invert"
+                    alt=""
+                  />
+                  <p class="text-sm text-slate-400">Projects</p>
+                </div>
+              </div>
+              <div class="unhide hidden">
+                <div
+                  class="flex items-center gap-2"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="right"
+                  data-bs-title="Projects"
+                >
+                  <img
+                    src="./imgages/project.png"
+                    class="w-[20px] h-[20px] invert"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <!-- <i class="fa-solid fa-angle-down text-slate-400"></i> -->
+            </div>
+            <div class="flex items-center justify-between">
+              <div class="flex gap-2">
+                <div
+                  class="flex items-center justify-center w-[30px] h-[30px] object-fit-contain rounded-circle overflow-hidden"
+                >
+                  <img
+                    src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    class="w-100"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <p class="text-xs">Rishav Talukdar</p>
+                  <p class="text-[10px] text-slate-400 truncate">
+                    talukdarrishav@outlook.com
+                  </p>
+                </div>
+              </div>
+              <div class="text-xs">
+                <i class="fas fa-right-from-bracket"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full overflow-y-auto overflow-x-hidden">
+        <div class="sticky bg-[#0d111d] top-0 p-2 pt-0 pb-5">
+          <div
+            class="rounded-4 mt-2 w-100 h-40 overflow-hidden object-fit-contain"
+          >
+            <img
+              src="https://t4.ftcdn.net/jpg/05/08/17/01/360_F_508170187_4Oonk4IG8u9eyfwSUvTASkT8hl71vRX2.jpg"
+              class="w-100 rounded-4"
+              alt=""
+            />
+          </div>
+
+          <div class="">
+            <div class="bg-[#0d111d] p-2">
+              <div class="flex  position-relative gap-2">
+                <div
+                  class="rounded-circle position-absolute top-[-30px] border-3 w-[120px] min-w-[120px] h-[120px] min-h-[120px] border-[#0d111d] overflow-hidden object-fit-contain"
+                >
+                  <img
+                    class="w-100"
+                    src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    alt=""
+                  />
+                </div>
+                <div class="w-[120px] min-w-[120px]"></div>
+                
+                <div class="flex flex-wrap p-2 w-100 justify-between">
+                  <div class="mb-2">
+                    <p class="text-lg">Rishav Talukdar</p>
+                    <p class="text-xs text-slate-400">
+                      I am a Frontend Developer
+                    </p>
+                  </div>
+
+                  <div class="flex items-center gap-2 flex-wrap justify-between">
+                    <button class="btn bg-[#20242f] text-sm fw-light truncate">
+                      <i class="fas fa-ellipsis"></i>
+                    </button>
+                    <button
+                      class="btn bg-[#20242f] text-sm text-white truncate fw-light"
+                    >
+                      <i class="fas fa-video"></i> Video call
+                    </button>
+                    <button
+                      class="btn bg-[#20242f] text-sm text-white fw-light truncate"
+                    >
+                      <i class="fa-solid fa-message"></i> Message
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-2">
+          <div
+            class="flex items-center justify-between p-2 pb-4 border-b-2 border-slate-800"
+          >
+            <div>
+              <p class="text-lg">Experience</p>
+              <p class="text-sm text-slate-400">I am frontend developer</p>
+            </div>
+            <i class="fas fa-ellipsis-vertical"></i>
+          </div>
+          <div class="py-4 px-2">
+            <div class="row">
+              <div class="col-md-7">
+                <p class="text-lg mb-2">About me</p>
+                <p class="text-sm text-slate-400 mb-2">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Facilis porro minima quasi saepe repellendus voluptas, totam
+                  harum doloremque excepturi soluta.
+                </p>
+                <p class="text-sm text-slate-400 mb-2">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Facilis porro minima quasi saepe repellendus voluptas, totam
+                  harum doloremque excepturi soluta.
+                </p>
+                <p class="text-sm text-slate-400 mb-2">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Facilis porro minima quasi saepe repellendus voluptas, totam
+                  harum doloremque excepturi soluta.
+                </p>
+              </div>
+              <div class="col-md-5">
+                <div class="flex gap-5 flex-wrap">
+                  <div >
+                    <p class="text-sm text-slate-400">Location</p>
+                    <p class="text-lg mb-2">Guwahati, Assam</p>
+                    <p class="text-sm text-slate-400">Portfolio</p>
+                    <a href="" class="text-lg mb-2"
+                      >@talukdarrishav <i class="fas fa-arrow-up z-[-10] position-relative rotate-45"></i
+                    ></a>
+                  </div>
+                  <div>
+                    <p class="text-sm text-slate-400">Location</p>
+                    <p class="text-lg mb-2">Guwahati, Assam</p>
+                    <p class="text-sm text-slate-400">Portfolio</p>
+                    <a href="" class="text-lg mb-2"
+                      >@talukdarrishav <i class="fas fa-arrow-up z-[-10] position-relative rotate-45"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-2">
+            <div class="col-md-4 mb-3">
+              <div class="p-2 bg-[#171b26] rounded-2">
+                <div class="flex gap-3 items-center mb-2">
+                  <div class="rounded-circle overflow-hidden object-fit-contain w-[30px] min-w-[30px] h-[30px] min-h-[30px] object-fit-contain">
+                    <img class="w-100" src="./imgages/html.png" alt="">
+                  </div>
+                  <div>
+                    <p class="text-lg">User Research</p>
+                    <p class="text-sm text-slate-400">Loom</p>
+                  </div>
+                </div>
+                <p class="text-xs text-slate-400">
+                  Mar 2017-Jan 2018
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div class="p-2 bg-[#171b26] rounded-2">
+                <div class="flex gap-3 items-center mb-2">
+                  <div class="rounded-circle overflow-hidden object-fit-contain w-[30px] min-w-[30px] h-[30px] min-h-[30px] object-fit-contain">
+                    <img class="w-100" src="./imgages/html.png" alt="">
+                  </div>
+                  <div>
+                    <p class="text-lg">User Research</p>
+                    <p class="text-sm text-slate-400">Loom</p>
+                  </div>
+                </div>
+                <p class="text-xs text-slate-400">
+                  Mar 2017-Jan 2018
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div class="p-2 bg-[#171b26] rounded-2">
+                <div class="flex gap-3 items-center mb-2">
+                  <div class="rounded-circle overflow-hidden object-fit-contain w-[30px] min-w-[30px] h-[30px] min-h-[30px] object-fit-contain">
+                    <img class="w-100" src="./imgages/html.png" alt="">
+                  </div>
+                  <div>
+                    <p class="text-lg">User Research</p>
+                    <p class="text-sm text-slate-400">Loom</p>
+                  </div>
+                </div>
+                <p class="text-xs text-slate-400">
+                  Mar 2017-Jan 2018
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center justify-between p-2 ">
+            
+              <p class="text-lg">Recent works</p>
+            
+            <i class="fas fa-ellipsis-vertical"></i>
+          </div>
+          <div class="row">
+            <div class="col-md-3 mb-3">
+              <div class="aspect-video">
+                <img src="./imgages/a.png" class="w-100" alt="">
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <div class="aspect-video">
+                <img src="./imgages/b.png" class="w-100" alt="">
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <div class="aspect-video">
+                <img src="./imgages/c.png" class="w-100" alt="">
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <div class="aspect-video">
+                <img src="./imgages/d.png" class="w-100" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const tooltipTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="tooltip"]'
+      );
+      const tooltipList = [...tooltipTriggerList].map(
+        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+      );
+    </script>
+  </body>
+</html>

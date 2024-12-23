@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Check out</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+        
+            .no-scrollbar::-webkit-scrollbar {
+                display: none;
+            }
+        
+            .no-scrollbar {
+                -ms-overflow-style: none;
+                /* IE and Edge */
+                scrollbar-width: none;
+                /* Firefox */
+            }
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  min-width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: rgb(3, 175, 3);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px rgb(3, 175, 3);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+        </style>
+</head>
+<body id="body">
+    <div class="p-2 bg-[#f0f0f0] h-full sm:h-screen">
+        <div class="row mx-0">
+            <div class="col-md-8 mb-3">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-3 ">
+                    <div class="flex flex-col gap-1 bg-white text-center items-center p-3 shadow-sm rounded-lg">
+                        <div class="rounded-full flex justify-center items-center h-[60px] w-[60px] bg-slate-200">
+                            <i class="fas fa-location-dot text-3xl text-slate-500"></i>
+                        </div>
+                        <p class="font-semibold">No address saved</p>
+                        <p class="text-sm text-slate-400 ">Add an address so we can get tracking on the delivery</p>
+                        <p class="p-2 font-semibold rounded-lg cursor-pointer  bg-[#43c2d1] hover:text-black text-white ">Add
+                            new locations</p>
+                    </div>
+                    <div class="shadow-sm p-3 bg-white rounded-lg">
+                        <div class="flex justify-between mb-2">
+                            <p class="font-semibold">Choos how to pay</p>
+                            <p class="font-semibold text-[#43c2d1]">+ Add new method</p>
+                        </div>
+                        <div class="flex items-center justify-between mb-2">
+                            <div class="flex items-center gap-2">
+                                <div class="w-[34px] min-w-[34px]">
+                                    <img class="w-full" src="https://thefinancialtechnologyreport.com/wp-content/uploads/2023/07/VISA.png" alt="">
+                                </div>
+                                <div class="">
+                                    <p class="text-sm">
+                                        Visa***0912
+                                    </p>
+                                    <p class="text-sm text-slate-400">Wrap your items</p>
+                                </div>
+
+                            </div>
+                            <div class="rounded-full p-1 border-2 border-[#43c2d1]">
+                                <div class="bg-[#43c2d1] p-2 rounded-full"></div>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between mb-2">
+                            <div class="flex items-center gap-2">
+                                <div class="w-[34px] min-w-[34px]">
+                                    <img class="w-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmX6Hduegmi-z9-AtdzBQF5xlsYNj-_OAGetIcnYDq_nPPU7nCJYZuWaJep4pepde5yH4&usqp=CAU" alt="">
+                                </div>
+                                <div class="">
+                                    <p class="text-sm">
+                                        Mastercard***0912
+                                    </p>
+                                    <p class="text-sm text-slate-400">Wrap your items</p>
+                                </div>
+
+                            </div>
+                            <div class="rounded-full p-1 border-2 border-[#43c2d1]">
+                                <div class="bg-[#43c2d1] p-2 rounded-full"></div>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between mb-2">
+                            <div class="flex items-center gap-2">
+                                <div class="w-[34px] min-w-[34px]">
+                                    <img class="w-full" src="https://www.paypalobjects.com/marketing/web23/us/en/ppe/mobile-apps/card-wrapped-content-section-01_size-all.png" alt="">
+                                </div>
+                                <div class="">
+                                    <p class="text-sm">
+                                        Pay with PayPal
+                                    </p>
+                                    <p class="text-sm text-slate-400">Wrap your items</p>
+                                </div>
+
+                            </div>
+                            <div class="rounded-full p-1 border-2 border-[#43c2d1]">
+                                <div class="bg-[#43c2d1] p-2 rounded-full"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-slate-300 rounded-t-lg p-3 flex items-center gap-2">
+                    <div
+                        class="rounded-full border-2 border-slate-500 h-[24px] w-[24px] flex  items-center justify-center p-2 text-slate-500">
+                        i</div>
+                    <div class="">
+                        <p class="text-sm">Check your product before checkout</p>
+                        <p class="text-xs">Ensure every detail is perfect before completing your purchase</p>
+                    </div>
+                </div>
+                <div class="p-3 mt-[-10px] bg-white rounded-lg">
+                    <div class="bg-white flex justify-between mb-3">
+                        <p class="font-semibold">Cart <span class="font-normal text-slate-400">3 items</span></p>
+                        <p class="text-red-500"><i class="fas fa-trash-can"></i> Remve all</p>
+                    </div>
+                    <div class="overflow-y-auto no-scrollbar h-[300px]" id="productList">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 rounded-lg bg-white mb-3">
+                <div class="p-3 flex items-center gap-3 justify-between flex-wrap">
+                    <div class="flex gap-2">
+                         <div class="w-[34px] min-w-[34px] h-[34px] flex items-center justify-center rounded-full bg-slate-200">
+                        <i class="fas fa-wallet text-lg text-[#43c2d1]"></i>
+                    </div>
+                    <div class="">
+                        <p class="text-sm font-semibold">Use Credit Card for this Purchase</p>
+                        <p class="text-xs">Available balance: <span class="text-slate-400">SAR 400</span></p>
+                    </div>
+                    </div>
+                   
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <p class="p-3 text-xs text-slate-400 border-b-[2px]">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim at eius nulla qui accusantium dicta delectus illum doloribus id sed!
+                </p>
+                <div class="p-3 flex items-center gap-3 justify-between flex-wrap">
+                    <div class="flex gap-2">
+                        <div class=" w-[34px] min-w-[34px] h-[34px] flex items-center justify-center rounded-full bg-slate-200">
+                            <i class="fas fa-gift text-lg text-[#43c2d1]"></i>
+                        </div>
+                        <div class="">
+                            <p class="text-sm font-semibold">Make it a gift</p>
+                            <p class="text-xs">Available balance: <span class="text-slate-400">SAR 400</span></p>
+                        </div>
+                    </div>
+                    
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <p class="p-3 text-xs border-b-[2px] mb-3">All items will be wrapped in one box <u class="cursor-pointer  text-blue-400">More info</u></p>
+                <p class="font-semibold">Discount Code</p>
+                <div class="rounded-lg border-2 p-2 flex justify-between items-center">
+                    <p class="text-sm font-semibold"><i class="text-[#43c2d1] fa-solid fa-ticket"></i>&nbsp; PIX20%</p>
+                    <p class="text-red-500">Remove</p>
+                </div>
+                <p class="text-sm text-green-400 py-2 border-b-2">Coupon code is valid</p>
+                <div class="flex justify-between py-2">
+                    <p class="text-sm text-slate-400">Subtotal(0 items)</p>
+                    <p class="text-sm font-semibold" id="subtotal">SAR 0</p>
+                </div>
+                <div class="flex justify-between py-2 border-b-2">
+                    <p class="text-sm text-slate-400">Shipping</p>
+                    <p class="text-sm text-green-400 font-semibold">Free</p>
+                </div>
+                <div class="flex justify-between py-2">
+                    <p class="font-semibold">Total(with vat)</p>
+                    <p class="font-semibold" id="totalvat">SAR 0</p>
+                </div>
+                <div class="flex justify-between items-center py-2">
+                    <i class="fa-brands fa-cc-visa text-4xl text-slate-400"></i>
+                    <i class="fa-brands fa-cc-mastercard text-4xl text-slate-400"></i>
+                    <i class="fa-brands fa-cc-paypal text-4xl text-slate-400"></i>
+                    <i class="fa-brands fa-cc-amazon-pay text-4xl text-slate-400"></i>
+                </div>
+                <button class="w-full bg-[#43c2d1] p-2 py-3 text-white cursor-pointer rounded-lg">Checkout</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./product.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

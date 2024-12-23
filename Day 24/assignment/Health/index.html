@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Health</title>
+    <style>
+      * {
+        font-family: "Roboto", serif;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .hover-main:hover + .hover-secondary {
+        background: black;
+        color: white;
+      }
+      .hover-main:hover {
+        background: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex p-5 justify-between border-b-2">
+      <div class="flex gap-2 items-center">
+        <div class="h-[30px] w-[30px]">
+          <img src="./images/logo.png" alt="" />
+        </div>
+        <p>Health</p>
+      </div>
+      <div class="flex gap-3">
+        <div class="flex">
+          <button class="btn">Home</button>
+          <button class="btn">Doctor</button>
+          <button class="btn">Services</button>
+          <button class="btn">Review</button>
+        </div>
+        <div
+          class="btn rounded-0 btn-dark flex items-center gap-2 bg-[#081329] text-white hover:font-dark"
+        >
+          Contact us
+          <div
+            class="badge rounded-circle flex items-center justify-center text-slate-300 bg-slate-600 h-[20px] w-[20px]"
+          >
+            <i class="text-sm fas fa-angle-right"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="">
+      <div class="row mx-0">
+        <div class="col-md-5 flex justify-center border-2">
+          <div class="p-5">
+            <label for="">Search</label>
+            <div class="border-2 border-slate-400   flex mb-2">
+              <input
+                type="text"
+                class="placeholder:text-secondary p-2"
+                placeholder="Search"
+              />
+              <div class="bg-dark text-white btn rounded-0">
+                <i class="fas fa-magnifying-glass"></i>
+              </div>
+            </div>
+            <label for="">Country</label>
+            <br />
+            <select
+              class="h-[40px] border-2 mb-2 border-slate-400  w-100 focous:border-0"
+              aria-label=".form-select-sm "
+            >
+              <option selected>INDIA</option>
+              <option value="1">US</option>
+              <option value="2">UK</option>
+              <option value="3">UAE</option>
+            </select>
+            <label for="">District/State</label>
+            <br />
+            <select
+              class="h-[40px] border-2 mb-2 border-slate-400  w-100 focous:border-0"
+              aria-label=".form-select-sm "
+            >
+              <option selected>Assam</option>
+              <option value="1">UP</option>
+              <option value="2">MP</option>
+              <option value="3">GUJRAT</option>
+            </select>
+            <div class="border-2 border-slate-400 p-1 mb-2">
+              <p class="fw-semibold">Specify</p>
+              <div class="border-2 border-slate-400 flex mb-2">
+                <input
+                  type="text"
+                  class="placeholder:text-secondary p-2 focous:border-0 w-100"
+                  placeholder="Search"
+                />
+                
+              </div>
+              <div class="overflow-y-auto  overflow-x-hidden min-h-[50px] max-h-[150px]">
+                
+                    <input class="" type="checkbox" value="" id="" />
+                    <label class="form-check-label" for=""> All rounder </label>
+                    <br/>
+                    <input class="" type="checkbox" value="" id="" />
+                    <label class="form-check-label" for=""> All rounder </label>
+                    <br/>
+                    <input class="" type="checkbox" value="" id="" />
+                    <label class="form-check-label" for=""> All rounder </label>
+                    <br/>
+                    <input class="" type="checkbox" value="" id="" />
+                    <label class="form-check-label" for=""> All rounder </label>
+                    <br/>
+                    <input class="" type="checkbox" value="" id="" />
+                    <label class="form-check-label" for=""> All rounder </label>
+                    <br/>
+                    <input class="" type="checkbox" value="" id="" />
+                    <label class="form-check-label" for=""> All rounder </label>
+                    <br/>
+                    <input class="" type="checkbox" value="" id="" />
+                    <label class="form-check-label" for=""> All rounder </label>
+                    <br/>
+                    <input class="" type="checkbox" value="" id="" />
+                    <label class="form-check-label" for=""> All rounder </label>
+                    <br/>
+                    <input class="" type="checkbox" value="" id="" />
+                    <label class="form-check-label" for=""> All rounder </label>
+                    <br/>
+                    <input class="" type="checkbox" value="" id="" />
+                    <label class="form-check-label" for=""> All rounder </label>
+                    <br/>
+                    <input class="" type="checkbox" value="" id="" />
+                    <label class="form-check-label" for=""> All rounder </label>
+                    <br/>
+                
+                
+              </div>
+            </div>
+            <div class="border-2 border-slate-400 p-1 mb-2">
+              <p class="fw-semibold">Qualification</p>
+              <div class="border-2 border-slate-400  flex mb-2">
+                <input
+                  type="text"
+                  class="placeholder:text-secondary p-2 focous:border-0 w-100"
+                  placeholder="Search"
+                />
+                
+              </div>
+              <div class="overflow-y-auto  overflow-x-hidden min-h-[50px] max-h-[150px]">
+                
+                    <input class="" type="checkbox" value="" id="" />
+                    <label class="form-check-label" for=""> All rounder </label>
+                    <br/>
+                    <input class="" type="checkbox" value="" id="" />
+                    <label class="form-check-label" for=""> All rounder </label>
+                    <br/>
+                    <input class="" type="checkbox" value="" id="" />
+                    <label class="form-check-label" for=""> All rounder </label>
+                    <br/>
+                    <input class="" type="checkbox" value="" id="" />
+                    <label class="form-check-label" for=""> All rounder </label>
+                    <br/>
+                    <input class="" type="checkbox" value="" id="" />
+                    <label class="form-check-label" for=""> All rounder </label>
+                    <br/>
+                    <input class="" type="checkbox" value="" id="" />
+                    <label class="form-check-label" for=""> All rounder </label>
+                    <br/>
+                    <input class="" type="checkbox" value="" id="" />
+                    <label class="form-check-label" for=""> All rounder </label>
+                    <br/>
+                    <input class="" type="checkbox" value="" id="" />
+                    <label class="form-check-label" for=""> All rounder </label>
+                    <br/>
+                    <input class="" type="checkbox" value="" id="" />
+                    <label class="form-check-label" for=""> All rounder </label>
+                    <br/>
+                    <input class="" type="checkbox" value="" id="" />
+                    <label class="form-check-label" for=""> All rounder </label>
+                    <br/>
+                    <input class="" type="checkbox" value="" id="" />
+                    <label class="form-check-label" for=""> All rounder </label>
+                    <br/>
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-7 border-2">
+          <div class="flex flex-wrap">
+            <div class="flex flex-col p-3 items-center">
+              <div
+                class="mb-2 w-[80px] h-[80px] rounded-circle overflow-hidden object-fit-contain"
+              >
+                <img
+                  src="https://cdn.pixabay.com/photo/2023/12/21/06/23/doctor-8461303_1280.jpg"
+                  class="w-100"
+                  alt=""
+                />
+              </div>
+              <p class="capitalize fw-medium">Mr Doctor</p>
+              <p class="capitalize text-sm text-secondary">Senior Operator</p>
+            </div>
+            <div class="hover-main flex flex-col p-3 items-center">
+              <div
+                class="mb-2 w-[80px] h-[80px] rounded-circle overflow-hidden object-fit-contain"
+              >
+                <img
+                  src="https://cdn.pixabay.com/photo/2023/12/21/06/23/doctor-8461303_1280.jpg"
+                  class="w-100"
+                  alt=""
+                />
+              </div>
+              <p class="capitalize fw-medium">Mr Doctor</p>
+              <p class="capitalize text-sm text-secondary">Senior Operator</p>
+            </div>
+            <div class="hover-secondary flex flex-col p-3 items-center">
+              <div
+                class="mb-2 w-[80px] h-[80px] rounded-circle overflow-hidden object-fit-contain"
+              >
+                <img
+                  src="https://cdn.pixabay.com/photo/2023/12/21/06/23/doctor-8461303_1280.jpg"
+                  class="w-100"
+                  alt=""
+                />
+              </div>
+              <p class="capitalize fw-medium">Mr Doctor</p>
+              <p class="capitalize text-sm text-secondary">Senior Operator</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+let num=123.456789
+console.log(num.toFixed(2))
+console.log(num.toString())
+console.log(num.toPrecision(4))
+console.log(parseInt(num))
+console.log(parseFloat(num))
+console.log(isNaN(num))
+console.log(isNaN("hello"))
+console.log(Number.isInteger(num))
+console.log(Number.isInteger(123))
+
+console.log(Math.round(123.46))
+console.log(Math.floor(123.19))
+console.log(Math.ceil(123.1))
+console.log(Math.abs(-123.1))
+console.log(Math.max(1,2,4,5,6,7,90))
+console.log(Math.min(1,2,4,5,6,7,90))
+console.log(Math.random())
+console.log(Math.random()*100)
+console.log(Math.floor(Math.random() * 100));
