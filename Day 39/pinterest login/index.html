@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title></title>
+    <style>
+        .text-divider {
+            display: flex;
+            align-items: center;
+            --text-divider-gap: 8px;
+        }
+
+        .text-divider::before,
+        .text-divider::after {
+            content: '';
+            height: 1px;
+            background-color: silver;
+            flex-grow: 1;
+        }
+
+        .text-divider::before {
+            margin-right: var(--text-divider-gap);
+        }
+
+        .text-divider::after {
+            margin-left: var(--text-divider-gap);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex items-center justify-center p-4 bg-slate-200">
+        <div class="rounded-2xl overflow-hidden">
+            <p class="text-slate-400   p-3 -z-10 bg-slate-100"><i class="fas fa-angle-left"></i> Back</p>
+            
+            <div class="text-xl font-semibold p-3 rounded-xl -mt-[10px] bg-white z-30">
+                <p class="text-xl font-semibold mb-3">Register Now</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-3">
+                    <div class="">
+                        <p class="text-sm">First Name</p>
+                        <input type="text" name="" id=""
+                            class="border-b-2 w-full focus-visible:outline-none focus-visible:border-black text-lg p-2">
+                    </div>
+                    <div class="">
+                        <p class="text-sm">Last Name</p>
+                        <input type="text" name="" id=""
+                            class="border-b-2 w-full focus-visible:outline-none focus-visible:border-black  text-lg p-2">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <p class="text-sm">Email address</p>
+                    <input type="email" name="" id=""
+                        class="border-b-2 w-full focus-visible:outline-none focus-visible:border-black  text-lg p-2">
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-3">
+                    <div class="">
+                        <p class="text-sm">Your age</p>
+                        <input type="number" name="" id=""
+                            class="border-b-2 w-full focus-visible:outline-none focus-visible:border-black text-lg p-2">
+                    </div>
+                    <div class="border-b-2">
+                        <p class="text-sm">Your Gender</p>
+                        <!-- <input type="" name="" id=""
+                            class="border-b-2 focus-visible:outline-none focus-visible:border-black  text-lg p-2"> -->
+                            <select name="" id="" class="w-full p-2 text-lg focus-visible:outline-none">
+                                <option value="">Male</option>
+                                <option value="">Female</option>
+                            </select>
+                    </div>
+
+                </div>
+                <div class="mb-3">
+                    <p class="text-sm">Password</p>
+                    <div class="flex items-center border-b-2">
+                        <input type="password" name="" id="passwd"
+                            class=" w-full focus-visible:outline-none focus-visible:border-black  text-lg p-2">
+                        <i class="fas fa-eye text-slate-400" onclick="visible()" id="eye"></i>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <p class="text-sm">Confirm password</p>
+                    <div class="flex items-center border-b-2">
+                        <input type="password" name="" id="passwd"
+                            class=" w-full focus-visible:outline-none focus-visible:border-black  text-lg p-2">
+
+                    </div>
+                </div>
+                <button class="text-sm rounded-xl cursor-pointer bg-red-600 text-white  w-full p-3 mb-3">Register Now</button>
+                <div class="text-divider text-sm text-slate-400 mb-3">Or continue with</div>
+                <div class="flex gap-2 justify-between mb-3">
+                    <div class="border-2 p-3 flex items-center justify-center rounded-lg w-[100px] h-[60px] object-contain">
+                        <img class="h-full" src="./google.png" alt="">
+                    </div>
+                    <div class="border-2 p-3 flex items-center justify-center rounded-lg w-[100px] h-[60px] object-contain">
+                        <img class="h-full" src="./apple.png" alt="">
+                    </div>
+                    <div class="border-2 p-3 flex items-center justify-center rounded-lg w-[100px] h-[60px] object-contain">
+                        <img class="h-full" src="./facebook.png" alt="">
+                    </div>
+                </div>
+                <p class="text-sm text-center text-slate-400">Already have an account? <span class="text-red-500">Sing in</span></p>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function visible() {
+            console.log('working')
+            var a = document.getElementById('passwd')
+            var eye = document.getElementById('eye')
+            if (a.type === 'password') {
+                a.type = 'text'
+
+                eye.classList.remove('fa-eye')
+                eye.classList.add('fa-eye-slash')
+            }
+            else {
+                a.type = 'password'
+                eye.classList.remove('fa-eye-slash')
+                eye.classList.add('fa-eye')
+            }
+
+        }
+
+
+    </script>
+    <script src="./pinterest.html"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

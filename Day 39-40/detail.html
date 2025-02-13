@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title></title>
+</head>
+<body>
+    <div id="bookdetail">
+        <div class="w-[375px] h-full bg-white p-3 border-2 relative no-scrollbar overflow-y-auto">
+            <div class="mb-2">
+                <a href="./index.html"><i class="fas fa-arrow-left cursor-pointer"></i></a>
+            </div>
+            <div class="mb-3">
+                <div class="  p-2 relative">
+                    <img class="w-[100px] shadow-md" src="" alt="" id="bookimage">
+                    <div class="w-full shadow-md  h-[120px] bottom-0 left-0 absolute">
+                        <div class="ms-[108px] p-2">
+                            <div class="flex justify-between items-center">
+                                <p class="font-semibold text-lg truncate" id="booktitle"></p>
+                                <i class="fas fa-ellipsis cursor-pointer text-slate-400"></i>
+                            </div>
+                            <p class="text-slate-400 text-sm mb-2 " id="author"> </p>
+                            <p class="text-slate-400 text-xs line-clamp-2 mb-2 truncate" id="caption"></p>
+                            <div class="flex items-center gap-2">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <p class="text-yellow-400">5.0</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-y-2 flex justify-between p-2 mb-3">
+                <p class="text-slate-400">
+                    <i class="fas fa-heart"></i>
+                    Like
+                </p>
+                <p class="text-slate-400">
+                    <i class="fas fa-share"></i>
+                    Share
+                </p>
+                <p class="text-slate-400">
+                    <i class="fa-solid fa-book"></i>
+                    Bookshelf
+                </p>
+            </div>
+            <p class="playfair font-semibold mb-3">Details</p>
+            <p class="text-sm font-semibold text-slate-500 mb-3" id="detail"></p>
+            <div class="border-y-2 flex justify-between items-center mb-3">
+                <p class="playfair">Check the directory</p>
+                <i class="fas fa-angle-right text-slate-400 py-3"></i>
+            </div> 
+            <div class="shadow-sm absolute bottom-0 w-full  left-0">
+                <div class="flex justify-between items-center p-2">
+                    <div class="flex items-center gap-3">
+                        <p class="playfair font-semibold text-lg" id="price"></p>
+                        <strike>$65.00</strike>
+                    </div>
+                    <button class="px-4 py-1 bg-blue-900 rounded-sm text-white">Buy
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    <script src="./detailbook.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Shopping</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", serif;
+        }
+        .slideshow-container {
+ 
+  position: relative;
+  
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+     .no-scrollbar::-webkit-scrollbar {
+          display: none;
+      }
+     /* Hide scrollbar for IE, Edge and Firefox */
+      .no-scrollbar {
+          -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;  /* Firefox */
+    }
+    </style>
+</head>
+<body>
+    <div class="flex justify-between p-3 gap-2 items-center flex-wrap border-b-[2px]">
+        <p class="font-semibold text-lg">Cartify</p>
+        <div class="flex items-center bg-slate-200 p-2 rounded-sm">
+            <i class="fas fa-magnifying-glass text-slate-500 me-2"></i>
+            <input class="bg-slate-200 w-full focus-visible:outline-none" placeholder="Search by Category" type="text">
+        </div>
+        <div class="flex gap-2 text-sm">
+            <p class="cursor-pointer">About</p>
+            <a href="./detail.html">
+                <p class="cursor-pointer">Orders</p>
+            </a>
+            <a href="./cart.html">
+                <p class="cursor-pointer"><i class="fas fa-cart-shopping"></i> Cart</p>
+            </a>
+        </div>
+    </div>
+    <div class="flex justify-between items-center flex-wrap gap-2 sm:gap-3 p-3 " id="categorySection">
+        <!-- <div class="flex flex-col items-center">
+            <div class="w-20 flex items-center justify-center">
+                <img class="w-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA2mRtoZxwDNkeBV6EFEP-nTkJ3VGYp82WIQ&s" alt="">
+            </div>
+            <p class="text-sm">Mobiles</p>
+        </div> -->
+        
+    </div>
+    <div class="w-full ">
+            <div class="slideshow-container">
+                <div class="mySlides ">
+                    <p class="absolute h5 p-4">Create your dream work</p>
+                    <img src="https://img.freepik.com/premium-photo/computer-monitor-with-black-screen-that-says-dell-bottom_853677-118531.jpg?w=1380" style="width:100%">
+                    
+                </div>
+            
+                <div class="mySlides ">
+                    
+                    <img src="https://img.freepik.com/premium-photo/computer-monitor-with-black-screen-that-says-dell-bottom_853677-118531.jpg?w=1380" style="width:100%">
+                  
+                </div>
+            
+                <div class="mySlides ">
+                   
+                    <img src="https://www.iseazy.com/wp-content/uploads/2023/09/elearning-3.0.jpg" style="width:100%">
+                    
+                </div>
+            
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            
+           
+    </div>
+    <p class="font-semibold text-lg p-3">Top offers</p>
+    <div class="overflow-y-auto p-3 flex gap-3 no-scrollbar " id="topOffers">
+        <!-- <div class="w-[160px] flex flex-col items-center gap-1">
+            <div class=" flex items-center justify-center h-[160px] w-[160px]">
+                <img class="h-full rounded-xl" src="https://images.woodenstreet.de/image/data/study-tables-mdf/stanis-study-table/updated/exotic-teak/updated/new/new-logo/1.jpg" alt="">
+            </div>
+            <p class="text-sm ">Work desks</p>
+            <p class="text-sm text-green-500 flex items-center gap-2">4.9 <i class="fas fa-star text-xs text-yellow-400"></i></p>
+        </div> -->
+      
+    </div>
+    <div class="flex justify-center mb-3">
+        <p class="text-sm bg-black text-white p-1 cursor-pointer rounded-md">View all</p>
+    </div>
+    <div class="grid sm:grid-rows-2 grid-flow-col gap-3 p-3 mb-3">
+        <div class=" p-4 row-span-2 bg-[#e9e1f2] rounded-lg text-center">
+            <p class="">Newly Launched</p>
+            <p class="text-lg font-semibold">Samsung Galaxy z Flip 3</p>
+            <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1662438422/Croma%20Assets/Communication/Mobiles/Images/243354_bfra3p.png?tr=w-600" alt="">
+
+        </div>
+        <div class=" p-4 bg-[#ffeadd] rounded-lg grid grid-cols-3 gap-2">
+            <div class="">
+                <p class="">20% off</p>
+                <p class="text-lg font-semibold">Redmi Smart TV</p>
+            </div>
+            <div class="col-span-2 flex items-center justify-center">
+                <img src="./tv.png" alt="">
+            </div>
+        </div>
+        <div class=" p-4 bg-[#e7eaba] rounded-lg grid grid-cols-3 gap-2">
+            <div class="">
+                <p class="">30% off</p>
+                <p class="text-lg font-semibold">Phillips Trimmer</p>
+            </div>
+            <div class="col-span-2 flex items-center justify-center">
+                <img class="w-full" src="./trimmer.png" alt="">
+            </div>
+        </div>
+    </div>
+    <p class="font-semibold text-lg p-3">Fashion sale</p>
+    <div class="overflow-y-auto p-3 flex gap-3 no-scrollbar" id="fashionSale">
+        
+        
+        
+    </div>
+    <p class="font-semibold text-lg p-3 text-center">Recommended for you</p>
+    <div class="overflow-y-auto p-3 flex gap-3 no-scrollbar" id="recommended">
+        <!-- <div class="w-[160px]">
+            <div class="mb-1 flex items-center justify-center object-contain overflow-hidden h-[160px]  w-[160px]">
+                <img class="h-full rounded-xl"
+                    src="https://i.pinimg.com/736x/27/ca/8b/27ca8bc246030a8231d273ff748de520.jpg"
+                    alt="">
+            </div>
+            <p class="text-sm line-clamp-2">Thinking with type</p>
+            <div class="flex justify-between items-center">
+                <div class="flex gap-1">
+                    <i class="fas fa-star text-xs"></i>
+                    <i class="fas fa-star text-xs"></i>
+                    <i class="fas fa-star text-xs"></i>
+                    <i class="fas fa-star text-xs"></i>
+                    <i class="fas fa-star text-xs"></i>
+                </div>
+                <p class="text-sm">$40.49</p>
+            </div>
+        </div> -->
+        
+    </div>
+    <div class="flex justify-center mb-3">
+        <p class="text-sm bg-black text-white p-1 cursor-pointer rounded-md">View all</p>
+    </div>
+    <script src="./products.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

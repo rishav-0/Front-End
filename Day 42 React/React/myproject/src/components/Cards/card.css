@@ -1,0 +1,33 @@
+.card{
+    width: 200px;
+    border: 1px solid #dcdcdc;
+    padding: 1dvb;
+}
+.image{
+    width: 100%;
+}
+.title{
+    font-size: x-large;
+    font-weight: 600;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    margin:5px 0;
+}
+.buy{
+    padding: 4px 8px ;
+    background: black;
+    color: white;
+    font-size: small;
+}
+.addtocart{
+    padding: 4px 8px ;
+    border: 1px solid black;
+    
+    font-size: small;
+}
+.buy:hover{
+    background-color: gray;
+}

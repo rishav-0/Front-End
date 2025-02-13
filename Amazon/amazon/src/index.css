@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+  font-family: "Roboto", serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box ;
+}
+.primaryBtn{
+  background-color:#ff9900 ;
+}
+.secondaryBtn{
+  background-color: #ffb700;
+}
+.textColor{
+  background-color: #141b24;
+}
+.remarkable{
+  background-color: #00a8e1;
+}
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.background{
+  background-color: #eef3f9;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}

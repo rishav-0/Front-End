@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        *,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+            font-family: "Montserrat", sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            scroll-snap-type: y mandatory;
+            scroll-behavior: smooth;
+        }
+
+        .snap {
+            scroll-snap-align: start;
+            scroll-snap-stop: always;
+        }
+    </style>
+    <title>Resume</title>
+</head>
+
+<body>
+    <div class="row mx-0">
+        <div class="col-md-4">
+            <div class="p-4 ">
+                <form action="" id="register" class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <div class="">
+                        <label class="font-semibold" for="">Name</label>
+                        <br>
+                        <input required class="border-2 w-full mb-3 font-semibold p-2 border-black" id="name"
+                            type="text">
+                        <br>
+                        <label class="font-semibold" for="">Position</label>
+                        <br>
+                        <input required class="border-2 w-full  mb-3 font-semibold p-2 border-black" id="position"
+                            type="text">
+                        <br>
+                        <label class="font-semibold" for="">Address</label>
+                        <br>
+                        <input required class="border-2 w-full  mb-3 font-semibold p-2 border-black" id="address"
+                            type="text">
+                        <br>
+                        <label class="font-semibold" for="">Phone</label>
+                        <br>
+                        <input required class="border-2 w-full  mb-3 font-semibold p-2 border-black" id="phone"
+                            type="tel">
+                        <br>
+                    </div>
+                    <div class="">
+                        <label class="font-semibold" for="">Email</label>
+                        <br>
+                        <input required class="border-2 w-full  mb-3 font-semibold p-2 border-black" id="email"
+                            type="email">
+                        <br>
+                        <label class="font-semibold" for="">Website</label>
+                        <br>
+                        <input required class="border-2 w-full  mb-3 font-semibold p-2 border-black" id="website"
+                            type="url">
+                        <br>
+                        <label class="font-semibold" for="">Profile</label>
+                        <br>
+                        <input required class="border-2 w-full  mb-3 font-semibold p-2 border-black" id="profile"
+                            type="url">
+                        <br>
+                        <label class="font-semibold" for="">About</label>
+                        <br>
+                        <input required class="border-2 w-full  mb-3 font-semibold p-2 border-black" id="about"
+                            type="text">
+                        <br>
+                    </div>
+                    <button type="reset" class=" btn btn-outline-dark font-semibold rounded-0">Clear</button>
+                    <button type="submit" class=" btn btn-dark font-semibold rounded-0">Submit</button>
+
+                </form>
+            </div>
+            <div class="p-4  text-center">
+                <p class="font-semibold mb-3 text-lg">Work Experience</p>
+                <form action="" id="workExperience" class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <div class="">
+                        <label class="font-semibold" for="">Company Name</label>
+                        <br>
+                        <input required class="border-2 w-full mb-3 font-semibold p-2 border-black" id="companyName"
+                            type="text">
+                        <br>
+
+                        <label class="font-semibold" for="">Start Year</label>
+                        <br>
+                        <input required class="border-2 mb-3 font-semibold p-2 border-black w-full"
+                            id="startYear" type="number" min="2010" max="2020">
+                        <br>
+                    </div>
+                    <div class="">
+                        <label class="font-semibold" for="">Position</label>
+                        <br>
+                        <input required class="border-2 w-full mb-3 font-semibold p-2 border-black" id="companyPosition"
+                            type="text">
+                        <br>
+
+                        <label class="font-semibold" for="">End Year</label>
+                        <br>
+                        <input required class="border-2 mb-3 font-semibold p-2 border-black w-full" id="endYear"
+                            type="number" min="2011" max="2024">
+                        <br>
+                    </div>
+                    <label class="font-semibold" for="">About Company</label>
+                    <br>
+                    <input required class="col-span-2 border-2 w-full font-semibold p-2 border-black" id="aboutCompany"
+                        type="text">
+
+                    <button type="reset" class="col-span-1 btn btn-outline-dark font-semibold rounded-0">Clear</button>
+                    <button type="submit" class="col-span-1 btn btn-dark font-semibold rounded-0">Add</button>
+
+                </form>
+            </div>
+            <div class="p-4  text-center">
+                <p class="font-semibold mb-3 text-lg">Education</p>
+                <form action="" id="education" class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <div class="">
+                        <label class="font-semibold" for="">Institute Name</label>
+                        <br>
+                        <input required class="border-2 w-full mb-3 font-semibold p-2 border-black" id="instituteName"
+                            type="text">
+                        <br>
+
+                        <label class="font-semibold" for="">Start Year</label>
+                        <br>
+                        <input required class="border-2 w-full mb-3 font-semibold p-2 border-black "
+                            id="startYearEdu" type="number" min="2010" max="2020">
+                        <br>
+                    </div>
+                    <div class="">
+                        <label class="font-semibold" for="">Position</label>
+                        <br>
+                        <input required class="border-2 w-full mb-3 font-semibold p-2 border-black" id="positionEdu"
+                            type="text">
+                        <br>
+
+                        <label class="font-semibold" for="">End Year</label>
+                        <br>
+                        <input required class="border-2 mb-3 font-semibold p-2 border-black w-full" id="endYearEdu"
+                            type="number" min="2011" max="2024">
+                        <br>
+                    </div>
+                    <label class="font-semibold" for="">About Insititute</label>
+                    <br>
+                    <input required class="col-span-2 border-2 w-full font-semibold p-2 border-black" id="aboutEdu"
+                        type="text">
+
+                    <button type="reset" class="col-span-1 btn btn-outline-dark font-semibold rounded-0">Clear</button>
+                    <button type="submit" class="col-span-1 btn btn-dark font-semibold rounded-0">Add</button>
+
+                </form>
+            </div>
+            <div class="p-4  text-center">
+                <p class="font-semibold mb-3 text-lg">Skills</p>
+                <div class="grid grid-cols-2 gap-3">
+                    <form action="" id="skilladdpersonal" class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <p class="font-semibold col-span-2">Personal Skills</p>
+                        <div class="">
+                            <label class="font-semibold" for="">Skill</label>
+                            <br>
+                            <input required class="border-2 w-full mb-3 font-semibold p-2 border-black" id="skillName"
+                                type="text">
+                            <br>
+                        </div>
+                        <div class="">
+                            <label class="font-semibold" for="">Skill level </label>
+                            <br>
+                            <input required class="border-2 mb-3 font-semibold p-2 border-black w-full"
+                                id="skillLevel" placeholder="(0-10)" type="number" min="0" max="10">
+                            <br>
+                        </div>
+                        <button type="reset"
+                            class="col-span-1 btn btn-outline-dark font-semibold rounded-0">Clear</button>
+                        <button type="submit" class="col-span-1 btn btn-dark font-semibold rounded-0">Add</button>
+
+                    </form>
+                    <form action="" id="skillAddProf" class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <p class="font-semibold col-span-2">Professional Skills</p>
+                        <div class="">
+                            <label class="font-semibold" for="">Skill</label>
+                            <br>
+                            <input required class="border-2 w-full mb-3 font-semibold p-2 border-black" id="skillNameProf"
+                                type="text">
+                            <br>
+                        </div>
+                        <div class="">
+                            <label class="font-semibold" for="">Skill level</label>
+                            <br>
+                            <input required class="border-2 mb-3 font-semibold p-2 border-black w-full" id="skillLevelProf"
+                                type="number" placeholder="(0-10)" min="0" max="10">
+                            <br>
+                        </div>
+
+                        <button type="reset"
+                            class="col-span-1 btn btn-outline-dark font-semibold rounded-0">Clear</button>
+                        <button type="submit" class="col-span-1 btn btn-dark font-semibold rounded-0">Add</button>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="flex items-center  bg-[#e8cc17] rounded-full w-[100px] h-[100px]">
+                <div class="ms-4" id="namePost">
+                    <p class="text-4xl font-bold whitespace-nowrap" id="myname">Rishav Talukdar</p>
+                    <p class="whitespace-nowrap" id="myposition">Ui developer</p>
+                </div>
+            </div>
+
+            <div class="row mx-0 mb-3">
+                <div class="col-md-4"></div>
+                <div class="col-md-8 flex justify-between" id="communication">
+                    <div class="flex gap-2 items-center">
+                        <i class="fas fa-phone border-b-4 border-slate-600 pb-2"></i>
+                        <div class="">
+                            <p class="text-sm">Phone</p>
+                            <p class="text-sm " id="myphone"></p>
+                        </div>
+                    </div>
+                    <div class="flex gap-2 items-center">
+                        <i class="fas fa-envelope border-b-4 border-slate-600 pb-2"></i>
+                        <div class="">
+                            <p class="text-sm">Email</p>
+                            <p class="text-sm " id="myemail">xyz@gamil.com</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-2 items-center">
+                        <i class="fas fa-window-maximize border-b-4 border-slate-600 pb-2"></i>
+                        <div class="">
+                            <p class="text-sm">Website</p>
+                            <p class="text-sm " id="mywebsite">github.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mx-0 mb-3">
+                <div class="col-md-4 py-4">
+                    <p class="border-b-2 pb-2 mb-3 inline-block border-slate-700">Address</p>
+                    <p class="text-slate-400" id="myaddress">Rauly Barpeta</p>
+                </div>
+                <div class="col-md-2 py-4 flex items-center flex-col">
+                    <div class="h-3 mb-3 w-100 flex items-center justify-center bg-[#e8cc17]">
+                        <p class="text-2xl font-semibold">Profile</p>
+                    </div>
+                    <div
+                        class="flex items-center justify-center object-contain h-[80px] w-[80px] overflow-hidden rounded-full">
+                        <img class="w-full" src="" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6 flex items-end">
+                    <p class="text-slate-400 p-2" id="aboutMe">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum aut ducimus harum provident
+                        minus quo ut explicabo dignissimos delectus dicta!
+                    </p>
+                </div>
+            </div>
+
+            <div class="row mx-0">
+                <div class="col-md-4">
+                    <p class="text-2xl font-semibold">Work </p>
+                    <p class="text-2xl font-semibold border-b-2 pb-2 mb-3 inline-block border-slate-700">Experience</p>
+                </div>
+                <div class="col-md-8 border-t-2 border-[#e8cc17]">
+                    <div class="row mx-0" id="showExperience">
+                        <div class="col-md-3 py-5">
+                            <p class="font-semibold">2015-2020</p>
+                            <p class="text-slate-400">Google</p>
+
+                        </div>
+                        <div class="col-md-9  py-5">
+                            <p class="font-semibold">Ui developer</p>
+                            <p class="text-slate-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+                                tempore eum ratione praesentium laboriosam cum delectus, eligendi voluptas deleniti!
+                                Quas.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4">
+                    <p class="text-2xl font-semibold"> </p>
+                    <p class="text-2xl font-semibold border-b-2 pb-2 mb-3 inline-block border-slate-700">Education</p>
+                </div>
+                <div class="col-md-8 border-t-2 border-[#e8cc17]">
+                    <div class="row mx-0" id="eductationDispllay">
+                        <div class="col-md-3 py-5">
+                            <p class="font-semibold">2015-2020</p>
+                            <p class="text-slate-400">Google</p>
+
+                        </div>
+                        <div class="col-md-9  py-5">
+                            <p class="font-semibold">Ui developer</p>
+                            <p class="text-slate-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+                                tempore eum ratione
+                                praesentium laboriosam cum delectus, eligendi voluptas deleniti! Quas.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-4">
+                    <p class="text-2xl font-semibold"> </p>
+                    <p class="text-2xl font-semibold border-b-2 pb-2 mb-3 inline-block border-slate-700">Skills</p>
+                </div>
+                <div class="col-md-4 border-t-2 border-[#726511] py-5">
+                    <p class="font-semibold mb-3">Personal</p>
+                    <div id="showPersonalSkills">
+                        
+                    </div>
+                </div>
+                <div class="col-md-4 border-t-2 border-[#e8cc17] py-5">
+                    <p class="font-semibold mb-3">Professional</p>
+                    <div id="profSkills">
+                        
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <p class="text-2xl font-semibold border-b-2 pb-2 mb-3 inline-block border-slate-700">Interests</p>
+                </div>
+                <div class="col-md-8 border-t-2 py-4 border-[#726511] pb-5 flex gap-2 justify-between">
+                    <div class="text-center">
+                        <div
+                            class="bg-[#dbbf1b] text-4xl h-[80px] w-[80px] rounded-full flex items-center justify-center">
+                            <i class="fas fa-bicycle "></i>
+                        </div>
+                        <p class="text-slate-400 font-semibold mt-2">Bicycle</p>
+                    </div>
+                    <div class="text-center">
+                        <div
+                            class="bg-[#dbbf1b] text-4xl h-[80px] w-[80px] rounded-full flex items-center justify-center">
+                            <i class="fas fa-gamepad "></i>
+                        </div>
+                        <p class="text-slate-400 font-semibold mt-2">Gaming</p>
+                    </div>
+                    <div class="text-center">
+                        <div
+                            class="bg-[#dbbf1b] text-4xl h-[80px] w-[80px] rounded-full flex items-center justify-center">
+                            <i class="fas fa-music "></i>
+                        </div>
+                        <p class="text-slate-400 font-semibold mt-2">Music</p>
+                    </div>
+                    <div class="text-center">
+                        <div
+                            class="bg-[#dbbf1b] text-4xl h-[80px] w-[80px] rounded-full flex items-center justify-center">
+                            <i class="fas fa-video "></i>
+                        </div>
+                        <p class="text-slate-400 font-semibold mt-2">Video</p>
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+                    <p class="text-2xl font-semibold"> </p>
+                    <p class="text-2xl font-semibold border-b-2 pb-2 mb-3 inline-block border-slate-700">References</p>
+                </div>
+                <div class="col-md-4 border-t-2 border-[#726511] py-5">
+                    <p class="font-semibold mb-2">Jane Doe</p>
+                    <p class="text-slate-400">Rupnagar, Maharastra</p>
+                    <p class="text-slate-400">60063987</p>
+                    <p class="text-slate-400">Emai@gmai.com</p>
+                </div>
+                <div class="col-md-4 border-t-2 border-[#e8cc17] py-5">
+                    <p class="font-semibold mb-2">Jane Doe</p>
+                    <p class="text-slate-400">Rupnagar, Maharastra</p>
+                    <p class="text-slate-400">60063987</p>
+                    <p class="text-slate-400">Emai@gmai.com</p>
+                </div>
+
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-8 border-t-2 py-4 border-[#726511] pb-5 flex gap-2 justify-between">
+                    <p class=" text-3xl font-semibold flex items-center gap-3">
+                        <i class="fab fa-twitter"></i>
+                        <span class="text-sm text-slate-400">Twitter</span>
+                    </p>
+                    <p class=" text-3xl font-semibold flex items-center gap-3">
+                        <i class="fab fa-skype"></i>
+                        <span class="text-sm text-slate-400">Skype</span>
+                    </p>
+                    <p class=" text-3xl font-semibold flex items-center gap-3">
+                        <i class="fab fa-pinterest"></i>
+                        <span class="text-sm text-slate-400">Pinterest</span>
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="./resume.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+.bg-gray{
+background: rgb(117,117,127);
+background: linear-gradient(79deg, rgba(117,117,127,1) 22%, rgba(85,88,95,1) 77%);
+}
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
