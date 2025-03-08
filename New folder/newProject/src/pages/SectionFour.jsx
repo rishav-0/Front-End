@@ -1,11 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Button from '../components/button/Button'
+import { Globalcontext } from '../context'
 
 const SectionFour = (props) => {
 
+  const {mode} = useContext(Globalcontext)
+
   return (
     <div>
-        <Button title={props.title} />
+        <Button title={mode} />
     </div>
   )
 }

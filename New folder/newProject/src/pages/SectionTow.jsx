@@ -6,7 +6,7 @@ const SectionTow = (props) => {
   return (
     <div>
         <SectionThree onClick={props.onClick} mode={props.mode} title='Hello'/>
-        <SectionFour title={props.btntitle}/>
+        <SectionFour />
     </div>
   )
 }
