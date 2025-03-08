@@ -19,7 +19,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />}></Route>
         <Route path='/settings' element={<Settings />}></Route>
-        <Route path='/profile' element={<User usrName='Bruce Wyane' photo='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQBWP-9EjpszdnPWI6TM-n7Fmr_9ZOkXhB8A&s'
+        <Route path='/profile' element={<User usrName='Bruce Wyane' photo='https://www.themarketingnutz.com/wp-content/uploads/2018/01/opulent-profile-square-07.jpg'
       caption='we are a small team of idiots who aimed bring you the best ui materials on the web' post='Ui developer'/>}></Route>
       </Routes>
       {/* <Home /> */}

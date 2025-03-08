@@ -5,7 +5,7 @@ import vector1 from '../../images/Vector1.png'
 import vector2 from '../../images/Vector2.png'
 import vector3 from '../../images/Vector3.png'
 import vector4 from '../../images/Vector4.png'
-import group from '../../images/group.png'
+import Group from '../../images/Group.png'
 import shield from '../../images/shield.png'
 import Heading from './Heading'
 import Check from './Check'
@@ -21,7 +21,7 @@ const Settings = () => {
                     <Search title='Search settings' />
                 </div>
                 <div className="pr-4">
-                    <TabSetting title='Account' icon={group} />
+                    <TabSetting title='Account' icon={Group} />
                     <TabSetting title='Apps and website' icon={vector} />
                     <TabSetting title='Change Password' icon={vector1} />
                     <TabSetting title='Activity log' icon={vector2} />
