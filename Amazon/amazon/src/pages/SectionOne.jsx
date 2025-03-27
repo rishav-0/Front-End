@@ -8,7 +8,7 @@ const SectionOne = (props) => {
 
   return (
     <div>
-      <Banner title="Refresh your space" desc="Shop the Home store" btnTitle="Learn more" />
+      {/* <Banner title="Refresh your space" desc="Shop the Home store" btnTitle="Learn more" /> */}
       <Bar title="Related to items you've viewed" btn='View all'/>
       {/* Product List */}
       <div className="flex gap-4 overflow-x-auto p-5 no-scrollbar mb-5">

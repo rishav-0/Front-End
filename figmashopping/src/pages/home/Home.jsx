@@ -6,6 +6,7 @@ import Product from '../../Components/Product'
 import { Globalcontext } from '../../Globalcontext'
 import Btn from '../../Components/Btn'
 import CateCard from '../../Components/CateCard'
+import FlashSale from '../../Features/home/FlashSale'
 
 const Home = () => {
     const { flash, categories, best, products,flashLoading,flashError,cartLIst, getCart,handleAddUpdate} = useContext(Globalcontext)
@@ -24,44 +25,9 @@ const Home = () => {
     return (
         <div>
             <CarouselDefault />
-            <div className="px-10 lg:px-[135px]">
-                <Heading title="Today's" />
-                <BigHeading title='Flash Sales' />
-            </div>
+            <FlashSale />
+            
 
-            <div className="overflow-x-auto flex gap-6 px-10 lg:px-[135px] no-scrollbar mb-12">
-                {
-                    !flashLoading &&
-                    flash.map(i => {
-                        const isinCart = cartLIst?.some(j=>j.id == i.id)
-                        const sItem = cartLIst?.find(j=>j.id == i.id)
-
-                        return (
-                            <Product title={i.title} image={i.images[0]} price={i.price} id={i.id} isinCart={isinCart} cartid={sItem?._id} addToCart={()=>handleAddUpdate(isinCart,i,sItem)}/>
-                        )
-                    })
-                }
-                {
-                    flashLoading && 'Loading'
-                }
-                {flashError && flashError}
-            </div>
-            <div className="flex justify-center mb-[70px]">
-                <Btn title={view?'Hide':'View all products'} onClick={()=>setView(!view)}/>
-            </div>
-            {
-                view && <div className="overflow-y-auto flex h-[400px] justify-center w-full px-10 lg:px-[135px] no-scrollbar mb-12">
-                <div className="grid  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full">
-                    {
-                        products.map(i => {
-                            return (
-                                <Product title={i?.title} image={i?.images[0]} price={i?.price} id={i.id}/>
-                            )
-                        })
-                    }
-                </div>
-            </div>
-            }
 
             <hr className='mb-[70px]' />
 
@@ -73,7 +39,8 @@ const Home = () => {
             
             <hr className='mb-[70px]' />
 
-            <div className="overflow-x-auto flex gap-6 px-10 lg:px-[135px] no-scrollbar mb-12">
+            <div>
+                <div className="overflow-x-auto flex gap-6 px-10 lg:px-[135px] no-scrollbar mb-12">
                 {
                     categories.map(i => {
                         return (
@@ -92,8 +59,14 @@ const Home = () => {
                     })
                 }
             </div>
+            </div>
 
-            <div className="px-10 lg:px-[135px]">
+            
+
+            <hr className='mb-[70px]' />
+
+            <div>
+                <div className="px-10 lg:px-[135px]">
                 <Heading title="This month's" />
                 <BigHeading title='Best Selling Products' btn='View all' />
             </div>
@@ -107,9 +80,13 @@ const Home = () => {
                     })
                 }
             </div>
+            </div>
+            
 
 
             <hr className='mb-[70px]' />
+                
+            <div>
             <div className="px-10 lg:px-[135px]">
                 <Heading title="Our Products" />
                 <BigHeading title='Explore our Products' />
@@ -125,9 +102,12 @@ const Home = () => {
                         })
                     }
                 </div>
-            </div>
+            </div>    
+            </div> 
+
             
-            <hr className='mb-[70px]' />
+            
+           
         </div>
     )
 }

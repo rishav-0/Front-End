@@ -18,9 +18,9 @@ const SectionTwo = (props) => {
             </div>
         </div>
         <div className="overflow-auto no-scrollbar flex items-baseline gap-4 mb-5">
-          <CardTwo />
-          <CardTwo />
-          <CardTwo />
+          <CardTwo img='https://www.shutterstock.com/image-photo/beautiful-smiling-woman-long-wavy-600nw-2381985577.jpg' />
+          <CardTwo  img='https://img.freepik.com/premium-photo/male-models-pose-great-photoshoot-high-fashion-magazine-cover_563241-4328.jpg'/>
+          <CardTwo img='https://i.pinimg.com/736x/22/c2/61/22c261e52a0fc27b1f5fac19de2ec73f.jpg'/>
           <CardTwo />
         </div>
     </div>

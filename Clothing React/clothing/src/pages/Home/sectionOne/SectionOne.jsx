@@ -26,9 +26,9 @@ const SectionOne = () => {
         </div>
     </div>
     <div className="overflow-auto no-scrollbar flex gap-4 mb-6">
-        <Card/>
-        <Card/>
-        <Card/>
+        <Card img='https://media.gettyimages.com/id/1294339577/photo/young-beautiful-woman.jpg?s=612x612&w=0&k=20&c=v41m_jNzYXQtxrr8lZ9dE8hH3CGWh6HqpieWkdaMAAM='/>
+        <Card img='https://www.shutterstock.com/image-photo/beautiful-smiling-woman-long-wavy-600nw-2381985577.jpg'/>
+        <Card img='https://t4.ftcdn.net/jpg/04/19/94/59/360_F_419945971_YNfDJMmW1nrXi63PGJ6zTqvWwS2RviKK.jpg'/>
     </div>
     <div className="flex items-center gap-4 justify-between mb-3">
         <div className="bg-slate-400 w-full h-[2px]"><div className="bg-black w-1/3 h-full"></div></div>

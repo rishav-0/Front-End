@@ -6,10 +6,10 @@ const Tab = (props) => {
     <div className='rounded-xl p-3  flex items-center justify-between hover:bg-black  hover:text-white'>
         <div className="flex gap-2 items-center">
             <i className={icon}></i>
-            <p className="text-sm font-bold hidden">{title}</p>
+            <p className="text-sm font-bold ">{title}</p>
         </div>
         {
-            notification && <div className="rounded-full hidden bg-black h-4 w-4 p-3 flex items-center justify-center ">
+            notification && <div className="rounded-full  bg-black h-4 w-4 p-3 flex items-center justify-center ">
             <p className="text-white">{notification}</p>
         </div>
         }

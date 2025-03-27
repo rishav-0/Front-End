@@ -1,95 +1,317 @@
-import React from 'react'
+import React from "react"
 
-const Footer = () => {
+export default function FooterDarkTheme() {
   return (
-    
-
-<footer class="bg-white dark:bg-gray-900">
-    <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-        <div class="md:flex md:justify-between">
-          <div class="mb-6 md:mb-0">
-              <a href="https://flowbite.com/" class="flex items-center">
-                  {/* <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 me-3" alt="FlowBite Logo" /> */}
-                  <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Exclusive</span>
-              </a>
+    <>
+      {/*    <!-- Component: Dark Theme Footer --> */}
+      <footer className="w-full text-gray-400">
+        {/*      <!-- Main footer --> */}
+        <div className="  bg-gray-300 pb-12 pt-16 text-sm">
+          <div className="container mx-auto px-6">
+            <div className="grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12">
+              <nav
+                className="col-span-2 md:col-span-4 lg:col-span-3"
+                aria-labelledby="footer-product-dark"
+              >
+                <h3
+                  className="mb-6 text-base font-medium text-black"
+                  id="footer-product-dark"
+                >
+                  Product
+                </h3>
+                <ul>
+                  <li className="mb-2 leading-6 text-gray-800 ">
+                    <a
+                      href="javascript:void(0)"
+                      className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
+                    >
+                      Features
+                    </a>
+                  </li>
+                  <li className="mb-2 leading-6 text-gray-800">
+                    <a
+                      href="javascript:void(0)"
+                      className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
+                    >
+                      Customers
+                    </a>
+                  </li>
+                  <li className="mb-2 leading-6 text-gray-800">
+                    <a
+                      href="javascript:void(0)"
+                      className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
+                    >
+                      Why us?
+                    </a>
+                  </li>
+                  <li className="mb-2 leading-6 text-gray-800">
+                    <a
+                      href="javascript:void(0)"
+                      className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
+                    >
+                      Pricing
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <nav
+                className="col-span-2 md:col-span-4 lg:col-span-3"
+                aria-labelledby="footer-docs-dark"
+              >
+                <h3
+                  className="mb-6 text-base font-medium text-black"
+                  id="footer-docs-dark"
+                >
+                  Docs & help
+                </h3>
+                <ul>
+                  <li className="mb-2 leading-6 text-gray-800">
+                    <a
+                      href="javascript:void(0)"
+                      className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
+                    >
+                      Documentation
+                    </a>
+                  </li>
+                  <li className="mb-2 leading-6 text-gray-800">
+                    <a
+                      href="javascript:void(0)"
+                      className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
+                    >
+                      Training
+                    </a>
+                  </li>
+                  <li className="mb-2 leading-6 text-gray-800">
+                    <a
+                      href="javascript:void(0)"
+                      className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
+                    >
+                      System status
+                    </a>
+                  </li>
+                  <li className="mb-2 leading-6 text-gray-800">
+                    <a
+                      href="javascript:void(0)"
+                      className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
+                    >
+                      FAQ's
+                    </a>
+                  </li>
+                  <li className="mb-2 leading-6 text-gray-800">
+                    <a
+                      href="javascript:void(0)"
+                      className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
+                    >
+                      Help Center
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <nav
+                className="col-span-2 md:col-span-4 lg:col-span-3"
+                aria-labelledby="footer-about-dark"
+              >
+                <h3
+                  className="mb-6 text-base font-medium text-black"
+                  id="footer-about-dark"
+                >
+                  About us
+                </h3>
+                <ul>
+                  <li className="mb-2 leading-6 text-gray-800">
+                    <a
+                      href="javascript:void(0)"
+                      className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
+                    >
+                      About us
+                    </a>
+                  </li>
+                  <li className="mb-2 leading-6 text-gray-800">
+                    <a
+                      href="javascript:void(0)"
+                      className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
+                    >
+                      Careers
+                    </a>
+                  </li>
+                  <li className="mb-2 leading-6 text-gray-800">
+                    <a
+                      href="javascript:void(0)"
+                      className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
+                    >
+                      Leadership
+                    </a>
+                  </li>
+                  <li className="mb-2 leading-6 text-gray-800">
+                    <a
+                      href="javascript:void(0)"
+                      className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
+                    >
+                      Blog
+                    </a>
+                  </li>
+                  <li className="mb-2 leading-6 text-gray-800">
+                    <a
+                      href="javascript:void(0)"
+                      className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
+                    >
+                      Events
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <nav
+                className="col-span-2 md:col-span-4 lg:col-span-3"
+                aria-labelledby="footer-get-in-touch-dark"
+              >
+                <h3
+                  className="mb-6 text-base font-medium text-black"
+                  id="footer-get-in-touch-dark"
+                >
+                  Get in touch
+                </h3>
+                <ul>
+                  <li className="mb-2 leading-6 text-gray-800">
+                    <a
+                      href="javascript:void(0)"
+                      className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
+                    >
+                      Contact
+                    </a>
+                  </li>
+                  <li className="mb-2 leading-6 text-gray-800">
+                    <a
+                      href="javascript:void(0)"
+                      className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
+                    >
+                      Support
+                    </a>
+                  </li>
+                  <li className="mb-2 leading-6 text-gray-800">
+                    <a
+                      href="javascript:void(0)"
+                      className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
+                    >
+                      Partners
+                    </a>
+                  </li>
+                  <li className="mb-2 leading-6 text-gray-800">
+                    <a
+                      href="javascript:void(0)"
+                      className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
+                    >
+                      Join research
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
           </div>
-          <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
-              <div>
-                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
-                  <ul class="text-gray-500 dark:text-gray-400 font-medium">
-                      <li class="mb-4">
-                          <a href="https://flowbite.com/" class="hover:underline">Flowbite</a>
-                      </li>
-                      <li>
-                          <a href="https://tailwindcss.com/" class="hover:underline">Tailwind CSS</a>
-                      </li>
-                  </ul>
+        </div>
+        {/*      <!-- Sub Footer --> */}
+        <div className="border-t border-gray-900 bg-gray-700 py-4 text-sm">
+          <div className="container mx-auto px-6">
+            <div className="grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12">
+              <div className="col-span-2 md:col-span-4 lg:col-span-6">
+                Copyright 2024 Brand
               </div>
-              <div>
-                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
-                  <ul class="text-gray-500 dark:text-gray-400 font-medium">
-                      <li class="mb-4">
-                          <a href="https://github.com/themesberg/flowbite" class="hover:underline ">Github</a>
-                      </li>
-                      <li>
-                          <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Discord</a>
-                      </li>
-                  </ul>
-              </div>
-              <div>
-                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
-                  <ul class="text-gray-500 dark:text-gray-400 font-medium">
-                      <li class="mb-4">
-                          <a href="#" class="hover:underline">Privacy Policy</a>
-                      </li>
-                      <li>
-                          <a href="#" class="hover:underline">Terms &amp; Conditions</a>
-                      </li>
-                  </ul>
-              </div>
+              <nav
+                aria-labelledby="footer-social-links-dark"
+                className="col-span-2 text-right md:col-span-4 lg:col-span-6"
+              >
+                <h2 className="sr-only" id="footer-social-links-dark">
+                  Social Media Links
+                </h2>
+                <ul className="flex items-center justify-end gap-4">
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      className="transition-colors duration-300 hover:text-emerald-500"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 48 48"
+                        height="16"
+                        width="16"
+                        className="h-4 w-4 shrink-0"
+                        role="graphics-symbol"
+                        aria-labelledby="title-tb01-dark desc-tb01-dark"
+                      >
+                        <title id="title-tb01-dark">Icon title</title>
+                        <desc id="desc-tb01-dark">
+                          A more detailed description of the icon
+                        </desc>
+                        <path
+                          fill="currentColor"
+                          fillRule="evenodd"
+                          d="M37.2491 3.30238C37.0498 2.18649 36.0513 1.49746 34.9878 1.50395C32.2606 1.5206 29.7927 1.60328 27.6333 1.96988C25.4705 2.33708 23.584 2.99414 22.038 4.18283C18.9929 6.52415 17.4377 10.7872 17.3724 18.3217H11.9552C10.9254 18.3217 9.94522 18.9739 9.74313 20.0674C9.51312 21.312 9.33088 23.311 9.75643 25.8014C9.95527 26.9651 10.9939 27.7324 12.1233 27.7324H17.3703V44.3867C17.3703 45.2169 17.8349 46.0595 18.7834 46.2403C19.5015 46.3773 20.6304 46.5002 22.375 46.5002C24.1168 46.5002 25.347 46.3777 26.1718 46.2437C27.2507 46.0684 27.8777 45.1191 27.8777 44.1186V27.7324H34.9316C36.0256 27.7324 37.0562 27.009 37.2608 25.8665C37.6736 23.5618 37.4742 21.4753 37.2437 20.1563C37.0465 19.0284 36.0444 18.3217 34.9653 18.3217H27.8795C27.8917 16.7111 27.9661 15.4564 28.1447 14.4728C28.341 13.3921 28.6547 12.6875 29.1044 12.2048C29.5502 11.7263 30.1817 11.4104 31.1284 11.2121C32.0832 11.0121 33.3126 10.9408 34.9123 10.9193C36.0128 10.9045 37.0511 10.1718 37.2541 9.01765C37.6718 6.64193 37.4794 4.59202 37.2491 3.30238Z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      className="transition-colors duration-300 hover:text-emerald-500"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 48 48"
+                        height="16"
+                        width="16"
+                        className="h-4 w-4 shrink-0"
+                        role="graphics-symbol"
+                        aria-labelledby="title-tb02-dark desc-tb02-dark"
+                      >
+                        <title id="title-tb02-dark">Icon title</title>
+                        <desc id="desc-tb02-dark">
+                          A more detailed description of the icon
+                        </desc>
+                        <path
+                          fill="currentColor"
+                          d="M34.7229 4.69819C36.9179 5.13151 38.8231 6.226 39.9574 7.46121L44.8741 7.22772C46.162 7.16656 46.9576 8.61264 46.216 9.66758L42.8041 14.5217C43.7777 35.6815 22.2547 49.0961 4.54954 41.2208C3.75067 40.8654 3.58181 40.0439 3.74682 39.4029C3.91015 38.7685 4.4337 38.1304 5.23631 38.0329C7.74782 37.7279 10.886 36.8951 13.5309 34.8102C11.3351 34.4801 8.87383 33.2203 6.77118 31.5522C4.25179 29.5535 2.11595 26.8651 1.53319 24.2321C1.41942 23.7181 1.60805 23.2504 1.94754 22.9478C2.27981 22.6517 2.75116 22.5146 3.22643 22.6022C4.4998 22.8369 6.44397 23.1705 7.93366 23.3225C7.82715 23.2095 7.71399 23.0872 7.59534 22.9561C6.83881 22.1198 5.85466 20.9171 4.947 19.4528C3.13974 16.5372 1.58717 12.5021 2.86967 8.24191C3.04524 7.65872 3.52191 7.3215 4.02883 7.2399C4.52724 7.15967 5.07712 7.31911 5.46709 7.72851C7.80814 10.1862 13.7896 15.4057 22.914 16.1638C22.5823 14.0277 22.368 9.45707 27.2507 6.17582C29.7236 4.51405 32.4029 4.2402 34.7229 4.69819Z"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      className="transition-colors duration-300 hover:text-emerald-500"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 48 48"
+                        height="16"
+                        width="16"
+                        className="h-4 w-4 shrink-0"
+                        role="graphics-symbol"
+                        aria-labelledby="title-tb03-dark desc-tb03-dark"
+                      >
+                        <title id="title-tb03-dark">Icon title</title>
+                        <desc id="desc-tb03-dark">
+                          A more detailed description of the icon
+                        </desc>
+                        <path
+                          fill="currentColor"
+                          fillRule="evenodd"
+                          d="M18.9563 7.52344C18.7526 6.91526 18.1767 6.49018 17.5166 6.51256C13.7277 6.64105 10.4346 7.72034 9.03159 8.24815C8.46409 8.46164 7.98142 8.84195 7.6475 9.35489C6.13235 11.6824 1.35143 20.1396 1.5015 33.9816C1.51112 34.8687 1.87868 35.7421 2.60293 36.3174C4.05518 37.4709 7.22566 39.6169 12.2716 41.1548C13.1338 41.4176 14.1343 41.1791 14.6848 40.3722C15.3668 39.3727 15.9633 38.1197 16.3718 37.1704C16.4818 36.9145 16.7753 36.775 17.0546 36.8566C18.8459 37.3799 21.1512 37.7795 24.0128 37.7795C26.865 37.7795 29.1613 37.3825 30.9459 36.8617C31.2254 36.7802 31.5188 36.9197 31.6289 37.1755C32.0373 38.1241 32.6329 39.3744 33.3137 40.3722C33.8643 41.1791 34.8647 41.4176 35.727 41.1548C40.7729 39.6169 43.9433 37.4709 45.3956 36.3174C46.1198 35.7421 46.4874 34.8687 46.497 33.9816C46.6459 20.2518 41.9432 11.8198 40.3884 9.41269C40.0295 8.85716 39.4986 8.45634 38.8845 8.24366C37.3835 7.72379 33.9285 6.65561 30.4846 6.51532C29.821 6.48828 29.2456 6.91631 29.0422 7.52344L28.5352 9.03687C28.4493 9.293 28.1503 9.47311 27.8343 9.41471C27.0144 9.26322 25.7164 9.09373 24.0128 9.09373C22.2989 9.09373 20.9871 9.26529 20.1611 9.41734C19.8471 9.47513 19.5502 9.29611 19.4648 9.04103L18.9563 7.52344ZM21 25C21 27.7614 18.9853 30 16.5 30C14.0147 30 12 27.7614 12 25C12 22.2386 14.0147 20 16.5 20C18.9853 20 21 22.2386 21 25ZM31.5 30C29.0147 30 27 27.7614 27 25C27 22.2386 29.0147 20 31.5 20C33.9853 20 36 22.2386 36 25C36 27.7614 33.9853 30 31.5 30Z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
           </div>
-      </div>
-      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-      <div class="sm:flex sm:items-center sm:justify-between">
-          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.
-          </span>
-          <div class="flex mt-4 sm:justify-center sm:mt-0">
-              <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
-                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
-                        <path fill-rule="evenodd" d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z" clip-rule="evenodd"/>
-                    </svg>
-                  <span class="sr-only">Facebook page</span>
-              </a>
-              <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
-                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 21 16">
-                        <path d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z"/>
-                    </svg>
-                  <span class="sr-only">Discord community</span>
-              </a>
-              <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
-                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 17">
-                    <path fill-rule="evenodd" d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z" clip-rule="evenodd"/>
-                </svg>
-                  <span class="sr-only">Twitter page</span>
-              </a>
-              <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
-                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd"/>
-                  </svg>
-                  <span class="sr-only">GitHub account</span>
-              </a>
-              <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
-                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M10 0a10 10 0 1 0 10 10A10.009 10.009 0 0 0 10 0Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.094 20.094 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM8 1.707a8.821 8.821 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.758 45.758 0 0 0 8 1.707ZM1.642 8.262a8.57 8.57 0 0 1 4.73-5.981A53.998 53.998 0 0 1 9.54 7.222a32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.64 31.64 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM10 18.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 13.113 11a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z" clip-rule="evenodd"/>
-                </svg>
-                  <span class="sr-only">Dribbble account</span>
-              </a>
-          </div>
-      </div>
-    </div>
-</footer>
-
+        </div>
+      </footer>
+      {/*    <!-- End Dark Theme Footer --> */}
+    </>
   )
 }
-
-export default Footer

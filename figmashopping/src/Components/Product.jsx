@@ -1,9 +1,24 @@
+import { useAuth } from '@clerk/clerk-react'
 import React from 'react'
-import { Link } from 'react-router'
+import { Link, useNavigate } from 'react-router'
 
 const Product = (props) => {
+    const navigate = useNavigate()
     const { title, image, price, id,addToCart,isinCart } = props
- 
+     const { isSignedIn } = useAuth()
+
+     const handleAddtoCart = ()=>{
+        if(isSignedIn){
+            addToCart
+        }else{
+            navigate('/signup')
+                window.scrollTo({
+            top: 0,
+            behavior: 'smooth' // Optional: adds smooth scrolling animation
+            });
+        }
+     }
+
     return (
         
             <div className='w-[270px] min-w-[270px] rounded-sm '>
@@ -24,7 +39,7 @@ const Product = (props) => {
                 </div>
                 <Link to={`/productdetail/${id}`}><img className='w-full' src={image} alt="" /></Link>
                 {
-                    !isinCart && <div onClick={addToCart} className="bg-black absolute bottom-0 w-full invisible group-hover:visible cursor-pointer text-white text-center py-2">Add to Cart</div>
+                    <div onClick={handleAddtoCart} className="bg-black absolute bottom-0 w-full invisible group-hover:visible cursor-pointer text-white text-center py-2">Add to Cart</div>
                 }
                 
             </div>

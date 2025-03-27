@@ -9,26 +9,30 @@ import Nav from './Components/Nav'
 import { Route, Routes } from 'react-router'
 import ProductDetail from './pages/detail/ProductDetail'
 import Cart from './pages/Cart/Cart'
+import FooterDarkTheme from './Components/Footer'
+import { useAuth } from '@clerk/clerk-react'
 
 
 function App() {
-  
+   const {  userId,isSignedIn } = useAuth()
   const {flash,best,products,categories} = useContext(Globalcontext)
 
-  // console.log(categories,'data')
+  console.log(userId,'data')
+
   return (
     <>
       <Nav />  
       <Routes>
-        <Route path='/' element={ <Home />}></Route>
-        <Route path='/signup' element={ <Signup /> }></Route>
-        <Route path='/productdetail/:id' element={ <ProductDetail />}></Route>
-        <Route path='/cart' element={ <Cart />}></Route>
+        <Route path='/' exact element={ <Home />}></Route>
+         <Route path='/signup' exact element={ <Signup /> }></Route>
+        
+        <Route path='/productdetail/:id' exact element={ <ProductDetail />}></Route>
+        <Route path='/cart' exact element={ <Cart />}></Route>
 
       </Routes>
-      {/* <Signup />   */}
+       
      
-      {/* <Footer /> */}
+      <FooterDarkTheme />
     </>
   )
 }

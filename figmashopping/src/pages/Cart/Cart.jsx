@@ -2,16 +2,20 @@ import React, { useContext } from 'react'
 import CartProduct from './CartProduct'
 import Btn from '../../Components/Btn'
 import { Globalcontext } from '../../Globalcontext'
+import { useAuth } from '@clerk/clerk-react'
+
 
 
 const Cart = (props) => {
 
+   const { userId } = useAuth()
   const {cartLIst,updateItem,getCart} = useContext(Globalcontext)
 
   // console.log(cartLIst.data,'cartlist')
+  const userCart = cartLIst?.filter(i=>i._userId == userId)
+  console.log(userCart,'usercart')
+  const total = userCart?.reduce((total, item) => total + item.price * item.qty, 0)
   
-  const total = cartLIst?.reduce((total, item) => total + item.price * item.qty, 0)
-
   
     const handleIncrement = async (isinCart,i,sItem)=>{
       console.log(sItem,'sitem')
@@ -60,9 +64,9 @@ const Cart = (props) => {
         </div>
 
          {
-          cartLIst?.map(i=>{
-             const isinCart = cartLIst?.some(j=>j.id == i.id)
-              const sItem = cartLIst?.find(j=>j.id == i.id)
+          userCart?.map(i=>{
+             const isinCart = userCart?.some(j=>j.id == i.id)
+              const sItem = userCart?.find(j=>j.id == i.id)
             return (
               <CartProduct title={i.title} img={i?.image} price={i.price}  count={i.qty} key={i.id} id={i._id} decrement={()=>handleDecrement(isinCart,i,sItem)} increment={()=>handleIncrement(isinCart,i,sItem)}/> 
             )

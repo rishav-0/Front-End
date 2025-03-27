@@ -1,5 +1,6 @@
 import { createContext, useEffect, useState } from "react"
 import { addToCart, cartItems, deleteItems, getAll, getBestSeller, getCategory, getFlashSale, updateCart } from "./Services"
+import { useAuth } from "@clerk/clerk-react"
 
 export const Globalcontext = createContext()
 
@@ -12,6 +13,7 @@ export const GlobalcontextProvider = ({ children }) => {
     const [flashLoading, setFlashLoading] = useState(false)
     const [flashError, setFlashError] = useState('')
     const [cart, setCart] = useState([])
+     const { userId } = useAuth()
 
     const getProducts = async () => {
         const res = await getAll()
@@ -72,7 +74,7 @@ export const GlobalcontextProvider = ({ children }) => {
      
   const addtocart = async (i)=>{
     const payload = {
-      userId:Date.now(),
+      _userId:userId,
       id:i.id,
       title: i.title,
       price: i.price,

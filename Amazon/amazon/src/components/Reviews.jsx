@@ -4,7 +4,7 @@ import CommentCard from './CommentCard'
 
 const Reviews = (props) => {
     const {item} = props
-    console.log(item.reviews,'rev')
+    console.log(item?.reviews,'rev')
     return (
         <div className='flex w-full'>
             <div className='w-1/3 p-3'>
@@ -68,7 +68,7 @@ const Reviews = (props) => {
             {
                 item?.reviews.map(i=>{
                     return (
-                        <CommentCard rating={i.rating}  comment={i.comment} reviewerName={i.reviewerName} />
+                        <CommentCard rating={i.rating} date={i.date} comment={i.comment} reviewerName={i.reviewerName} />
                     )
                 })
             }
