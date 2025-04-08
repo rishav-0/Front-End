@@ -81,12 +81,14 @@ export const GlobalcontextProvider = ({ children }) => {
       image: i.images[0],
       qty: 1
     }
+    console.log('called 1')
     await addToCart(payload)
 
     getCart()
   }
 
       const handleAddUpdate = async (isinCart,i,sItem)=>{
+        console.log('called ',isinCart,i,sItem);
     if(isinCart){
       const payload = {
         ...sItem,

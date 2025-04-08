@@ -21,7 +21,8 @@ function App() {
 
   return (
     <>
-      <Nav />  
+      <div className="flex flex-col  justify-between">
+        <Nav />  
       <Routes>
         <Route path='/' exact element={ <Home />}></Route>
          <Route path='/signup' exact element={ <Signup /> }></Route>
@@ -33,6 +34,8 @@ function App() {
        
      
       <FooterDarkTheme />
+      </div>
+      
     </>
   )
 }

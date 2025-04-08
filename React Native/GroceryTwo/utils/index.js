@@ -246,3 +246,4 @@ export const categories = [
 ];
 
 
+export const detailTab = ["Description",'Nutrional info','Reviews']

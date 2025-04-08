@@ -37,7 +37,7 @@ const Home = () => {
             </div>
            
             
-            <hr className='mb-[70px]' />
+
 
             <div>
                 <div className="overflow-x-auto flex gap-6 px-10 lg:px-[135px] no-scrollbar mb-12">
@@ -53,8 +53,11 @@ const Home = () => {
              <div className="overflow-x-auto flex gap-6 px-10 lg:px-[135px] no-scrollbar mb-12">
                 {
                     newData?.map(i => {
+                        const isinCart = cartLIst?.some(j=>j.id == i.id)
+                        const sItem = cartLIst?.find(j=>j.id == i.id)
+
                         return (
-                            <Product title={i?.title} image={i?.images[0]} price={i?.price} id={i.id}/>
+                            <Product title={i?.title} image={i?.images?.[0]} price={i?.price} id={i?.id} isinCart={isinCart} key={i.id} cartid={sItem?._id} addToCart={()=>handleAddUpdate(isinCart,i,sItem)}/>
                         )
                     })
                 }
@@ -74,8 +77,11 @@ const Home = () => {
             <div className="overflow-x-auto flex gap-6 px-10 lg:px-[135px]  no-scrollbar mb-12">
                 {
                     best.map(i => {
+                        const isinCart = cartLIst?.some(j=>j.id == i.id)
+                        const sItem = cartLIst?.find(j=>j.id == i.id)
+
                         return (
-                            <Product title={i?.title} image={i?.images[0]} price={i?.price} id={i.id}/>
+                            <Product title={i?.title} image={i?.images?.[0]} price={i?.price} id={i?.id} isinCart={isinCart} key={i.id} cartid={sItem?._id} addToCart={()=>handleAddUpdate(isinCart,i,sItem)}/>
                         )
                     })
                 }
@@ -92,13 +98,16 @@ const Home = () => {
                 <BigHeading title='Explore our Products' />
             </div>
 
-            <div className="overflow-y-auto flex h-[400px] justify-center w-full px-10 lg:px-[135px] no-scrollbar mb-12">
-                <div className="grid  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 3xl:grid-cols-5 gap-6 w-full">
+            <div className="overflow-y-auto flex h-[400px] justify-center w-full px-10 xl:px-[135px] no-scrollbar mb-12">
+                <div className="grid  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 3xl:grid-cols-5 gap-6 w-full">
                     {
                         products.map(i => {
-                            return (
-                                <Product title={i?.title} image={i?.images[0]} price={i?.price} id={i.id}/>
-                            )
+                        const isinCart = cartLIst?.some(j=>j.id == i.id)
+                        const sItem = cartLIst?.find(j=>j.id == i.id)
+
+                        return (
+                            <Product title={i?.title} image={i?.images?.[0]} price={i?.price} id={i?.id} isinCart={isinCart} key={i.id} cartid={sItem?._id} addToCart={()=>handleAddUpdate(isinCart,i,sItem)}/>
+                        )
                         })
                     }
                 </div>

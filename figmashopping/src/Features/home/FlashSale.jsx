@@ -42,9 +42,12 @@ const FlashSale = () => {
                 <div className="grid  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 3xl:grid-cols-5 gap-6 w-full">
                     {
                         products?.map(i => {
-                            return (
-                                <Product title={i?.title} image={i?.images?.[0]} key={i.id} price={i?.price} id={i?.id}/>
-                            )
+                        const isinCart = cartLIst?.some(j=>j.id == i.id)
+                        const sItem = cartLIst?.find(j=>j.id == i.id)
+
+                        return (
+                            <Product title={i?.title} image={i?.images?.[0]} price={i?.price} id={i?.id} isinCart={isinCart} key={i.id} cartid={sItem?._id} addToCart={()=>handleAddUpdate(isinCart,i,sItem)}/>
+                        )
                         })
                     }
                 </div>

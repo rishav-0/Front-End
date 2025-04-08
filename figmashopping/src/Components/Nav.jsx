@@ -9,7 +9,7 @@ const Nav = () => {
     const {  isSignedIn } = useAuth()
 
   return (
-    <div className='px-10 flex items-center flex-wrap justify-between border-b mb-10 py-4'>
+    <div className='px-10 flex items-center flex-wrap justify-between border-b mb-10 py-4 sticky top-0 z-10 bg-white'>
         <Link to='/'><p className="text-2xl font-semibold">Exclusive</p></Link>
         
         <div className="flex items-center justify-between sm:gap-12">

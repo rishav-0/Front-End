@@ -21,7 +21,7 @@ const Signup = () => {
 
    console.log(isSignedIn,'signup')
   return (
-    <div className='flex gap-10 flex-wrap h-screen'>
+    <div className='flex justify-center items-center'>
         
         <SignUp />
         

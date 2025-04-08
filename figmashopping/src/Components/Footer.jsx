@@ -4,7 +4,7 @@ export default function FooterDarkTheme() {
   return (
     <>
       {/*    <!-- Component: Dark Theme Footer --> */}
-      <footer className="w-full text-gray-400">
+      <footer className="w-full text-gray-400 mt-10">
         {/*      <!-- Main footer --> */}
         <div className="  bg-gray-300 pb-12 pt-16 text-sm">
           <div className="container mx-auto px-6">

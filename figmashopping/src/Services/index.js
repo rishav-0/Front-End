@@ -1,10 +1,10 @@
 import axios from "axios"
 
-const flashSaleUrl = 'https://todoappres-default-rtdb.firebaseio.com/flashsale.json'
-const bestSellerUrl = 'https://todoappres-default-rtdb.firebaseio.com/bestseller.json'
+const flashSaleUrl = 'https://learn-18ff1-default-rtdb.firebaseio.com/flashsale.json'
+const bestSellerUrl = 'https://learn-18ff1-default-rtdb.firebaseio.com/bestseller.json'
 const ApiUrl = 'https://api.escuelajs.co/api/v1/products'
 const allCategory = 'https://api.escuelajs.co/api/v1/categories' 
-const cartUrl = 'https://todoappres-default-rtdb.firebaseio.com/ExclusiveCart.json'
+const cartUrl = 'https://learn-18ff1-default-rtdb.firebaseio.com/ExclusiveCart.json'
 
 export const getAll = async ()=>{
     const res = await axios.get(ApiUrl)
@@ -65,14 +65,14 @@ export const cartItems = async ()=>{
 export const addToCart = async (payload)=>{
     try{
         const res = await axios.post(cartUrl,payload)
-        console.log('added to cart')
+        console.log('called added to cart')
     }catch(error){
-        console.log('failed to add')
+        console.log('called failed to add')
     }
 }
 export const updateCart = async (id,payload)=>{
     try{
-        const res = await axios.patch(`https://todoappres-default-rtdb.firebaseio.com/ExclusiveCart/${id}.json`,payload)
+        const res = await axios.patch(`https://learn-18ff1-default-rtdb.firebaseio.com/ExclusiveCart/${id}.json`,payload)
         return res
         console.log('update cart')
     }catch(error){
@@ -83,7 +83,7 @@ export const updateCart = async (id,payload)=>{
 
 
 export const deleteItems = async (id)=>{
-    const res  = await axios.delete(`https://todoappres-default-rtdb.firebaseio.com/ExclusiveCart/${id}.json`)
+    const res  = await axios.delete(`https://learn-18ff1-default-rtdb.firebaseio.com/ExclusiveCart/${id}.json`)
 
     // const cart = Object.entries(response.data).map(([id, todo]) => ({ id, ...todo, }));
     console.log(res.data)

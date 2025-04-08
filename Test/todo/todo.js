@@ -4,15 +4,19 @@ let todo = []
 
 function addTask(){
     console.log(task.value)
+
     if(task.value != '' ){
-        todo.push({
-        id:Date.now(),
-        taskName: task.value
-    })
+        todo.push(
+            {
+                id:Date.now(),
+                taskName: task.value
+            }
+)
     }
     
     console.log(todo)
     task.value= ''
+
     showTask()
 }
 
@@ -30,6 +34,7 @@ function showTask(){
 
 function remove(id){
     todo = todo.filter(i=>i.id != id)
+
     showTask()
 }
 
@@ -37,7 +42,9 @@ let selectedItem ;
 
 function inputUpdate(id){
     let toEdit = todo.find(i=>i.id === id)
+
     task.value = toEdit.taskName
+
     selectedItem = toEdit
 
     document.getElementById('update').classList.remove('hidden')    
@@ -53,9 +60,10 @@ function update(){
     //     taskName: task.value
     // })
 
-    todo = todo.map(i => 
+    todo = todo?.map(i => 
         i.id === selectedItem.id ? { ...i, taskName: task.value } : i
     );
+    
     task.value = ''
 
     showTask()

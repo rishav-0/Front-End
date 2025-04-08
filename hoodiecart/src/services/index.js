@@ -5,6 +5,7 @@ const ApiUrl = 'https://api.escuelajs.co/api/v1/products'
 
 export const getData = async ()=>{
     const res = await axios.get(ApiUrl)
+    
     if(res.status === 200 && res.data){
         return res.data
     }

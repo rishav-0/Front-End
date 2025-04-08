@@ -10,11 +10,15 @@ function App() {
   const [isLoading,setLoading] = useState(false)
 
   const  productApi = ()=>{
+
     setLoading(true)
+
     fetch('https://dummyjson.com/products')
-    .then((res) => res.json())
-    .then((data) => console.log(data,"hjhj"))
+    .then((response) => response.json())
+    .then((data) => console.log(data))
+
     .catch(err=>{setTitle("failed to load");setLoading(false)})
+
   }
 
    useEffect(() => {
