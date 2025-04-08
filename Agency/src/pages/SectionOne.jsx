@@ -13,8 +13,8 @@ function SectionOne() {
             <p className="text-5xl font-bold mb-6 nato">Online Today.</p>
             <p className="font-semibold mb-12 line-clamp-2">We help to create clients desired task properly & our team also collaborate</p>
             <div className="flex gap-2">
-                <Button className='rounded-none'>Get Started</Button>
-                <Button variant='text' className='flex gap-2 items-center rounded-none py-0' >How it Works <i class="fa-regular text-2xl fa-circle-play"></i></Button>
+                <Button className='rounded-none whitespace-nowrap'>Get Started</Button>
+                <Button variant='text' className='flex gap-2 items-center rounded-none py-0 whitespace-nowrap' >How it Works <i class="fa-regular text-2xl fa-circle-play"></i></Button>
             </div>
         </div>
         <div className='hidden lg:block'>

@@ -9,7 +9,7 @@ function Nav() {
 
   return (
     <div>
-        <div className="flex justify-between items-center mb-4 container mx-auto lg:px-20 pt-4 ">
+        <div className="flex justify-between items-center flex-wrap mb-4 container mx-auto lg:px-20 pt-4 ">
             <p className="font-bold italic">Delta</p>
             <div className="flex gap-4">
                 {

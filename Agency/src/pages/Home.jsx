@@ -6,7 +6,7 @@ import SectionThree from './SectionThree'
 
 function Home() {
   return (
-    <div className='scroll-container snap-y snap-mandatory overflow-y-auto'>
+    <div className='p-2'>
         <Nav />
         <SectionOne />
         <SectionTwo />
